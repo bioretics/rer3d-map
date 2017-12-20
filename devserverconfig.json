@@ -21,6 +21,10 @@
         "gov",
         "gov.uk",
         "gov.nz"
-    ]
+    ],
+
+    "proxyAllDomains": false,
+
+    "initPaths": [ "/data/3d_config" ]
 }
 

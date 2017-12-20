@@ -1,59 +1,55 @@
 {
     /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
-    initializationUrls: [
+    "initializationUrls": [
         "terria"
     ],
-    parameters: {
-        bingMapsKey: "AkaOmRFtjAb71cXgLwAGtLbj2RpkPKtVqAIroFQsocfurCBILxIeAWPkil7hhRy_",
-        googleUrlShortenerKey: null,
-        googleAnalyticsKey: null,
-        googleAnalyticsOptions: null,
+    "parameters": {
+        "bingMapsKey": "AkaOmRFtjAb71cXgLwAGtLbj2RpkPKtVqAIroFQsocfurCBILxIeAWPkil7hhRy_",
+        "googleUrlShortenerKey": null,
+        "googleAnalyticsKey": null,
+        "googleAnalyticsOptions": null,
         /* Text that appears at the bottom of the map */
-        disclaimer: {
-            text: "Disclaimer: This map must not be used for navigation or precise spatial analysis",
-            url: ""
+        "disclaimer": {
+            "text": "Disclaimer: questa mappa non può essere usata per la navigazione o calcoli di elevata precisione. @Regione Emilia-Romagna ",
+            "url": ""
         },
-        /*
+        
         // Text that will be added to any pages printed from your site.
-        printDisclaimer:{
-            text:"Put your print disclaimer here.",
-            url: "#"
+        "printDisclaimer":{
+            "text":"@Regione Emilia-Romagna",
+            "url": "#"
         },
-        */
+        
          
         // Pop-up disclaimer that will be shown at the start
         // The text of the disclaimer is in lib/Views/GlobalDisclaimer.html
-        globalDisclaimer: {
-            confirmationRequired: true,
-            buttonTitle: "I agree",
-            title: "Disclaimer",
-            // If the current browser location is not prod, or is dev, then show a "not the real site" warning.
-            // The text of that is in lib/Views/DevelopmentDisclaimerPreamble.html
-            //prodHostRegex: "gov.\\.au$",
-            //devHostRegex: "\\b(staging|preview|test|dev)\\.",
+        /*"globalDisclaimer": {
+            confirmationRequired: false,
+            buttonTitle: "Ok",
+            title: "Geoportale 3D della Regione Emilia-Romagna",
             enableOnLocalhost: true // If false, don't show this when running on localhost
-        },
-        
-        /*
-        developerAttribution: {
-            text: "Your organisation",
-            link: "http://www.example.com"
         },*/
+        
+        
+        "developerAttribution": {
+            "text": "Bioretics srl",
+            "link": "http://www.bioretics.com"
+        },
         // This is used in various text messages. You should also set <title> in index.html
-        appName: "Terria Map",
+        "appName": "Geoportale 3D",
 
         // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
-        brandBarElements: [
+        "brandBarElements": [
             "",
-            "<a target=\"_blank\" href=\"http://www.nicta.com.au\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
+            "<a target=\"_blank\" href=\"http://geoportale.regione.emilia-romagna.it\"><img src=\"images/320px-Logo_orizzontale_Regione_Emilia-Romagna.jpg\" height=\"52\" title=\"Logo Regione Emilia-Romagna\" /></a>",
             ""
         ],
         // Shown when things go wrong.
-        supportEmail: "help@example.com",
+        "supportEmail": "infogeoportale@regione.emilia-romagna.it",
         // You probably shouldn't change this.
-        proj4ServiceBaseUrl: "proj4def/",
+        "proj4ServiceBaseUrl": "proj4def/",
         // Or this
-        feedbackUrl: "feedback",
+        "feedbackUrl": "",
 
         // Default mobile viewer mode when loading the map for the first time on mobile platforms.
         // Options are: "3DTerrain", "3DSmooth", "2D"

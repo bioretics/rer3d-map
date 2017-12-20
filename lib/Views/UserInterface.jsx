@@ -25,8 +25,9 @@ export default function UserInterface(props) {
     return (
         <StandardUserInterface {... props} version={version}>
             <Menu>
-                <RelatedMaps viewState={props.viewState} />
-                <MenuItem caption="About" href="about.html" key="about-link"/>
+				{/*<RelatedMaps viewState={props.viewState} />*/}
+                {/*<CoordsConverter viewState={props.viewState} terria={props.terria} />*/}
+                <MenuItem caption="About 3D" href="https://geoportale.regione.emilia-romagna.it/it/contenuti/geoportale-3d" key="about-link"/>
             </Menu>
             <ExperimentalMenu>
                 <If condition={isBrowserSupportedAV()}>
