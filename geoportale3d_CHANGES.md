@@ -1,6 +1,14 @@
 Geoportale3D change log
 =======================
 
+### 1.4.0 - 25/01/2018
+* Updated to TerriaMap of 10/11/2017 and terriajs v. 5.5.4.
+* Added to SharePanel new features: save screenshot to file on local disk; save/load map config from/to file on local disk.
+* Enabled coordinate conversion panel with new features: goto coordinates; grab coordinates from last picked point.
+* Some words and sentences translated to italian language.
+* Some minor layout and style changes.
+
+
 ### 1.3.0 - 29/11/2017
 * Fixed packages versions.
 * Fixed a accessibility issues (link in "Condividi" panel).
@@ -30,7 +38,6 @@ Geoportale3D change log
 
 
 ### 1.0.0 - 14/10/2016
-
 * Updated to [TerriaMap](https://github.com/TerriaJS/TerriaMap) unreleased 2016-10-14 version.
 * Updated to [TerriaJS](https://github.com/TerriaJS/terriajs) 4.5.0 version.
 * Added a coordinate conversion panel that use RER conversion REST service.
