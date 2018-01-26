@@ -5,7 +5,6 @@ import version from '../../version';
 import StandardUserInterface from 'terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx';
 import MenuItem from 'terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuItem';
 import RelatedMaps from './RelatedMaps';
-import { Menu, ExperimentalMenu } from 'terriajs/lib/ReactViews/StandardUserInterface/customizable/Groups';
 import SplitPoint from 'terriajs/lib/ReactViews/SplitPoint';
 
 import './global.scss';
