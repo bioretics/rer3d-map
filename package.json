@@ -52,10 +52,7 @@
     "sass-loader": "^6.0.3",
     "semver": "^5.0.0",
     "svg-sprite-loader": "^3.4.0",
-<<<<<<< HEAD
     "terriajs": "^5.5.4",
-=======
->>>>>>> TerriaMap_orig/master
     "terriajs-catalog-editor": "^0.2.0",
     "terriajs-schema": "latest",
     "urijs": "^1.18.12",
