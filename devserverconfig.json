@@ -20,7 +20,8 @@
         "githubusercontent.com",
         "gov",
         "gov.uk",
-        "gov.nz"
+        "gov.nz",
+        "geoportale.regione.emilia-romagna.it"
     ],
 
     "proxyAllDomains": false,
