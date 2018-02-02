@@ -1,6 +1,11 @@
 Change Log
 ==========
 
+### 1.5.1 - 02/02/2018
+* Updated README.md
+* Added installation guide (english and italian) to GitHub wiki.
+* Use terriajs-server 2.7.1.
+
 ### 1.5.0 - 01/02/2018
 * Renamed to rer3d-map.
 * Updated package.json.
