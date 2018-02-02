@@ -14,4 +14,4 @@ The software has been developed and customized by [Bioretics srl](http://www.bio
 
 This is a complete website built using the TerriaJS library. See the [TerriaJS README](https://github.com/TerriaJS/TerriaJS) for information about TerriaJS, and getting started using this repository.
 
-[Go to the installation guide!](https://github.com/glughi/rer3d-map/wiki/Installation)
+Go to the [installation guide](https://github.com/glughi/rer3d-map/wiki/Installation)
