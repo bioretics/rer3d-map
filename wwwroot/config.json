@@ -41,7 +41,7 @@
         // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
         "brandBarElements": [
             "",
-            "<a target=\"_blank\" href=\"http://geoportale.regione.emilia-romagna.it\"><img src=\"images/320px-Logo_orizzontale_Regione_Emilia-Romagna.jpg\" height=\"52\" title=\"Logo Regione Emilia-Romagna\" /></a>",
+            "<img src=\"images/logo_rer_w.png\" title=\"Logo Regione Emilia-Romagna\" />",
             ""
         ],
         // Shown when things go wrong.
