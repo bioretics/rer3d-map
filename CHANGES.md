@@ -1,10 +1,20 @@
 Change Log
 ==========
 
+### 1.6.0 - 22/03/2018
+* Updated package.json.
+* Upgraded glughi/terriajs#rer3d_1.6.1.
+* Changed brand bar with a new (tmp) logo.
+* Changed link color to be more readable.
+* Merge pull request pr/4 from TerriaJS/TerriaMap.
+* devserverconfig.json customization.
+
+
 ### 1.5.1 - 02/02/2018
 * Updated README.md
 * Added installation guide (english and italian) to GitHub wiki.
 * Use terriajs-server 2.7.1.
+
 
 ### 1.5.0 - 01/02/2018
 * Renamed to rer3d-map.
