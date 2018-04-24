@@ -41,7 +41,7 @@
         // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
         "brandBarElements": [
             "",
-            "<img src=\"images/logo_rer_w.png\" title=\"Logo Regione Emilia-Romagna\" />",
+            "<img src=\"images/3d_350x70.png\" title=\"Logo Regione Emilia-Romagna\" />",
             ""
         ],
         // Shown when things go wrong.
