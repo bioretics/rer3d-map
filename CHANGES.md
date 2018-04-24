@@ -1,6 +1,11 @@
 Change Log
 ==========
 
+### 1.6.2 - 24/04/2018
+* Updated terriajs to glughi/terriajs#rer3d_1.6.3.
+* Removed old pics.
+
+
 ### 1.6.1 - 24/04/2018
 * Updated terriajs to glughi/terriajs#rer3d_1.6.2.
 * Changed brand bar with another new (tmp) logo.
