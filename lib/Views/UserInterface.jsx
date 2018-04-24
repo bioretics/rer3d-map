@@ -4,7 +4,6 @@ import version from '../../version';
 
 import StandardUserInterface from 'terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx';
 import MenuItem from 'terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuItem';
-//import RelatedMaps from './RelatedMaps';
 import { Menu, Nav, ExperimentalMenu } from 'terriajs/lib/ReactViews/StandardUserInterface/customizable/Groups';
 import SplitPoint from 'terriajs/lib/ReactViews/SplitPoint';
 import MeasureTool from 'terriajs/lib/ReactViews/Map/Navigation/MeasureTool';
@@ -26,7 +25,6 @@ export default function UserInterface(props) {
     return (
         <StandardUserInterface {... props} version={version}>
             <Menu>
-                {/*<RelatedMaps viewState={props.viewState} />*/}
                 <MenuItem caption="About 3D" href="https://geoportale.regione.emilia-romagna.it/it/contenuti/geoportale-3d" key="about-link"/>
             </Menu>
             <Nav>
