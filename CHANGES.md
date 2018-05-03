@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+### 1.6.3 - 03/05/2018
+* Updated terriajs to glughi/terriajs#rer3d_1.6.4.
+* Fixed mistyped in global style.
+* 
+
+
 ### 1.6.2 - 24/04/2018
 * Updated terriajs to glughi/terriajs#rer3d_1.6.3.
 * Removed old pics.
