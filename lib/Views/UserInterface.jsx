@@ -28,7 +28,7 @@ export default function UserInterface(props) {
                 <MenuItem caption="About 3D" href="https://geoportale.regione.emilia-romagna.it/it/contenuti/geoportale-3d" key="about-link"/>
             </Menu>
             <Nav>
-                <MeasureTool terria={props.viewState.terria} key="measure-tool"/>
+                <MeasureTool terria={props.viewState.terria} mouseCoords={props.viewState.mouseCoords} key="measure-tool"/>
             </Nav>
             <ExperimentalMenu>
                 <If condition={isBrowserSupportedAV()}>
