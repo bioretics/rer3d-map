@@ -30,6 +30,8 @@ import BingMapsSearchProviderViewModel from 'terriajs/lib/ViewModels/BingMapsSea
 /*import GazetteerSearchProviderViewModel from 'terriajs/lib/ViewModels/GazetteerSearchProviderViewModel.js';
 import GnafSearchProviderViewModel from 'terriajs/lib/ViewModels/GnafSearchProviderViewModel.js';*/
 //import RerSearchProviderViewModel from 'terriajs/lib/ViewModels/RerSearchProviderViewModel.js';
+import NominatimSearchProviderViewModel from 'terriajs/lib/ViewModels/NominatimSearchProviderViewModel';
+
 import defined from 'terriajs-cesium/Source/Core/defined';
 import render from './lib/Views/render';
 
@@ -84,10 +86,14 @@ terria.start({
         configuration.bingMapsKey = terria.configParameters.bingMapsKey ? terria.configParameters.bingMapsKey : configuration.bingMapsKey;
 
         viewState.searchState.locationSearchProviders = [
+            new NominatimSearchProviderViewModel({
+                terria: terria,
+                countryCodes: "it"
+            }),
             new BingMapsSearchProviderViewModel({
                 terria: terria,
                 key: configuration.bingMapsKey
-            }),
+            })
             /*new GazetteerSearchProviderViewModel({terria}),
             new GnafSearchProviderViewModel({terria}),*/
             
