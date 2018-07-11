@@ -11,7 +11,11 @@
         "gis.ente.regione.emr.it",
 		"www502.regione.toscana.it",
 		"wms.cartografia.agenziaentrate.gov.it",
-        "agenziaentrate.gov.it"
+        "agenziaentrate.gov.it",
+        "dati.emilia-romagna.it",
+        "servizigis.arpa.emr.it",
+        "openstreetmap.org",
+        "nominatim.openstreetmap.org"
     ],
 
     "proxyAllDomains": false,
