@@ -177,7 +177,11 @@ gulp.task('make-package', function() {
         fs.writeFileSync(path.join(workingDir, 'wwwroot', 'config.json'), JSON.stringify(productionClientConfig, undefined, '  '));
     }
 
-    var tarResult = spawnSync('tar', [
+    // if we are on OSX make sure to use gtar for compatibility with Linux
+    // otherwise we see lots of error message when extracting with GNU tar
+    var tar = /^darwin/.test(process.platform) ? 'gtar' : 'tar';
+
+    var tarResult = spawnSync(tar, [
         'czf',
         path.join('..', 'packages', packageName + '.tar.gz')
     ].concat(fs.readdirSync(workingDir)), {
@@ -281,6 +285,7 @@ gulp.task('sync-terriajs-dependencies', function() {
     syncDependencies(appPackageJson.devDependencies, terriaPackageJson);
 
     fs.writeFileSync('./package.json', JSON.stringify(appPackageJson, undefined, '  '));
+    console.log('TerriaMap\'s package.json has been updated. Now run yarn install.');
 });
 
 gulp.task('check-terriajs-dependencies', function() {
@@ -315,7 +320,7 @@ function checkForDuplicateCesium() {
         console.log('You have two copies of terriajs-cesium, one in this application\'s node_modules\n' +
                     'directory and the other in node_modules/terriajs/node_modules/terriajs-cesium.\n' +
                     'This leads to strange problems, such as knockout observables not working.\n' +
-                    'Please verify that node_modules/terriajs-cesium is the correct version and\n' + 
+                    'Please verify that node_modules/terriajs-cesium is the correct version and\n' +
                     '  rm -rf node_modules/terriajs/node_modules/terriajs-cesium\n' +
                     'Also consider running:\n' +
                     '  npm run gulp sync-terriajs-dependencies\n' +

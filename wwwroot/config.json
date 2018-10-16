@@ -23,11 +23,21 @@
          
         // Pop-up disclaimer that will be shown at the start
         // The text of the disclaimer is in lib/Views/GlobalDisclaimer.html
-        /*"globalDisclaimer": {
-            confirmationRequired: false,
-            buttonTitle: "Ok",
-            title: "Geoportale 3D della Regione Emilia-Romagna",
-            enableOnLocalhost: true // If false, don't show this when running on localhost
+        // globalDisclaimer: {
+        //     confirmationRequired: false,
+        //     buttonTitle: "Ok",
+        //     title: "Geoportale 3D della Regione Emilia-Romagna",
+        //     // If the current browser location is not prod, or is dev, then show a "not the real site" warning.
+        //     // The text of that is in lib/Views/DevelopmentDisclaimerPreamble.html
+        //     //prodHostRegex: "gov.\\.au$",
+        //     //devHostRegex: "\\b(staging|preview|test|dev)\\.",
+        //     enableOnLocalhost: true // If false, don't show this when running on localhost
+        // },
+        
+        /*
+        developerAttribution: {
+            text: "Your organisation",
+            link: "http://www.example.com"
         },*/
         
         
@@ -42,6 +52,7 @@
         "brandBarElements": [
             "",
             "<img src=\"images/3d_350x70.png\" title=\"Logo Regione Emilia-Romagna\" />",
+            "<a target=\"_blank\" href=\"https://terria.io\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
             ""
         ],
         // Shown when things go wrong.
