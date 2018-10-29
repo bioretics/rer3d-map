@@ -3,11 +3,10 @@
     "initializationUrls": [
         "emiro"
     ],
-    "parameters": {
-        "bingMapsKey": "AkaOmRFtjAb71cXgLwAGtLbj2RpkPKtVqAIroFQsocfurCBILxIeAWPkil7hhRy_",
-        "googleUrlShortenerKey": null,
-        "googleAnalyticsKey": null,
-        "googleAnalyticsOptions": null,
+    parameters: {
+        googleUrlShortenerKey: null,
+        googleAnalyticsKey: null,
+        googleAnalyticsOptions: null,
         /* Text that appears at the bottom of the map */
         "disclaimer": {
             "text": "Disclaimer: questa mappa non può essere usata per la navigazione o calcoli di elevata precisione. @Regione Emilia-Romagna ",
