@@ -20,7 +20,7 @@
 							"name": "DTM5_Ridracoli_Ripa",
 							"type": "cesium-terrain",
 							"url": "http://192.168.1.11:8090/tilesets/dtm_emiro",
-							"isEnabled": true,
+							"isEnabled": false,
 							"isShown": true,
 							"rectangle": [
 								9.278,
@@ -43,7 +43,7 @@
 									"name": "Uso del suolo",
 									"type": "wms-getCapabilities",
 									"url": "http://servizigis.regione.emilia-romagna.it/wms/uso_del_suolo",
-									"isEnabled": true,
+									"isEnabled": false,
 									"isShown": true
 								}
 							]

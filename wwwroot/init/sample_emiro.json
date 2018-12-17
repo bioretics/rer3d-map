@@ -28,9 +28,9 @@
 						{
 							"name": "DTM5_Ridracoli_Ripa",
 							"type": "cesium-terrain",
-							"url": "ttp://192.168.1.182:8090/tilesets/calc",
-							"isEnabled": true,
-							"isShown": true,
+							"url": "http://192.168.1.182:8090/tilesets/calc",
+							"isEnabled": false,
+							"isShown": false,
 							"rectangle": [
 								9.278,
 								43.736,
@@ -49,8 +49,8 @@
 							"type": "wms",
 							"url": "http://servizigis.regione.emilia-romagna.it/wms/agea2011_rgb",
 							"layers": "Agea2011_RGB",
-							"isEnabled": true,
-							"isShown": false
+							"isEnabled": false,
+							"isShown": true
 						},
 						{
 							"name": "Uso del suolo",
@@ -58,6 +58,7 @@
 							"items": [
 								{
 									"name": "Uso del suolo",
+									"isEnabled": false,
 									"type": "wms-getCapabilities",
 									"url": "http://servizigis.regione.emilia-romagna.it/wms/uso_del_suolo"
 								}
@@ -69,6 +70,7 @@
 							"items": [
 								{
 									"name": "Rete escursionistica",
+									"isEnabled": false,
 									"type": "wms-getCapabilities",
 									"url": "http://servizigis.regione.emilia-romagna.it/wms/rete_escursionistica"
 								}
@@ -80,6 +82,7 @@
 							"items": [
 								{
 									"name": "DBTR",
+									"isEnabled": false,
 									"type": "wms-getCapabilities",
 									"url": "http://servizigis.regione.emilia-romagna.it/wms/dbtr"
 								}
@@ -91,6 +94,7 @@
 							"items": [
 								{
 									"name": "Geologia sintesi",
+									"isEnabled": false,
 									"type": "wms",
 									"url": "http://servizigis.regione.emilia-romagna.it/wms/geologia_sintesi",
 									"layers": "Domini_geologici"
