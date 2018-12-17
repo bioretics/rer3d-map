@@ -3,10 +3,11 @@
     "initializationUrls": [
         "emiro"
     ],
-    parameters: {
-        googleUrlShortenerKey: null,
-        googleAnalyticsKey: null,
-        googleAnalyticsOptions: null,
+    "parameters": {
+        "bingMapsKey": "Ap3-3lzCO0---yJ-IKWdbxq3QVFykIJ8vJrqrCqsYofNT5ETG1g8ei-Squ9cFxxV",
+        "googleUrlShortenerKey": null,
+        "googleAnalyticsKey": null,
+        "googleAnalyticsOptions": null,
         /* Text that appears at the bottom of the map */
         "disclaimer": {
             "text": "Disclaimer: questa mappa non può essere usata per la navigazione o calcoli di elevata precisione. @Regione Emilia-Romagna ",
@@ -50,8 +51,7 @@
         // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
         "brandBarElements": [
             "",
-            "<img src=\"images/3d_350x70.png\" title=\"Logo Regione Emilia-Romagna\" />",
-            "<a target=\"_blank\" href=\"https://terria.io\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
+            "<a target=\"_blank\" href=\"http://www.regione.emilia-romagna.it\"><img src=\"https://www.regione.emilia-romagna.it/impostazioni/logo-regione.png/@@images/5d77c649-6a1a-4e30-8283-1eeb25e6d86b.png\" height=\"52\" title=\"Logo Geoportale 3D Emilia-Romagna\" style=\"position: relative; top: 15%\"/></a>",
             ""
         ],
         // Shown when things go wrong.
@@ -66,7 +66,10 @@
         "mobileDefaultViewerMode": "2D",
         // Enable experimental features, since its nice to have the bleeding edge.
         // Disable it if things go wrong with the experimental features or your users aren't robust to features which might change or disapear completly.
-        "experimentalFeatures": true
+        "experimentalFeatures": true,
+
+        "tabbedCatalog": false,
+        "interceptBrowserPrint": true
     }
 }
 
