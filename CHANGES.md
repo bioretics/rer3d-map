@@ -1,6 +1,14 @@
 Change Log
 ==========
 
+### 1.8.0 - 17/12/2018
+* Updated terriajs to glughi/terriajs#rer3d_1.8.0.
+* Added some proxable domains.
+* Updated manifes.
+* "isEnabled" setted to false in sample catalog json files.
+* Changed logo, fonts and colors.
+
+
 ### 1.7.0 - 11/07/2018
 * Updated terriajs to glughi/terriajs#rer3d_1.7.0.
 * Added proxable domains.
