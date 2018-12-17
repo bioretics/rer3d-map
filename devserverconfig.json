@@ -17,7 +17,8 @@
         "dati.emilia-romagna.it",
         "servizigis.arpa.emr.it",
         "openstreetmap.org",
-        "nominatim.openstreetmap.org"
+        "nominatim.openstreetmap.org",
+        "servizigis.regione.emilia-romagna.it"
     ],
 
     "proxyAllDomains": false,
