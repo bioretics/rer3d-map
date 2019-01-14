@@ -14,6 +14,20 @@
   "dependencies": {
     "terriajs-server": "^2.7.4"
   },
+  "config": {
+    "awsProfile": "terria",
+    "awsS3PackagesPath": "s3://terria-apps/map",
+    "awsRegion": "ap-southeast-2",
+    "awsEc2InstanceType": "t2.small",
+    "awsEc2ImageId": "ami-0d9ca8d416482590e",
+    "awsKeyName": "terria-kring",
+    "awsS3ServerConfigOverridePath": "s3://terria-apps/map/privateserverconfig-2016-08-31.json",
+    "awsS3ClientConfigOverridePath": "s3://terria-apps/map/privateclientconfig-2018-11-19.json",
+    "docker": {
+      "name": "data61/terria-terriamap",
+      "include": "wwwroot node_modules devserverconfig.json index.js package.json version.js"
+    }
+  },
   "devDependencies": {
     "babel-eslint": "^7.0.0",
     "babel-loader": "^7.0.0",
@@ -44,9 +58,9 @@
     "semver": "^5.0.0",
     "style-loader": "^0.19.1",
     "svg-sprite-loader": "^3.4.0",
-    "terriajs": "glughi/terriajs#rer3d_1.8.0",
+    "terriajs": "glughi/terriajs#rer3d_1.9.0",
     "terriajs-catalog-editor": "^0.2.0",
-    "terriajs-cesium": "1.51.0",
+    "terriajs-cesium": "1.53.0",
     "terriajs-schema": "latest",
     "urijs": "^1.18.12",
     "url-loader": "^0.5.7",
