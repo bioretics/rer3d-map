@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+### 1.9.0 - 17/01/2019
+* Updated terriajs to glughi/terriajs#rer3d_1.9.0.
+* Removed useless share-panel.scss
+* Added file to ignore to .npmignore
+
+
 ### 1.8.0 - 17/12/2018
 * Updated terriajs to glughi/terriajs#rer3d_1.8.0.
 * Added some proxable domains.
