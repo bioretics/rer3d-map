@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+### 1.9.1 - 27/02/2019
+* Changed culture in BingMapsSearch from en-au to it.
+* Avoid bbox too small and camera too close to the ground in NominatimSearch.
+* flightDurationSeconds default values is now 3 secontds instead of 1.5.
+
+
 ### 1.9.0 - 17/01/2019
 * Updated terriajs to glughi/terriajs#rer3d_1.9.0.
 * Removed useless share-panel.scss
