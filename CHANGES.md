@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+### 1.9.2 - 05/03/2019
+* Disabled Cesium ion in config.
+* Added terrain default link in config.
+* Updated terriajs to glughi/terriajs#rer3d_1.9.1 (1.9.2).
+
+
 ### 1.9.1 - 27/02/2019
 * Changed culture in BingMapsSearch from en-au to it.
 * Avoid bbox too small and camera too close to the ground in NominatimSearch.
