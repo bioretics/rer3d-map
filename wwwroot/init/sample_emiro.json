@@ -28,7 +28,7 @@
 						{
 							"name": "DTM5_Ridracoli_Ripa",
 							"type": "cesium-terrain",
-							"url": "http://192.168.1.182:8090/tilesets/calc",
+							"url": "http://192.168.1.11:8090/tilesets/dtm_emiro",
 							"isEnabled": false,
 							"isShown": false,
 							"rectangle": [
