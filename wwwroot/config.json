@@ -72,7 +72,8 @@
         "interceptBrowserPrint": true,
 
         "useCesiumIonTerrain": false,
-        "useCesiumIonBingImagery": false
+        "useCesiumIonBingImagery": false,
+        "cesiumTerrainUrl": "http://192.168.1.11:8090/tilesets/dtm_emiro"
     }
 }
 
