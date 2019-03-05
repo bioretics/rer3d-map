@@ -69,7 +69,10 @@
         "experimentalFeatures": true,
 
         "tabbedCatalog": false,
-        "interceptBrowserPrint": true
+        "interceptBrowserPrint": true,
+
+        "useCesiumIonTerrain": false,
+        "useCesiumIonBingImagery": false
     }
 }
 
