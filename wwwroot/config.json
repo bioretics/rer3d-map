@@ -73,7 +73,7 @@
 
         "useCesiumIonTerrain": false,
         "useCesiumIonBingImagery": false,
-        "cesiumTerrainUrl": "http://192.168.1.11:8090/tilesets/dtm_emiro"
+        "cesiumTerrainUrl": "http://rer3d.regione.emilia-romagna.it/tilesets/dtm"
     }
 }
 
