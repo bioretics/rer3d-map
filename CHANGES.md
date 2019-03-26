@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+### 1.9.3 - 26/03/2019
+* Changed default RER terrain URL.
+* Removed useless domains from proxy list.
+* Updated terriajs to glughi/terriajs#rer3d_1.9.3.
+
+
 ### 1.9.2 - 05/03/2019
 * Disabled Cesium ion in config.
 * Added terrain default link in config.
