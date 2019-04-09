@@ -42,7 +42,7 @@
 								{
 									"name": "Geologia sintesi",
 									"type": "wms",
-									"url": "http://servizigis.regione.emilia-romagna.it/wms/geologia_sintesi",
+									"url": "https://servizigis.regione.emilia-romagna.it/wms/geologia_sintesi",
 									"layers": "Domini_geologici",
 									"isEnabled": false,
 									"isShown": true

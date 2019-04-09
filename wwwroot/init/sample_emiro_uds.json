@@ -42,7 +42,7 @@
 								{
 									"name": "Uso del suolo",
 									"type": "wms-getCapabilities",
-									"url": "http://servizigis.regione.emilia-romagna.it/wms/uso_del_suolo",
+									"url": "https://servizigis.regione.emilia-romagna.it/wms/uso_del_suolo",
 									"isEnabled": false,
 									"isShown": true
 								}

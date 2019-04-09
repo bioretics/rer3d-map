@@ -47,7 +47,7 @@
 						{
 							"name": "AGEA2011_RGB",
 							"type": "wms",
-							"url": "http://servizigis.regione.emilia-romagna.it/wms/agea2011_rgb",
+							"url": "https://servizigis.regione.emilia-romagna.it/wms/agea2011_rgb",
 							"layers": "Agea2011_RGB",
 							"isEnabled": false,
 							"isShown": true
@@ -60,7 +60,7 @@
 									"name": "Uso del suolo",
 									"isEnabled": false,
 									"type": "wms-getCapabilities",
-									"url": "http://servizigis.regione.emilia-romagna.it/wms/uso_del_suolo"
+									"url": "https://servizigis.regione.emilia-romagna.it/wms/uso_del_suolo"
 								}
 							]
 						},
@@ -72,7 +72,7 @@
 									"name": "Rete escursionistica",
 									"isEnabled": false,
 									"type": "wms-getCapabilities",
-									"url": "http://servizigis.regione.emilia-romagna.it/wms/rete_escursionistica"
+									"url": "https://servizigis.regione.emilia-romagna.it/wms/rete_escursionistica"
 								}
 							]
 						},
@@ -84,7 +84,7 @@
 									"name": "DBTR",
 									"isEnabled": false,
 									"type": "wms-getCapabilities",
-									"url": "http://servizigis.regione.emilia-romagna.it/wms/dbtr"
+									"url": "https://servizigis.regione.emilia-romagna.it/wms/dbtr"
 								}
 							]
 						},
@@ -96,7 +96,7 @@
 									"name": "Geologia sintesi",
 									"isEnabled": false,
 									"type": "wms",
-									"url": "http://servizigis.regione.emilia-romagna.it/wms/geologia_sintesi",
+									"url": "https://servizigis.regione.emilia-romagna.it/wms/geologia_sintesi",
 									"layers": "Domini_geologici"
 								}
 							]

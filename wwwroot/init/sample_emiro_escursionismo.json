@@ -42,7 +42,7 @@
 								{
 									"name": "Rete escursionistica",
 									"type": "wms-getCapabilities",
-									"url": "http://servizigis.regione.emilia-romagna.it/wms/rete_escursionistica",
+									"url": "https://servizigis.regione.emilia-romagna.it/wms/rete_escursionistica",
 									"isEnabled": false,
 									"isShown": true
 								}

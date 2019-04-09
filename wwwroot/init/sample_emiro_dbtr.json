@@ -42,7 +42,7 @@
 								{
 									"name": "DBTR",
 									"type": "wms-getCapabilities",
-									"url": "http://servizigis.regione.emilia-romagna.it/wms/dbtr",
+									"url": "https://servizigis.regione.emilia-romagna.it/wms/dbtr",
 									"isEnabled": false,
 									"isShown": true
 								}
