@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+### 1.9.4 - 09/04/2019
+* Pages 404.html and 500.html rebranded.
+* Regione Emilia-Romagna URLs in samples changed from HTTP to HTTPS.
+* Updated terriajs to glughi/terriajs#rer3d_1.9.4.
+
+
 ### 1.9.3 - 26/03/2019
 * Changed default RER terrain URL.
 * Removed useless domains from proxy list.
