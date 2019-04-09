@@ -73,7 +73,7 @@
 
         "useCesiumIonTerrain": false,
         "useCesiumIonBingImagery": false,
-        "cesiumTerrainUrl": "http://rer3d.regione.emilia-romagna.it/tilesets/dtm"
+        "cesiumTerrainUrl": "https://rer3d.regione.emilia-romagna.it/tilesets/dtm"
     }
 }
 
