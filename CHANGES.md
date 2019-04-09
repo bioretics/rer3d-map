@@ -3,7 +3,8 @@ Change Log
 
 ### 1.9.4 - 09/04/2019
 * Pages 404.html and 500.html rebranded.
-* Regione Emilia-Romagna URLs in samples changed from HTTP to HTTPS.
+* Regione Emilia-Romagna layers URL in samples changed from HTTP to HTTPS.
+* Changed terrain URL, from HTTP to HTTPS.
 * Updated terriajs to glughi/terriajs#rer3d_1.9.4.
 
 
