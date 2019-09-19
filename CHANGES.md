@@ -1,9 +1,15 @@
 Change Log
 ==========
 
+### 1.11.0 - 19/09/2019
+* Merged with **terriajs-map**
+* Updated rer3d-terriajs to 2.1.0
+
+
 ### 1.10.0 - 19/09/2019
 * Merged with **terriajs-map**
 * Updated rer3d-terriajs to 2.0.0
+* Updated rer3d-terriajs-server to 1.1.0
 
 
 ### 1.9.4 - 09/04/2019
