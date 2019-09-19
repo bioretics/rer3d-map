@@ -1,6 +1,11 @@
 Change Log
 ==========
 
+### 1.10.0 - 19/09/2019
+* Merged with **terriajs-map**
+* Updated rer3d-terriajs to 2.0.0
+
+
 ### 1.9.4 - 09/04/2019
 * Pages 404.html and 500.html rebranded.
 * Regione Emilia-Romagna layers URL in samples changed from HTTP to HTTPS.
@@ -107,6 +112,9 @@ Change Log
 * The popup with navigation info isn't show every time the Geoportale3D page is open but when user click on "Come navigare" button.
 * Changed the basemap (now many maps can be merged).
 
+### Next Release
+
+* Fix the hot reload script.
 
 ### 2017-XX-XX
 
