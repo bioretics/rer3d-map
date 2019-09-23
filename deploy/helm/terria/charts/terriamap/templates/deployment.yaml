@@ -16,7 +16,7 @@ spec:
       - name: terriamap
         resources:
 {{ toYaml .Values.resources | indent 10 }}
-        command: [ "node", "./node_modules/terriajs-server/lib/app.js", "--config-file", "/etc/config/server/serverconfig.json"]
+        command: [ "node", "./node_modules/rer3d-terriajs-server/lib/app.js", "--config-file", "/etc/config/server/serverconfig.json"]
         env:
         - name: NODE_ENV
           value: production

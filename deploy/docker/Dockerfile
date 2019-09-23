@@ -10,4 +10,4 @@ RUN rm wwwroot/config.json && ln -s /etc/config/client/config.json wwwroot/confi
 
 EXPOSE 3001
 
-CMD [ "node", "./node_modules/terriajs-server/lib/app.js", "--config-file", "devserverconfig.json" ]
+CMD [ "node", "./node_modules/rer3d-terriajs-server/lib/app.js", "--config-file", "devserverconfig.json" ]

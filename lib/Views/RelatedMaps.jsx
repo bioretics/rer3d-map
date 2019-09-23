@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import MenuPanel from "terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuPanel.jsx";
-import PanelStyles from "terriajs/lib/ReactViews/Map/Panels/panel.scss";
+import MenuPanel from "rer3d-terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuPanel.jsx";
+import PanelStyles from "rer3d-terriajs/lib/ReactViews/Map/Panels/panel.scss";
 import Styles from "./related-maps.scss";
 import classNames from "classnames";
 

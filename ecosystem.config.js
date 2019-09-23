@@ -9,7 +9,7 @@ const args = argpos > -1 ? process.argv.slice(argpos + 1) : [];
 module.exports = {
   apps : [{
     name: path.basename(__dirname),
-    script: require.resolve('terriajs-server'),
+    script: require.resolve('rer3d-terriajs-server'),
 
     // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
     // passed to app, so any valid arguments in options.js are allowed.

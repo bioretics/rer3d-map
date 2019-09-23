@@ -314,7 +314,7 @@ Change Log
   * Fixed sharing of time-varying CZML files; the timeline was not showing on the shared link.
   * Fixed sharing of user-added time-varying CSV files.
   * Fixed a bug in `CkanCatalogItem` that made it build URLs incorrectly when given a base URL ending in a slash.
-  * Added column-specific styling to CSV files, using a new `tableStyle.columns` json parameter. This is an object whose keys are column names or indices, and whose values are objects of column-specific tableStyle parameters. See the CSV column-specific group in `wwwroot/test/init/test-tablestyle.json` for an example. [#1097](https://github.com/TerriaJS/terriajs/issues/1097)
+  * Added column-specific styling to CSV files, using a new `tableStyle.columns` json parameter. This is an object whose keys are column names or indices, and whose values are objects of column-specific tableStyle parameters. See the CSV column-specific group in `wwwroot/test/init/test-tablestyle.json` for an example. [#1097](https://github.com/TerriaJS/rer3d-terriajs/issues/1097)
   * Added the following column-specific `tableStyle` parameters:
     - `name`: renames the column.
     - `type`: sets the column type; can be one of LON, LAT, ALT, TIME, SCALAR, or ENUM.
@@ -603,7 +603,7 @@ Change Log
 ### 2015-05-28
 
 * To hide the Explorer Panel at startup, the url can contain the parameter `hideEplorerPanel=1`.
-* Upgraded to [TerriaJS 1.0.15](https://github.com/TerriaJS/terriajs/blob/1.0.15/CHANGES.md).  Significant changes relevant to National Map users include:
+* Upgraded to [TerriaJS 1.0.15](https://github.com/TerriaJS/rer3d-terriajs/blob/1.0.15/CHANGES.md).  Significant changes relevant to National Map users include:
   * Esri ArcGIS MapServers can now be added via the "Add Data" panel.
   * We now support discovery of ArcGIS MapServer "Raster Layers" in addition to "Feature Layers".
   * Sharing now preserves the base map and view mode (2D/3D) selection.
@@ -618,7 +618,7 @@ Change Log
   * Added National Data Sets -> Surface Water -> Water Observations from Space
   * Added National Data Sets -> Social and Economic -> Housing Stress
   * Data Providers -> Water (Bureau of Meteorology Geofabric) now has sensible groups instead of a flat list.
-* National Map is now built on [TerriaJS](http://www.github.com/TerriaJS/terriajs).  See the [changelog](https://github.com/TerriaJS/terriajs/blob/1.0.11/CHANGES.md) for the complete list of changes since TerriaJS split off from National Map.  Significant changes relevant to National Map users include:
+* National Map is now built on [TerriaJS](http://www.github.com/TerriaJS/terriajs).  See the [changelog](https://github.com/TerriaJS/rer3d-terriajs/blob/1.0.11/CHANGES.md) for the complete list of changes since TerriaJS split off from National Map.  Significant changes relevant to National Map users include:
   * The Search tab now searches the names of all datasets in the catalogue, including those in delay-loaded groups.
   * The 2D view once again correctly shows imagery attribution.
   * The catalog item info page now renders a much more complete set of Markdown and HTML elements.

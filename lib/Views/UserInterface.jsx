@@ -2,23 +2,23 @@ import {
   Menu,
   Nav,
   ExperimentalMenu
-} from "terriajs/lib/ReactViews/StandardUserInterface/customizable/Groups";
-import MeasureTool from "terriajs/lib/ReactViews/Map/Navigation/MeasureTool";
-import MenuItem from "terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuItem";
+} from "rer3d-terriajs/lib/ReactViews/StandardUserInterface/customizable/Groups";
+import MeasureTool from "rer3d-terriajs/lib/ReactViews/Map/Navigation/MeasureTool";
+import MenuItem from "rer3d-terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuItem";
 import PropTypes from "prop-types";
 import React from "react";
 //import RelatedMaps from "./RelatedMaps";
-import SplitPoint from "terriajs/lib/ReactViews/SplitPoint";
-import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx";
+import SplitPoint from "rer3d-terriajs/lib/ReactViews/SplitPoint";
+import StandardUserInterface from "rer3d-terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx";
 import version from "../../version";
 
 import "./global.scss";
 
 function loadAugmentedVirtuality(callback) {
   require.ensure(
-    "terriajs/lib/ReactViews/Map/Navigation/AugmentedVirtualityTool",
+    "rer3d-terriajs/lib/ReactViews/Map/Navigation/AugmentedVirtualityTool",
     () => {
-      const AugmentedVirtualityTool = require("terriajs/lib/ReactViews/Map/Navigation/AugmentedVirtualityTool");
+      const AugmentedVirtualityTool = require("rer3d-terriajs/lib/ReactViews/Map/Navigation/AugmentedVirtualityTool");
       callback(AugmentedVirtualityTool);
     },
     "AugmentedVirtuality"
