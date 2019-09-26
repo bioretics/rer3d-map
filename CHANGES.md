@@ -1,6 +1,9 @@
 Change Log
 ==========
 
+### 1.12.2 - 25/09/2019
+* Fixed merge error.
+
 ### 1.12.1 - 25/09/2019
 * Changed repository owner.
 * Updated rer3d-terriajs to 2.2.2
