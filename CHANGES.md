@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+### 1.14.2 - 10/12/2019
+* Updated rer3d-terriajs to 2.4.2
+
+
 ### 1.14.1 - 22/11/2019
 * Adjusted some minor package version
 * Updated rer3d-terriajs to 2.4.1
