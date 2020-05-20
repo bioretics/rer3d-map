@@ -15,7 +15,9 @@
 		"wms.cartografia.agenziaentrate.gov.it",
         "agenziaentrate.gov.it",
         "dati.emilia-romagna.it",
-        "servizigis.arpa.emr.it"
+        "servizigis.arpa.emr.it",
+        "servizigis.arpae.it",
+        "servizigis.regione.emilia-romagna.it"
     ],
 
     "proxyAllDomains": false,

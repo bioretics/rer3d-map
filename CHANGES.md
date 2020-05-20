@@ -156,6 +156,7 @@ Change Log
 * Translated some sentences left in English.
 * The popup with navigation info isn't show every time the Geoportale3D page is open but when user click on "Come navigare" button.
 * Changed the basemap (now many maps can be merged).
+* Fix manifest.json start_url
 
 ### Next Release
 

@@ -1,6 +1,6 @@
 {
  "name": "Geoportale 3D",
- "start_url": "index.html",
+ "start_url": "/",
  "display": "standalone",
  "icons": [
   {

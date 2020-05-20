@@ -45,6 +45,18 @@
         "tabbedCatalog": false,
         "interceptBrowserPrint": true,
 
+        // To override TerriaJS's region mapping file with a local one.
+        // regionMappingDefinitionsUrl: "data/regionMapping.json"
+
+        // True to display welcome message on startup.
+        // "showWelcomeMessage": false,
+
+        // True to display in-app guides.
+        // "showInAppGuides": false,
+
+        // True to display new feature popups.
+        // "showFeaturePrompts": false,
+
         "maximumLeafletZoomLevel": 21,
 
         "useCesiumIonTerrain": false,
