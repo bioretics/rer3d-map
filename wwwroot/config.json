@@ -45,6 +45,8 @@
         "tabbedCatalog": false,
         "interceptBrowserPrint": true,
 
+        "maximumLeafletZoomLevel": 21,
+
         "useCesiumIonTerrain": false,
         "useCesiumIonBingImagery": false,
         "cesiumTerrainUrl": "https://rer3d.regione.emilia-romagna.it/tilesets/dtm"
