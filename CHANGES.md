@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+### 1.15.0 - 04/06/2020
+* Updated rer3d-terriajs to 2.7.0
+* Updated rer3d-terriajs-server to 1.3.0
+* About button moved to rer3d-terriajs.
+* Added Rer search.
+
 ### 1.14.3 - 19/12/2019
 * Updated rer3d-terriajs to 2.4.3
 
