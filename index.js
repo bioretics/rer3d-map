@@ -20,7 +20,7 @@ import ViewState from 'rer3d-terriajs/lib/ReactViewModels/ViewState';
 import BingMapsSearchProviderViewModel from 'rer3d-terriajs/lib/ViewModels/BingMapsSearchProviderViewModel.js';
 /*import GazetteerSearchProviderViewModel from 'rer3d-terriajs/lib/ViewModels/GazetteerSearchProviderViewModel.js';
 import GnafSearchProviderViewModel from 'rer3d-terriajs/lib/ViewModels/GnafSearchProviderViewModel.js';*/
-//import RerSearchProviderViewModel from 'rer3d-terriajs/lib/ViewModels/RerSearchProviderViewModel.js';
+import RerSearchProviderViewModel from 'rer3d-terriajs/lib/ViewModels/RerSearchProviderViewModel.js';
 import NominatimSearchProviderViewModel from 'rer3d-terriajs/lib/ViewModels/NominatimSearchProviderViewModel';
 
 import defined from 'terriajs-cesium/Source/Core/defined';
@@ -69,6 +69,9 @@ module.exports = terria.start({
 }).always(function() {
     try {
         viewState.searchState.locationSearchProviders = [
+            new RerSearchProviderViewModel({
+                terria: terria
+            }),
             new NominatimSearchProviderViewModel({
                 terria: terria,
                 countryCodes: "it"
