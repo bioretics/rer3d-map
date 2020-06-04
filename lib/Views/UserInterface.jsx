@@ -32,13 +32,13 @@ function isBrowserSupportedAV() {
 export default function UserInterface(props) {
   return (
     <StandardUserInterface {...props} version={version}>
-      <Menu>
+      {/*<Menu>
         <MenuItem
           caption="About 3D"
           href="https://geoportale.regione.emilia-romagna.it/it/contenuti/geoportale-3d"
           key="about-link"
         />
-      </Menu>
+      </Menu>*/}
       <Nav>
         <MeasureTool
           terria={props.viewState.terria}
