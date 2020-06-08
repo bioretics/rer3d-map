@@ -1,6 +1,11 @@
 Change Log
 ==========
 
+### 1.16.0 - 08/06/2020
+* Updated rer3d-terriajs to 2.7.2
+* Updated Copyright year.
+* Translated help.html into italian.
+
 ### 1.15.0 - 04/06/2020
 * Updated rer3d-terriajs to 2.7.0
 * Updated rer3d-terriajs-server to 1.3.0
