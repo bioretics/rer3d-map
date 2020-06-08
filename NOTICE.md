@@ -5,7 +5,7 @@ For use with the Apache License, Version 2.0
 
 
 ### RER3D-MAP
-Copyright(c) 2017-2019 Bioretics srl for Regione Emilia-Romagna.
+Copyright(c) 2017-2020 Bioretics srl for Regione Emilia-Romagna.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
