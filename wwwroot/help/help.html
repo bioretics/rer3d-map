@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>The National Map - Help & FAQ</title>
+    <title>rer3d-map - Help & FAQ</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -43,16 +43,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://nationalmap.gov.au">
-            <img alt="Brand" src="img/nm-logo.png">
+          <a class="navbar-brand" href="http://rer3d.regione.emilia-romagna.it">
+            <img alt="Brand" src="../public/img/logo-regione.png">
           </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="../about.html">About the National Map</a></li>
+            <li><a href="../about.html">About</a></li>
             <li class="active"><a href="help.html">Help & FAQ</a></li>
             <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="http://nationalmap.gov.au" target="blank">Launch the National Map</a></li>
+            <li><a href="http://rer3d.regione.emilia-romagna.it/" target="blank">Apri rer3d-map</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -66,27 +66,27 @@
 
       <div data-spy="affix">
 
-        <h4 class="nav-header">How to...</h4>
+        <h4 class="nav-header">Come...</h4>
         <ul class="how-to">
-          <li><a href="help.html">Get started with the National Map</a></li>
-          <li><a href="help.html#feature-info">Find out about a displayed feature</a></li>
-          <li><a href="help.html#add-data">Display my own spatial data</a></li>
-          <li><a href="help.html#share">Share my National Map view</a></li>
-          <li><a href="help.html#contribute">Contribute Data Sets to the National Map</a></li>
+          <li><a href="help.html">Come iniziare</a></li>
+          <!--<li><a href="help.html#feature-info">Find out about a displayed feature</a></li>-->
+          <li><a href="help.html#add-data">Come caricare nuovi layer non presenti nel catalogo</a></li>
+          <li><a href="help.html#share">Come condividere la mappa con altri</a></li>
+          <!--<li><a href="help.html#contribute">Contribute Data Sets to the National Map</a></li>-->
         </ul>
 
         <h4 class="nav-header">Key Features</h4>
         <ul class="key-features">
-          <li><a href="map-navigation.html">Map Navigation and Display</a></li>
-          <li><a href="data-catalogue.html">Data Catalogue</a></li>
-          <li><a href="data-workbench.html">Data Workbench</a></li>
+          <li><a href="map-navigation.html">Mappa</a></li>
+          <li><a href="data-catalogue.html">Catalogo</a></li>
+          <li><a href="data-workbench.html">Workbench</a></li>
         </ul>
 
         <h4 class="nav-header">Frequently Asked Questions</h4>
         <ul class="faq">
-          <li><a href="faq.html">National Map Operation</a></li>
-          <li><a href="faq.html#nm-systemdata">National Map system and data</a></li>
-          <li><a href="faq.html#nm-reportingissues">Reporting issues</a></li>
+          <li><a href="faq.html">rer3d-map</a></li>
+          <li><a href="faq.html#nm-systemdata">Dati</a></li>
+          <li><a href="faq.html#nm-reportingissues">Segnalazioni</a></li>
         </ul>
 
         </div>
@@ -98,83 +98,72 @@
     <h1>Help & FAQ</h1>
 
     <!-- 4:3 aspect ratio -->
-    <div class="embed-responsive embed-responsive-16by9">
+    <!--<div class="embed-responsive embed-responsive-16by9">
       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2E-u0gjz9Yw"></iframe>
-    </div>
+    </div>-->
 
-    <h2><a class="anchor" name="getting-started">How to get started with the National Map</a></h2>
+    <h2><a class="anchor" name="getting-started">Come iniziare</a></h2>
 
-    <p>To launch the National Map and display some basic data follow these steps.</p>
+    <p>Di seguito alcuni passi per utilizzare le funzionalità di base.</p>
 
     <ul>
-      <li>Display the NationalMap by using the URL <a href="http://nationalmap.gov.au">http://nationalmap.gov.au</a>.</li>
-      <li>In the left hand panel click the <strong>Add Data</strong> button to launch the Data Catalogue.</li>
-      <li>Browse through the Data Catalogue to find a data set of interest. Click on the title of your prefered data set to get a preview of that data, along with a description and other relevent metadata. To view your selected data set on a larger map, click the <strong>Add to the Map</strong> button. The spatial data will be immediately displayed in the map view, and a visual legend for that data will appear in the Data Workbench, located on the left hand side of the page.</li>
-      <li>Note that it may not be immediately obvious where your selected spatial data has loaded on the map if does not cover a large part of Australia. To locate loaded data on the map, go to the Data Workbench (positioned on the left hand side of the page), and click the <strong>Zoom to extent</strong> link for your desired data set. From here you can also click <strong>About this data</strong> to get more information about your selected data set.</li>
-      <li>To add additional data sets to the map, simply click <strong>Add Data</strong> again in the left hand panel to relaunch the Data Catalogue.</li>
-      <li>Zoom manually by moving your mouse pointer over the map and using your mouse wheel to zoom in or out further.</li>
-      <li>Click and drag the map to further show the region in which you are interested.</li>
-      <li>Click on a feature (that is, directly on a point or line, or within a region) to show data about the individual feature.</li>
+      <!--<li>Display the NationalMap by using the URL <a href="http://nationalmap.gov.au">http://nationalmap.gov.au</a>.</li>-->
+      <li>Sulla sinistra, nel Workbench, cliccare sul pulsante <strong>Catalogo</strong> per aprire il pannello del catalogo regionale.</li>
+      <li>Naviga o cerca nel catalogo i layer di interesse. Clicca sul titolo di un layer per visualizzarne l'anteprima ed i metadati. Cliccare su <strong>Aggiungi alla mappa</strong> per caricare il layer nella mappa. Nel Workbench posto a sinistra compariranno le opzioni di controllo del layer ed eventualmente la legenda dei dati.</li>
+      <li>Se disponibile, è possibile cliccare, nei controlli del layer nel Workbench, su <strong>Zoom sul layer</strong> per far si che la visuale della mappa inquadri esattamente tutto il layer. Negli stessi controlli si trova <strong>Informazioni</strong> che riaprirà il catalogo per mostrare i metadati del layer.</li>
+      <li>Per aggiungere nuovi layer alla mappa, cliccare di nuovo su <strong>Catalogo</strong>, quindi su <strong>Nuovi layer</strong>.</li>
+      <li>I comandi per navigare nella mappa sono visualizzabili cliccando su <strong>Aiuto</strong>, sulla destra della mappa, quindi su <strong>Come navigare</strong>.</li>
+      <li>Si può cambiare la mappa di sfondo, o "Mappa base", cliccando sul bottone <strong>Mappa</strong> in alto nella mappa e selezionando la mappa di sfondo desiderata fra quelle disponibili.</li>
+      <li>Con un singolo click in un punto della mappa saranno visualizzati, se presenti, i dati trovati in quel punto nei layer attivi (le "Mappe base" non sono considerati layer attivi). Saranno inoltre fornite le coordinate del punto, visualizzabili anche nella barra in basso a destra.</li>
     </ul>
 
-    <p>You can perform these steps in any order as required to tune your display of spatial data.</p>
+    <!--<p>You can perform these steps in any order as required to tune your display of spatial data.</p>-->
 
 
-    <h2><a class="anchor" name="feature-info">How to find out about a displayed feature</a></h2>
+    <!--<h2><a class="anchor" name="feature-info">How to find out about a displayed feature</a></h2>
 
     <p>Click on the feature which is displayed on the map. You can click on Points, on Lines or within Regions to see a display of the information available from the spatial data provider for that particular feature.</p>
 
     <p>For Points and Lines, you need to click quite accurately to identify the feature. For Regions, clicking on the boundary will give ambiguous results. Click within the region.</p>
 
-    <p>You cannot find out further information about the features which are part of the base maps.</p>
+    <p>You cannot find out further information about the features which are part of the base maps.</p>-->
 
 
-    <h2><a class="anchor" name="add-data">How to display my own spreadsheet or spatial data</a></h2>
+    <h2><a class="anchor" name="add-data">Come caricare nuovi layer non presenti nel catalogo</a></h2>
 
-    <p>National Map can display two kinds of spreadsheets:<p>
-    <ol><li>Spreadsheets with a <strong>point location (latitude and longitude)</strong> for each row, expressed as two columns: <code>lat</code> and <code>lon</code>. These will be displayed as points (circles).</li>
-    <li>Spreadsheets where each row refers to a <strong>region</strong> such as a local government area (council), state, postcode, or ABS statistical unit such as an SA2 or CED (Commonwealth Electoral Division). Columns must be named according to the <a href="https://github.com/NICTA/nationalmap/wiki/csv-geo-au">CSV-geo-au</a> standard. These will be displayed as regions, highlighting the actual shape of each area.</li>
+    <p>Possono essere caricati due tipi di fogli di calcolo:<p>
+    <ol>
+      <li>Fogli di calcolo con una coppia di <strong>coordinate geografiche (latitudine e longitudine)</strong> per ogni riga, disposta su due colonne: <code>lat</code> e <code>lon</code>. Le posizioni saranno rappresentante come punti sulla mappa.</li>
+      <li>Fogli di calcolo in cui ogni riga si riferisce ad una <strong>regione</strong>, ad esempio confini amministrativi, CAP, ambiti, aggregazioni, etc. Le colonne dovranno seguire questa naming convention: <a href="https://github.com/NICTA/nationalmap/wiki/csv-geo-au">CSV-geo-au</a>. Questi dati saranno rappresentati con la forma delle regioni indicate.</li>
     </ol>
-    <p>Spreadsheets must be saved as CSV (comma-separated values). </p>
+    <p>I fogli di calcolo devono essere salvati come file CSV.</p>
 
-    <p>Other standard spatial data types such as GeoJSON and KML are also supported.</p>
+    <p>Sono supportati anche altri formati standard come ad esempio GeoJSON e KML.</p>
 
-    <p>There are two ways to load your data:</p>
-
-    <ul>
-    <li>Drag your data file onto the NationalMap map view. The format of the data file will be auto-detected.</li>
-    <li>Click on the <strong>Add Data</strong> button in the left hand panel. This will launch the Data Catalogue. Select the <strong>My Data</strong> tab at the top of the modal window and follow the provided instructions.</li>
-    </ul>
-
-    <p>As for NationalMap data sets, you can click on the regions or points to see the data available for that location. If the file is a CSV file, the data from all columns will be shown in the feature information dialogue when you click.</p>
-
-    <p>You can also use all of the features of the <a href="data-workbench.html">Data Workbench</a> on the data you have loaded as well.</p>
-    <p>To share a view of your data with others, you must first publish it to the web somewhere with a URL, and then load it from there.</p>
-
-
-    <h2><a class="anchor" name="share">How to share my National Map view with others</a></h2>
-
-    <p>There are three ways:</p>
+    <p>Ci sono due modi per caricare dati:</p>
 
     <ul>
-    <li>Click the Share button, copy the given URL (shown in the first text box) to the clipboard and paste it into an email which you send to the recipient. They can click on it in the email or paste it into their browser to see the same view as you.</li>
-    <li>Click the Share button, copy the HTML fragment (shown in the second text box) and paste it into an HTML file, which you then make available to the recipients. When the recipients display your web page, they will see the NationalMap view within that web page.</li>
-    <li>Take a screenshot and email it as an image (see your OS instructions on how to take a screenshot). This will share all information, even if loaded from a local file or URL.</li>
+      <li>Trascinare il file direttamente nella mappa. Se il file sarà valido ed in un formato supportato, sarà caricato e visualizzato.</li>
+      <li>Cliccare sul bottone <strong>Catalogo</strong> o in quello affianco, nel Workbench, seguire poi le indicazioni della tab <strong>Nuovi layer</strong>.</li>
     </ul>
 
-    <p><strong>Note that only the third method will show the data you have loaded from a local file</strong>.</p>
+    <!--<p>As for NationalMap data sets, you can click on the regions or points to see the data available for that location. If the file is a CSV file, the data from all columns will be shown in the feature information dialogue when you click.</p>-->
+
+    <p>Per maggiori informazioni sulle opzioni di comando dei layer (indifferentemente che siano presenti nel catalogo o caricati dall'utente) leggere la guida al <a href="data-workbench.html">Workbench</a>.</p>
+    <p>I layer caricati dall'utente da file locali non sono condivisibili con altri usando le funzionalità di condivisione <strong>Condividi/Stampa</strong>. Per renderli condivisibili è necessario prima renderli disponibili via web e ricaricarli via URL.</p>
 
 
-    <h2><a class="anchor" name="contribute">How to contribute Data Sets to National Map</a></h2>
+    <h2><a class="anchor" name="share">Come condividere la mappa con altri</a></h2>
 
-    <p>The NationalMap encourages data providers to publish their spatial data using this platform. There are two routes you can take to publishing.</p>
+    <p>Ci sono tre modi:</p>
 
     <ul>
-      <li><p>Any spatial data which is added to <a href="http://data.gov.au">data.gov.au</a> using a protocol or format supported by the NationalMap (such as WMS) will automatically appear in the <strong>data.gov.au</strong> section of the <strong>Data Catalogue</strong> tab for the NationalMap. See WMS Data Sets for a list of spatial data sets already on <a href="http://data.gov.au">data.gov.au</a>. See the <a href="https://toolkit.data.gov.au/index.php?title=How_to_use_data.gov.au">data.gov.au Toolkit</a> for a detailed reference on using <a href="http://data.gov.au">data.gov.au</a> and using it to publish your own data sets.</p></li>
-      <li><p>If you require your data set to appear under a separate category of the NationalMap Data Catalogue, you will need to contact the support for NationalMap by emailing to <a href="mailto:data@pmc.gov.au">data@pmc.gov.au</a> for more information. You will need to provide an internet accessible service in a standard protocol to access your data set on the internet and appropriate references must be added to the NationalMap configuration.</p></li>
+    <li>Clicca sul bottone <strong>Condividi/Stampa</strong>, copia l'URL (nel primo box) e invialo al destinatario (ad esempio via email). Cliccando sull'URL ricevuto, il destinatario vedrà aprirsi la mappa condivisa nel browser, nella stessa posizione e con gli stessi layer.</li>
+    <li>Clicca sul bottone <strong>Condividi/Stampa</strong>, visualizza le <strong>Opzioni avanzate</strong>, copia il codice HTML con il tag iframe e incollalo in un file HTML. Rendendo disponibile in qualsiasi modo il file HTML al desinatario, questi, aprendolo, vedrà la mappa che è stata condivisa.</li>
+    <li>Clicca sul bottone <strong>Condividi/Stampa</strong>, poi su <strong>Mostra vista di stampa</strong>, salva lo screenshot della mappa ed invialo al destinatario. Questa moadlità non permette di interagire con la mappa ma permette di condividere la visualizzazione dei layer locali.</li>
     </ul>
 
-
+    <p><strong>Solo il terzo metodo permette in qualche modo di condividere i layer caricati da file locali.</strong></p>
     </div>
 
 
@@ -183,7 +172,7 @@
 
     <footer class="footer">
       <div class="container">
-        <p class="text-muted">&copy; Department of the Prime Minister and Cabinet, Department of Communications, and National ICT Australia Limited (NICTA) 2014-2015. All Rights Reserved.</p>
+        <p class="text-muted">&copy; Regione Emilia-Romagna</p>
         <p><strong><a href="../about.html#terms">Terms and conditions</a></strong> – <strong><a href="privacy.html">Privacy</a></strong></p>
 
       </div>
