@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>The National Map - Help & FAQ - Data Workbench</title>
+    <title>rer3d-map - Help & FAQ - Workbench</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -43,16 +43,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://nationalmap.gov.au">
-            <img alt="Brand" src="img/nm-logo.png">
+          <a class="navbar-brand" href="http://rer3d.regione.emilia-romagna.it">
+            <img alt="Brand" src="../public/img/logo-regione.png">
           </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="../about.html">About the National Map</a></li>
+            <li><a href="../about.html">About</a></li>
             <li class="active"><a href="help.html">Help & FAQ</a></li>
-            <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="http://nationalmap.gov.au" target="blank">Launch the National Map</a></li>
+            <!--<li><a href="privacy.html">Privacy</a></li>-->
+            <li><a href="http://rer3d.regione.emilia-romagna.it/" target="blank">Apri rer3d-map</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -66,28 +66,26 @@
 
       <div data-spy="affix">
 
-        <h4 class="nav-header">How to...</h4>
-        <ul class="how-to">
-          <li><a href="help.html">Get started with the National Map</a></li>
-          <li><a href="help.html#feature-info">Find out about a displayed feature</a></li>
-          <li><a href="help.html#add-data">Display my own spatial data</a></li>
-          <li><a href="help.html#share">Share my National Map view</a></li>
-          <li><a href="help.html#contribute">Contribute Data Sets to the National Map</a></li>
-        </ul>
+        <h4 class="nav-header">Come...</h4>
+          <ul class="how-to">
+            <li><a href="help.html">Come iniziare</a></li>
+          <li><a href="help.html#add-data">Come caricare nuovi layer non presenti nel catalogo</a></li>
+          <li><a href="help.html#share">Come condividere la mappa con altri</a></li>
+          </ul>
 
-        <h4 class="nav-header">Key Features</h4>
-        <ul class="key-features">
-          <li><a href="map-navigation.html">Map Navigation and Display</a></li>
-          <li><a href="data-catalogue.html">Data Catalogue</a></li>
-          <li class="active"><a href="data-workbench.html">Data Workbench</a></li>
-        </ul>
+          <h4 class="nav-header">Key Features</h4>
+          <ul class="key-features">
+            <li><a href="map-navigation.html">Mappa</a></li>
+          <li><a href="data-catalogue.html">Catalogo</a></li>
+          <li><a href="data-workbench.html">Workbench</a></li>
+          </ul>
 
-        <h4 class="nav-header">Frequently Asked Questions</h4>
-        <ul class="faq">
-          <li><a href="faq.html">National Map Operation</a></li>
-          <li><a href="faq.html#nm-systemdata">National Map system and data</a></li>
-          <li><a href="faq.html#nm-reportingissues">Reporting issues</a></li>
-        </ul>
+          <h4 class="nav-header">Frequently Asked Questions</h4>
+          <ul class="faq">
+            <li><a href="faq.html">rer3d-map</a></li>
+            <li><a href="faq.html#nm-systemdata">Dati</a></li>
+            <li><a href="faq.html#nm-reportingissues">Segnalazioni</a></li>
+          </ul>
 
         </div>
 
@@ -95,18 +93,19 @@
 
     <div class="col-md-8">
 
-      <h1>Data Workbench</h1>
+      <h1>Workbench</h1>
 
-        <img src="img/data-workbench.jpg" class="screenshot img-responsive" alt="screenshot of the NationalMap Data Workbench">
+        <img src="img/data-workbench_rer.png" class="screenshot img-responsive" alt="screenshot of the Workbench">
 
-        <p>When a data set is added to the map via the <a href="data-catalogue.html">Data Catalogue</a>, a legend for that data set will appear at the top of your Data Workbench (pictured above). From the Data Workbench you can:</p>
+        <p>Quando un layer viene aggiunto in qualsiasi modo alla mappa, il suo nome appare nel Workbench, il pannello a sinistra della mappa. Dal Workbench è possibile:</p>
 
         <ul>
-        <li>Set the order in which data is shown on the map. To do this, simply click on the title of a data set and drag it to a new position in your Workbench.</li>
-        <li>Toggle the visibility of added data sets. To do this, click on the checkbox opposite your prefered data set title.</li>
-        <li>Zoom to the geographical extent of an added data set</li>
-        <li>Set the opacity of individual data sets</li>
-        <li>Remove data sets from the map. Note: removed data sets can always be re-added via the Data Catalogue.</li>
+        <li>Riordinare i layer per modificare l'ordine in cui sono visualizzati (quelli sopra coprono quelli sotto). Per farlo, cliccare sul nome del layer nel Workbench e trascinarlo nella posizione desiderata.</li>
+        <li>Abilitare/disabilitare la visualizzazione dei layer sulla mappa. Per farlo, cliccare sul checkbox posto a sinistra del nome del layer.</li>
+        <li>Zoomare sull'area del layer, se possibile, cliccando su <strong>Zoom sul layer</strong></li>
+        <li>Modificare l'opacità del layer, se possibile, spostando lo slider a destra di <strong>Opacità</strong>.</li>
+        <li>Rimuovere il layer cliccando su <strong>Rimuovi</strong>. Un layer rimosso può sempre essere aggiunto nuovamente. Cliccando su <strong>Rimuovi tutti</strong> saranno rimossi tutti i layer.</li>
+        <li>Visualizzare informazioni e metadati del layer cliccando su <strong>informazioni</strong>.</li>
         </ul>
 
     </div>
@@ -117,8 +116,8 @@
 
     <footer class="footer">
       <div class="container">
-        <p class="text-muted">&copy; Department of the Prime Minister and Cabinet, Department of Communications, and National ICT Australia Limited (NICTA) 2014-2015. All Rights Reserved.</p>
-        <p><strong><a href="../about.html#terms">Terms and conditions</a></strong> – <strong><a href="privacy.html">Privacy</a></strong></p>
+        <p class="text-muted">&copy; © Regione Emilia-Romagna 2017-2020</p>
+        <!--<p><strong><a href="../about.html#terms">Terms and conditions</a></strong> – <strong><a href="privacy.html">Privacy</a></strong></p>-->
 
       </div>
     </footer>
