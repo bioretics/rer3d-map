@@ -5,14 +5,9 @@ RER3D-MAP
 ![Terria logo](terria-logo.png "Terria logo")  
 
 The **rer3d-map** is a website for map-based access to italian [Emilia-Romagna region](http://www.regione.emilia-romagna.it) spatial data from local government agencies.
-The software has been developed and customized by [Bioretics srl](http://www.bioretics.com).
+Customizations and improvements has been developed and customized by [Bioretics srl](http://www.bioretics.com).
 
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/TerriaJS/TerriaMap.svg)](https://greenkeeper.io/)
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/TerriaJS/TerriaMap.svg)](https://greenkeeper.io/)
-
-This is a complete website built using the TerriaJS library. See the [TerriaJS README](https://github.com/TerriaJS/TerriaJS) for information and documentation about TerriaJS.
+**rer3d-map** is a container for [rer3d-terriajs](https://github.com/bioretics/rer3d-terriajs) and it needs less update than _rer3d-terriajs_.
 
 Go to the [wiki page](https://github.com/bioretics/rer3d-map/wiki) for installation guide.
 
