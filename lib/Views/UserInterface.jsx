@@ -30,6 +30,8 @@ function isBrowserSupportedAV() {
 }
 
 export default function UserInterface(props) {
+  console.log("rer3d-map v." + require("../../package.json").version);
+
   return (
     <StandardUserInterface {...props} version={version}>
       {/*<Menu>
