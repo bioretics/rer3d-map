@@ -1,9 +1,15 @@
 Change Log
 ==========
 
+### 1.17.0 - 28/04/2021
+* Log into console the package version.
+* Docs update and improvements.
+* Updated rer3d-terriajs to 2.9.2
+* _rer3d-terriajs can be updated without update rer3d-map_
+
 ### 1.16.1 - 12/06/2020
 * Updated rer3d-terriajs to 2.7.3
-* Help and about transtlation into italian language.
+* Help and about translation into italian language.
 
 ### 1.16.0 - 08/06/2020
 * Updated rer3d-terriajs to 2.7.2
