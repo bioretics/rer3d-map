@@ -30,6 +30,9 @@ import "./global.scss";
 // }
 
 export default function UserInterface(props) {
+  // Print version to console
+  console.log("rer3d-map v." + require("../../package.json").version);
+
   return (
     <StandardUserInterface {...props} version={version}>
       <MenuLeft>
