@@ -2,6 +2,12 @@
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
   "initializationUrls": ["simple"],
   "parameters": {
+    "cesiumIonAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5NDY4ZTFjZi1kZTJmLTRhMjUtYWNmNi01OGY5ZmJlMTM5OGQiLCJpZCI6NDU0LCJpYXQiOjE1MjUyNDU4NDh9.MJlRJ_cm3I8eFw7hCvBGCvv_aTmdCcpoo0CrmzevFu0",
+    "bingMapsKey": "Ap3-3lzCO0---yJ-IKWdbxq3QVFykIJ8vJrqrCqsYofNT5ETG1g8ei-Squ9cFxxV",
+    "useCesiumIonTerrain": false,
+    "useCesiumIonBingImagery": false,
+    "cesiumTerrainUrl": "https://mappe.regione.emilia-romagna.it/tilesets/dtm",
+
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
     "googleAnalyticsOptions": null,
@@ -11,16 +17,16 @@
 
     /* Text that appears at the bottom of the map */
     "disclaimer": {
-      "text": "Disclaimer: This map must not be used for navigation or precise spatial analysis",
+      "text": "Disclaimer: questa mappa non può essere usata per la navigazione o calcoli di elevata precisione. @Regione Emilia-Romagna",
       "url": ""
     },
-    /*
-        // Text that will be added to any pages printed from your site.
-        printDisclaimer:{
-            text:"Put your print disclaimer here.",
-            url: "#"
-        },
-        */
+
+    // Text that will be added to any pages printed from your site.
+    "printDisclaimer":{
+      "text":"@Regione Emilia-Romagna",
+      "url": "#"
+    },
+
 
     // Pop-up disclaimer that will be shown at the start
     // The text of the disclaimer is in lib/Views/GlobalDisclaimer.html
@@ -35,18 +41,18 @@
     //     enableOnLocalhost: true // If false, don't show this when running on localhost
     // },
 
-    /*
-        developerAttribution: {
-            text: "Your organisation",
-            link: "http://www.example.com"
-        },*/
+    
+    "developerAttribution": {
+      "text": "Bioretics srl",
+      "link": "http://www.bioretics.com"
+    },
     // This is used in various text messages. You should also set <title> in index.html
-    "appName": "Terria Map",
+    "appName": "Geoportale 3D - non va??",
 
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
       "",
-      "<a target=\"_blank\" href=\"https://terria.io\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
+      "<a target=\"_blank\" href=\"http://www.regione.emilia-romagna.it\"><img src=\"https://www.regione.emilia-romagna.it/impostazioni/logo-regione.png\" height=\"52\" title=\"Logo Geoportale 3D Emilia-ROmagna: {{version}}\" /></a>",
       ""
     ],
     // Shown when things go wrong.
@@ -77,11 +83,11 @@
 
     // see `languageOverrides.json` in languages/en
     "languageConfiguration": {
-      "enabled": false,
-      "debug": false,
+      "enabled": true,
+      "debug": true,
       "languages": {
         "en": "English",
-        "fr": "Français"
+        "it": "Italiano"
       },
       "fallbackLanguage": "en"
     },
