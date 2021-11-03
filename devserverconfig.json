@@ -22,7 +22,17 @@
         "gov.uk",
         "gov.nz",
         "sample.aero3dpro.com.au",
-        "services.aremi.data61.io"
+        "services.aremi.data61.io",
+
+        "geoportale.regione.emilia-romagna.it",
+        "gis.ente.regione.emr.it",
+		"www502.regione.toscana.it",
+		"wms.cartografia.agenziaentrate.gov.it",
+        "agenziaentrate.gov.it",
+        "dati.emilia-romagna.it",
+        "servizigis.arpa.emr.it",
+        "servizigis.arpae.it",
+        "servizigis.regione.emilia-romagna.it"
     ]
 }
 
