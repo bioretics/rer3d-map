@@ -21,6 +21,8 @@ import BingMapsSearchProviderViewModel from 'terriajs/lib/Models/SearchProviders
 // import GazetteerSearchProviderViewModel from 'terriajs/lib/ViewModels/GazetteerSearchProviderViewModel.js';
 // import GnafSearchProviderViewModel from 'terriajs/lib/ViewModels/GnafSearchProviderViewModel.js';
 // import defined from 'terriajs-cesium/Source/Core/defined';
+import RerSearchProviderViewModel from 'terriajs/lib/Models/SearchProviders/RerSearchProvider';
+import NominatimSearchProviderViewModel from 'terriajs/lib/Models/SearchProviders/NominatimSearchProvider';
 import render from './lib/Views/render';
 import registerCatalogMembers from 'terriajs/lib/Models/Catalog/registerCatalogMembers';
 import defined from 'terriajs-cesium/Source/Core/defined';
@@ -82,6 +84,11 @@ module.exports = terria.start({
             }),
             // new GazetteerSearchProviderViewModel({terria}),
             // new GnafSearchProviderViewModel({terria})
+            new NominatimSearchProviderViewModel({
+                terria: terria,
+                countryCodes: "it"
+            }),
+            new RerSearchProviderViewModel({ terria: terria })
         ];
 
         // Automatically update Terria (load new catalogs, etc.) when the hash part of the URL changes.
