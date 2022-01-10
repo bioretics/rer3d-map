@@ -78,17 +78,17 @@ module.exports = terria.start({
     terria.loadInitSources().then(result => result.raiseError(terria));
     try {
         viewState.searchState.locationSearchProviders = [
-            new BingMapsSearchProviderViewModel({
-                terria: terria,
-                key: terria.configParameters.bingMapsKey
-            }),
-            // new GazetteerSearchProviderViewModel({terria}),
-            // new GnafSearchProviderViewModel({terria})
+            new RerSearchProviderViewModel({ terria: terria }),
             new NominatimSearchProviderViewModel({
                 terria: terria,
                 countryCodes: "it"
             }),
-            new RerSearchProviderViewModel({ terria: terria })
+            new BingMapsSearchProviderViewModel({
+                terria: terria,
+                key: terria.configParameters.bingMapsKey
+            })
+            // new GazetteerSearchProviderViewModel({terria}),
+            // new GnafSearchProviderViewModel({terria})
         ];
 
         // Automatically update Terria (load new catalogs, etc.) when the hash part of the URL changes.

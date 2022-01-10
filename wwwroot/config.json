@@ -1,12 +1,13 @@
 {
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
-  "initializationUrls": ["simple"],
+  "initializationUrls": ["emiro_v8", "basemaps"],
   "parameters": {
-    "cesiumIonAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5NDY4ZTFjZi1kZTJmLTRhMjUtYWNmNi01OGY5ZmJlMTM5OGQiLCJpZCI6NDU0LCJpYXQiOjE1MjUyNDU4NDh9.MJlRJ_cm3I8eFw7hCvBGCvv_aTmdCcpoo0CrmzevFu0",
+    "cesiumIonAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkMjU1YmQyZS05Y2ZlLTRkM2EtYmQ4My05ODhjZmUzYmZlMjQiLCJpZCI6NjkzNzIsImlhdCI6MTYzMzQyOTcyM30.UYzNme-ZLIiOvziXcKpyx-ogvY3nzIw6m6tdESbb4X4",
     "bingMapsKey": "Ap3-3lzCO0---yJ-IKWdbxq3QVFykIJ8vJrqrCqsYofNT5ETG1g8ei-Squ9cFxxV",
     "useCesiumIonTerrain": false,
     "useCesiumIonBingImagery": false,
-    "cesiumTerrainUrl": "https://mappe.regione.emilia-romagna.it/tilesets/dtm",
+    //"cesiumTerrainUrl": "https://mappe.regione.emilia-romagna.it/tilesets/dtm",
+    "cesiumTerrainAssetId": 670481,
 
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
@@ -56,11 +57,11 @@
       ""
     ],
     // Shown when things go wrong.
-    "supportEmail": "help@example.com",
+    //"supportEmail": "help@example.com",
     // You probably shouldn't change this.
     "proj4ServiceBaseUrl": "proj4def/",
     // Or this
-    "feedbackUrl": "feedback",
+    //"feedbackUrl": "feedback",
 
     // Default mobile viewer mode when loading the map for the first time on mobile platforms.
     // Options are: "3DTerrain", "3DSmooth", "2D"
@@ -79,7 +80,7 @@
     // },
 
     // True to display in-app guides.
-    // "showInAppGuides": false,
+    "showInAppGuides": false,
 
     // see `languageOverrides.json` in languages/en
     "languageConfiguration": {
@@ -92,6 +93,12 @@
       "fallbackLanguage": "en"
     },
     "helpContent": [
+      {
+        "title": "About",
+        "itemName": "gettingstarted_22",
+        "paneMode": "videoAndContent",
+        "markdownText": "**rer3d-map** è il visualizzatore cartografico 3D ufficiale per la consultazione e visualizzazione sul web di dati GIS della Regione Emilia-Romagna. [Clicca qui per maggiori informazioni](about.html)."
+      },
       {
         "title": "translate#gettingstarted.title",
         "itemName": "gettingstarted",

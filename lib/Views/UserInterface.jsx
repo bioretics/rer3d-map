@@ -34,10 +34,10 @@ export default function UserInterface(props) {
 
   return (
     <StandardUserInterface {...props} version={version}>
-      <MenuLeft>
+      {/*<MenuLeft>
         <MenuItem caption="About" href="about.html" key="about-link" />
-        {/*<RelatedMaps viewState={props.viewState} />*/}
-      </MenuLeft>
+        <RelatedMaps viewState={props.viewState} />
+      </MenuLeft>*/}
       <ExperimentalMenu>
         {/* <If condition={isBrowserSupportedAV()}>
           <SplitPoint
