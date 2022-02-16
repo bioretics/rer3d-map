@@ -1,6 +1,18 @@
 Change Log
 ==========
 
+#### 2.0.0
+* Pull from to TerriaMap v8
+* Review and merge customizations from rer3d v7
+  * Add Rer and Nominatim search providers
+  * Italian language translation
+  * Add custom RER images and ico
+  * UI customization and translation
+  * Add RER tracking code
+  * Add domains to allowed proxy list
+  * Print version to console
+  * Remove RelatedMaps
+
 ### 2021-09-27
 
 * Disabled sourcemaps for production builds. To re-enable for your specific application, set "devtool" to 'source-map' in buildprocess/webpack.config.js

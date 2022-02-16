@@ -2,12 +2,12 @@
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
   "initializationUrls": ["emiro_v8", "basemaps"],
   "parameters": {
-    "cesiumIonAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkMjU1YmQyZS05Y2ZlLTRkM2EtYmQ4My05ODhjZmUzYmZlMjQiLCJpZCI6NjkzNzIsImlhdCI6MTYzMzQyOTcyM30.UYzNme-ZLIiOvziXcKpyx-ogvY3nzIw6m6tdESbb4X4",
+    "cesiumIonAccessToken": "",
     "bingMapsKey": "Ap3-3lzCO0---yJ-IKWdbxq3QVFykIJ8vJrqrCqsYofNT5ETG1g8ei-Squ9cFxxV",
     "useCesiumIonTerrain": false,
     "useCesiumIonBingImagery": false,
     //"cesiumTerrainUrl": "https://mappe.regione.emilia-romagna.it/tilesets/dtm",
-    "cesiumTerrainAssetId": 670481,
+    "cesiumTerrainAssetId": 754445,
 
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
@@ -48,13 +48,14 @@
       "link": "http://www.bioretics.com"
     },
     // This is used in various text messages. You should also set <title> in index.html
-    "appName": "Geoportale 3D - non va??",
+    "appName": "Geoportale 3D",
 
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
-      "",
-      "<a target=\"_blank\" href=\"http://www.regione.emilia-romagna.it\"><img src=\"https://www.regione.emilia-romagna.it/impostazioni/logo-regione.png\" height=\"52\" title=\"Logo Geoportale 3D Emilia-ROmagna: {{version}}\" /></a>",
-      ""
+      "<a target=\"_blank\" href=\"http://www.regione.emilia-romagna.it\"><img src=\"https://mappe.regione.emilia-romagna.it/init/logo/logoRER330.png\" height=\"52\" title=\"Mappe - Regione Emilia-Romagna\" /></a>"
+    ],
+    "brandBarSmallElements": [
+      "<a target=\"_blank\" href=\"http://www.regione.emilia-romagna.it\"><img src=\"https://mappe.regione.emilia-romagna.it/init/logo/logoRERsmall50.png\" height=\"52\" title=\"Mappe - Regione Emilia-Romagna\" /></a>"
     ],
     // Shown when things go wrong.
     //"supportEmail": "help@example.com",
