@@ -1,38 +1,43 @@
 {
     "port": 3001,
-
-    "allowProxyFor" : [
-        "nicta.com.au",
-        "gov.au",
-        "csiro.au",
+    "allowProxyFor": [
         "arcgis.com",
         "argo.jcommops.org",
-        "www.abc.net.au",
-        "geoserver.aurin.org.au",
-        "mapsengine.google.com",
-        "s3-ap-southeast-2.amazonaws.com",
-        "adelaidecitycouncil.com",
-        "www.dptiapps.com.au",
-        "geoserver-123.aodn.org.au",
-        "geoserver.imos.org.au",
-        "nci.org.au",
-        "static.nationalmap.nicta.com.au",
-        "githubusercontent.com",
-        "gov",
-        "gov.uk",
-        "gov.nz",
-        "sample.aero3dpro.com.au",
-        "services.aremi.data61.io",
-
-        "geoportale.regione.emilia-romagna.it",
+        "services.arcgisonline.com",
         "gis.ente.regione.emr.it",
-		"www502.regione.toscana.it",
-		"wms.cartografia.agenziaentrate.gov.it",
-        "agenziaentrate.gov.it",
+        "www502.regione.toscana.it",
+        "wms.cartografia.marche.it",
+        "wms.cartografia.agenziaentrate.gov.it",
         "dati.emilia-romagna.it",
-        "servizigis.arpa.emr.it",
         "servizigis.arpae.it",
-        "servizigis.regione.emilia-romagna.it"
-    ]
+        "ags.unionevallesavio.it",
+        "geoportale.regione.emilia-romagna.it",
+        "mappegis.regione.emilia-romagna.it",
+        "vm449srv.ente.regione.emr.it:6443",
+        "vm448srv.ente.regione.emr.it",
+        "vm437srv.ente.regione.emr.it",
+        "vm353srv.ente.regione.emr.it:9474",
+        "vm82srv.ente.regione.emr.it:9474",
+        "servizigistest.regione.emilia-romagna.it",
+        "servizigis.regione.emilia-romagna.it",
+        "pcn.minambiente.it",
+        "geomap.reteunitaria.piemonte.it",
+        "drive.google.com",
+        "viewer.globalland.vgt.vito.be",
+        "image.discomap.eea.europa.eu",
+        "isprambiente.it",
+        "labgis.gm.ingv.it",
+        "idt2-geoserver.regione.veneto.it",
+        "webgis.regione.sardegna.it",
+        "opengis.csi.it",
+        "geonext.comune.modena.it"
+    ],
+    "shareUrlPrefixes": {
+        "g": {
+            "service": "gist",
+            "accessToken": "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"
+        }
+    },
+    "newShareUrlPrefix": "g",
+    "shareMaxRequestSize": "1000kb"
 }
-

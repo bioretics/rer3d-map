@@ -1,6 +1,6 @@
 {
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
-  "initializationUrls": ["emiro_v8", "basemaps"],
+  "initializationUrls": ["basemaps", "1_emiro_rapido", "emiro_v8"],
   "parameters": {
     "cesiumIonAccessToken": "",
     "bingMapsKey": "Ap3-3lzCO0---yJ-IKWdbxq3QVFykIJ8vJrqrCqsYofNT5ETG1g8ei-Squ9cFxxV",
