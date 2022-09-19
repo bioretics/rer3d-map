@@ -1,17 +1,20 @@
 # Change Log
 
 #### 2.0.0
-* Pull from to TerriaMap v8
-* Review and merge customizations from rer3d v7
-  * Add Rer and Nominatim search providers
-  * Italian language translation
-  * Add custom RER images and ico
-  * UI customization and translation
-  * Add RER tracking code
-  * Add domains to allowed proxy list
-  * Print version to console
-  * Remove RelatedMaps
+
+- Pull from to TerriaMap v8
+- Review and merge customizations from rer3d v7
+  - Add Rer and Nominatim search providers
+  - Italian language translation
+  - Add custom RER images and ico
+  - UI customization and translation
+  - Add RER tracking code
+  - Add domains to allowed proxy list
+  - Print version to console
+  - Remove RelatedMaps
+
 ### 2022-03-14
+
 ### 2022-06-30
 
 - Add support Plugins support using `terriajs-plugin-api`. See [`plugins.ts`](./plugins.ts)
