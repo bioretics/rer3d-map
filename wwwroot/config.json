@@ -1,67 +1,246 @@
 {
-    "initializationUrls": [
-        "emiro"
+  /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
+  "initializationUrls": ["basemaps", "emiro_v8"],
+  "parameters": {
+    "cesiumIonAccessToken": "",
+    "cesiumTerrainAssetId": 754445,
+    "useCesiumIonTerrain": false,
+    "bingMapsKey": "",
+    "useCesiumIonBingImagery": false,
+    "googleUrlShortenerKey": null,
+    "googleAnalyticsKey": null,
+    "googleAnalyticsOptions": null,
+
+    // Log ConsoleAnalytics events to console
+    // logToConsole: true,
+
+    /* Text that appears at the bottom of the map */
+    "disclaimer": {
+      "text": "Disclaimer: questa mappa non può essere usata per la navigazione o calcoli di elevata precisione. @Regione Emilia-Romagna",
+      "url": ""
+    },
+    // Text that will be added to any pages printed from your site.
+    "printDisclaimer": {
+      "text": "@Regione Emilia-Romagna",
+      "url": "#"
+    },
+
+    // Pop-up disclaimer that will be shown at the start
+    // The text of the disclaimer is in lib/Views/GlobalDisclaimer.html
+    // globalDisclaimer: {
+    //     confirmationRequired: false,
+    //     buttonTitle: "I agree",
+    //     title: "Disclaimer",
+    //     // If the current browser location is not prod, or is dev, then show a "not the real site" warning.
+    //     // The text of that is in lib/Views/DevelopmentDisclaimerPreamble.html
+    //     //prodHostRegex: "gov.\\.au$",
+    //     //devHostRegex: "\\b(staging|preview|test|dev)\\.",
+    //     enableOnLocalhost: true // If false, don't show this when running on localhost
+    // },
+
+    "developerAttribution": {
+      "text": "Bioretics srl",
+      "link": "http://www.bioretics.com"
+    },
+    // This is used in various text messages. You should also set <title> in index.html
+    "appName": "Geoportale 3D",
+
+    // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
+    "brandBarElements": [
+      "<a target=\"_blank\" href=\"https://www.regione.emilia-romagna.it\"><img src=\"https://mappe.regione.emilia-romagna.it/init/logo/LogoRER52x52.png\" alt=\"Regione //Emilia-Romagna\"  height=\"52\" title=\"Regione Emilia-Romagna\" /></a>",
+      "<a target=\"_blank\" href=\"https://mappe.regione.emilia-romagna.it\"><img src=\"https://mappe.regione.emilia-romagna.it/init/logo/LogoGeoportale218x52.png\" height=\"52\"  alt=\"Geportale 3D - Emilia-Romagna\" title=\"Geoportale 3D - Regione Emilia-Romagna\" /></a>",
+      "<a target=\"_blank\" href=\"https://digitale.regione.emilia-romagna.it\"><img src=\"https://mappe.regione.emilia-romagna.it/init/logo/LogoDV60x52.png\" alt=\"Data Valley Emilia-Romagna\" height=\"52\" title=\"Data valley Bene Comune - Regione Emilia-Romagna\" /></a>"
     ],
-    "parameters": {
-        "bingMapsKey": "Ap3-3lzCO0---yJ-IKWdbxq3QVFykIJ8vJrqrCqsYofNT5ETG1g8ei-Squ9cFxxV",
-        "googleUrlShortenerKey": null,
-        "googleAnalyticsKey": null,
-        "googleAnalyticsOptions": null,
+    "brandBarSmallElements": [
+      "<a target=\"_blank\" href=\"https://www.regione.emilia-romagna.it\"><img src=\"https://mappe.regione.emilia-romagna.it/init/logo/LogoRER52x52.png\" alt=\"Regione Emilia-Romagna\"  height=\"52\" title=\"Regione Emilia-Romagna\" /></a>"
+    ],
+    // Shown when things go wrong.
+    "supportEmail": "infogeoportale@regione.emilia-romagna.it",
+    // You probably shouldn't change this.
+    "proj4ServiceBaseUrl": "proj4def/",
+    // Or this
+    //"feedbackUrl": "feedback",
 
-        "disclaimer": {
-            "text": "Disclaimer: questa mappa non può essere usata per la navigazione o calcoli di elevata precisione. @Regione Emilia-Romagna ",
-            "url": ""
-        },
-        
+    // Default mobile viewer mode when loading the map for the first time on mobile platforms.
+    // Options are: "3DTerrain", "3DSmooth", "2D"
+    "mobileDefaultViewerMode": "2d",
+    // Enable experimental features, since its nice to have the bleeding edge.
+    // Disable it if things go wrong with the experimental features or your users aren't robust to features which might change or disapear completly.
+    "experimentalFeatures": true,
+    // To enable welcome message when map first loads
+    // "showWelcomeMessage": true,
+    // To override the welcome message video displayed on the welcome message
+    // By default, the Getting Started to Terria video is displayed
+    // "welcomeMessageVideo": {
+    //     "videoTitle": "Getting started with the map",
+    //     "videoUrl": "https://www.youtube-nocookie.com/embed/NTtSM70rIvI", // use an embedded video link
+    //     "placeholderImage": "https://img.youtube.com/vi/NTtSM70rIvI/maxresdefault.jpg"
+    // },
 
-        "printDisclaimer":{
-            "text":"@Regione Emilia-Romagna",
-            "url": "#"
-        },
+    // True to display in-app guides.
+    "showInAppGuides": true,
 
-        "developerAttribution": {
-            "text": "Bioretics srl",
-            "link": "http://www.bioretics.com"
-        },
-
-        "appName": "Geoportale 3D",
-
-        "brandBarElements": [
-            "",
-            "<a target=\"_blank\" href=\"http://www.regione.emilia-romagna.it\"><img src=\"https://www.regione.emilia-romagna.it/impostazioni/logo-regione.png/@@images/5d77c649-6a1a-4e30-8283-1eeb25e6d86b.png\" height=\"52\" title=\"Logo Geoportale 3D Emilia-Romagna\" style=\"position: relative; top: 15%\"/></a>",
-            ""
-        ],
-
-        "supportEmail": "infogeoportale@regione.emilia-romagna.it",
-
-        "proj4ServiceBaseUrl": "proj4def/",
-
-        "feedbackUrl": "",
-
-        "mobileDefaultViewerMode": "2D",
-
-        "experimentalFeatures": true,
-
-        "tabbedCatalog": false,
-        "interceptBrowserPrint": true,
-
-        // To override TerriaJS's region mapping file with a local one.
-        // regionMappingDefinitionsUrl: "data/regionMapping.json"
-
-        // True to display welcome message on startup.
-        // "showWelcomeMessage": false,
-
-        // True to display in-app guides.
-        // "showInAppGuides": false,
-
-        // True to display new feature popups.
-        // "showFeaturePrompts": false,
-
-        "maximumLeafletZoomLevel": 21,
-
-        "useCesiumIonTerrain": false,
-        "useCesiumIonBingImagery": false,
-        "cesiumTerrainUrl": "https://rer3d.regione.emilia-romagna.it/tilesets/dtm"
-    }
+    // see `languageOverrides.json` in languages/en
+    "languageConfiguration": {
+      "enabled": true,
+      "debug": true,
+      "languages": {
+        "en": "English",
+        "it": "Italiano"
+      },
+      "fallbackLanguage": "en"
+    },
+    "helpContent": [
+      {
+        "title": "translate#gettingstarted.title",
+        "itemName": "gettingstarted",
+        "paneMode": "videoAndContent",
+        "markdownText": "translate#gettingstarted.markdownText"
+      },
+      {
+        "title": "translate#stepbystepguide.title",
+        "itemName": "stepbystepguide",
+        "paneMode": "trainer",
+        "markdownText": "translate#stepbystepguide.markdownText",
+        "icon": "oneTwoThree",
+        "trainerItems": [
+          {
+            "title": "translate#stepbystepguide.gettingstarted.title",
+            "footnote": "translate#stepbystepguide.gettingstarted.footnote",
+            "steps": [
+              {
+                "title": "translate#stepbystepguide.gettingstarted.step1.title",
+                "markdownDescription": "translate#stepbystepguide.gettingstarted.step1.markdownDescription"
+              },
+              {
+                "title": "translate#stepbystepguide.gettingstarted.step2.title",
+                "markdownDescription": "translate#stepbystepguide.gettingstarted.step2.markdownDescription"
+              },
+              {
+                "title": "translate#stepbystepguide.gettingstarted.step3.title",
+                "markdownDescription": "translate#stepbystepguide.gettingstarted.step3.markdownDescription"
+              },
+              {
+                "title": "translate#stepbystepguide.gettingstarted.step4.title",
+                "markdownDescription": "translate#stepbystepguide.gettingstarted.step4.markdownDescription"
+              },
+              {
+                "title": "translate#stepbystepguide.gettingstarted.step5.title",
+                "markdownDescription": "translate#stepbystepguide.gettingstarted.step5.markdownDescription"
+              },
+              {
+                "title": "translate#stepbystepguide.gettingstarted.step6.title",
+                "markdownDescription": "translate#stepbystepguide.gettingstarted.step6.markdownDescription"
+              },
+              {
+                "title": "translate#stepbystepguide.gettingstarted.step7.title",
+                "markdownDescription": "translate#stepbystepguide.gettingstarted.step7.markdownDescription"
+              },
+              {
+                "title": "translate#stepbystepguide.gettingstarted.step8.title",
+                "markdownDescription": "translate#stepbystepguide.gettingstarted.step8.markdownDescription"
+              },
+              {
+                "title": "translate#stepbystepguide.gettingstarted.step9.title",
+                "markdownDescription": "translate#stepbystepguide.gettingstarted.step9.markdownDescription"
+              },
+              {
+                "title": "translate#stepbystepguide.gettingstarted.step10.title",
+                "markdownDescription": "translate#stepbystepguide.gettingstarted.step10.markdownDescription"
+              }
+            ]
+          }
+          // -- Uncomment to enable the following trainer guides --
+          // {
+          //   "title": "stepbystepguide.satelliteimagery.title",
+          //   "footnote": "stepbystepguide.satelliteimagery.footnote",
+          //   "steps": [
+          //     {
+          //       "title": "stepbystepguide.satelliteimagery.step1.title",
+          //       "markdownDescription": "stepbystepguide.satelliteimagery.step1.markdownDescription"
+          //     },
+          //     {
+          //       "title": "stepbystepguide.satelliteimagery.step2.title",
+          //       "markdownDescription": "stepbystepguide.satelliteimagery.step2.markdownDescription"
+          //     },
+          //     {
+          //       "title": "stepbystepguide.satelliteimagery.step3.title",
+          //     "markdownDescription": "stepbystepguide.satelliteimagery.step3.markdownDescription"
+          //     },
+          //     {
+          //       "title": "stepbystepguide.satelliteimagery.step4.title",
+          //       "markdownDescription": "stepbystepguide.satelliteimagery.step4.markdownDescription"
+          //     }
+          //   ]
+          // },
+          // {
+          //   "title": "stepbystepguide.comparetimeseries.title",
+          //   "footnote": "stepbystepguide.comparetimeseries.footnote",
+          //   "steps": [
+          //     {
+          //       "title": "stepbystepguide.comparetimeseries.step1.title",
+          //       "markdownDescription": "stepbystepguide.comparetimeseries.step1.markdownDescription"
+          //     },
+          //     {
+          //       "title": "stepbystepguide.comparetimeseries.step2.title",
+          //       "markdownDescription": "stepbystepguide.comparetimeseries.step2.markdownDescription"
+          //     },
+          //     {
+          //       "title": "stepbystepguide.comparetimeseries.step3.title",
+          //       "markdownDescription": "stepbystepguide.comparetimeseries.step3.markdownDescription"
+          //     },
+          //     {
+          //       "title": "stepbystepguide.comparetimeseries.step4.title",
+          //       "markdownDescription": "stepbystepguide.comparetimeseries.step4.markdownDescription"
+          //     }
+          //   ]
+          // }
+        ]
+      } // For maps with satellite imagery, also see `showInAppGuides`
+      // {
+      //     "itemName": "satelliteimagery",
+      //     "title": "Satellite Imagery",
+      //     "paneMode": "slider",
+      //     "icon": "satellite"
+      // }
+    ],
+    "helpContentTerms": [
+      {
+        "term": "translate#helpContentTerm1.term",
+        "aliases": "translate#helpContentTerm1.aliases",
+        "content": "translate#helpContentTerm1.content"
+      },
+      {
+        "term": "translate#helpContentTerm2.term",
+        "aliases": "translate#helpContentTerm2.aliases",
+        "content": "translate#helpContentTerm1.content"
+      },
+      {
+        "term": "translate#helpContentTerm3.term",
+        "content": "translate#helpContentTerm3.content"
+      },
+      {
+        "term": "translate#helpContentTerm4.term",
+        "content": "translate#helpContentTerm4.content"
+      },
+      {
+        "term": "translate#helpContentTerm5.term",
+        "aliases": ["catalogue"],
+        "content": "translate#helpContentTerm5.content"
+      },
+      {
+        "term": "translate#helpContentTerm6.term",
+        "aliases": "translate#helpContentTerm6.aliases",
+        "content": "translate#helpContentTerm6.content"
+      },
+      {
+        "term": "translate#helpContentTerm7.term",
+        "content": "translate#helpContentTerm7.content"
+      },
+      {
+        "term": "translate#helpContentTerm8.term",
+        "content": "translate#helpContentTerm8.content"
+      }
+    ]
+  }
 }
-

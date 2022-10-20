@@ -2,6 +2,7 @@ node_modules/
 .idea/
 wwwroot/build/
 wwwroot/doc/
+wwwroot/index.html
 npm-debug.log
 version.js
 wwwroot/init/nm.json
@@ -21,3 +22,7 @@ wwwroot/privateconfig.json
 deploy/packages/
 deploy/work/
 packages/
+pancake/
+yarn-error.log
+
+package-lock.json

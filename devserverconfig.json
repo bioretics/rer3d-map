@@ -1,27 +1,30 @@
 {
-    "port": 3001,
-
-    "allowProxyFor" : [
-        "arcgis.com",
-        "argo.jcommops.org",
-        "geoserver.aurin.org.au",
-        "mapsengine.google.com",
-        "githubusercontent.com",
-        "opengis.net",
-        "cesium.com",
-        "geoportale.regione.emilia-romagna.it",
-        "gis.ente.regione.emr.it",
-		"www502.regione.toscana.it",
-		"wms.cartografia.agenziaentrate.gov.it",
-        "agenziaentrate.gov.it",
-        "dati.emilia-romagna.it",
-        "servizigis.arpa.emr.it",
-        "servizigis.arpae.it",
-        "servizigis.regione.emilia-romagna.it"
-    ],
-
-    "proxyAllDomains": false,
-
-    "initPaths": [ "/data/3d_config" ]
+  "port": 3001,
+  "allowProxyFor": [
+    "arcgis.com",
+    "argo.jcommops.org",
+    "geoserver.aurin.org.au",
+    "mapsengine.google.com",
+    "githubusercontent.com",
+    "opengis.net",
+    "cesium.com",
+    "geoportale.regione.emilia-romagna.it",
+    "gis.ente.regione.emr.it",
+    "www502.regione.toscana.it",
+    "wms.cartografia.agenziaentrate.gov.it",
+    "agenziaentrate.gov.it",
+    "dati.emilia-romagna.it",
+    "servizigis.arpa.emr.it",
+    "servizigis.arpae.it",
+    "servizigis.regione.emilia-romagna.it"
+  ],
+  "initPaths": ["/data/3d_config"],
+  "shareUrlPrefixes": {
+    "g": {
+      "service": "gist",
+      "accessToken": ""
+    }
+  },
+  "newShareUrlPrefix": "g",
+  "shareMaxRequestSize": "1000kb"
 }
-
