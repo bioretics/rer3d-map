@@ -28,6 +28,7 @@ import "./global.scss";
 // }
 
 export default function UserInterface(props) {
+  // Print version to console
   console.log("rer3d-map v." + require("../../package.json").version);
 
   const relatedMaps = props.viewState.terria.configParameters.relatedMaps;

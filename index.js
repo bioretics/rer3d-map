@@ -23,6 +23,8 @@ import NominatimSearchProviderViewModel from "rer3d-terriajs/lib/ViewModels/Nomi
 // import GazetteerSearchProviderViewModel from 'terriajs/lib/ViewModels/GazetteerSearchProviderViewModel.js';
 // import GnafSearchProviderViewModel from 'terriajs/lib/ViewModels/GnafSearchProviderViewModel.js';
 // import defined from 'terriajs-cesium/Source/Core/defined';
+import RerSearchProviderViewModel from "terriajs/lib/Models/SearchProviders/RerSearchProvider";
+import NominatimSearchProviderViewModel from "terriajs/lib/Models/SearchProviders/NominatimSearchProvider";
 import render from "./lib/Views/render";
 import registerCatalogMembers from "terriajs/lib/Models/Catalog/registerCatalogMembers";
 import defined from "terriajs-cesium/Source/Core/defined";

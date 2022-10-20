@@ -1,30 +1,43 @@
 {
-  "port": 3001,
-  "allowProxyFor": [
-    "arcgis.com",
-    "argo.jcommops.org",
-    "geoserver.aurin.org.au",
-    "mapsengine.google.com",
-    "githubusercontent.com",
-    "opengis.net",
-    "cesium.com",
-    "geoportale.regione.emilia-romagna.it",
-    "gis.ente.regione.emr.it",
-    "www502.regione.toscana.it",
-    "wms.cartografia.agenziaentrate.gov.it",
-    "agenziaentrate.gov.it",
-    "dati.emilia-romagna.it",
-    "servizigis.arpa.emr.it",
-    "servizigis.arpae.it",
-    "servizigis.regione.emilia-romagna.it"
-  ],
-  "initPaths": ["/data/3d_config"],
-  "shareUrlPrefixes": {
-    "g": {
-      "service": "gist",
-      "accessToken": ""
-    }
-  },
-  "newShareUrlPrefix": "g",
-  "shareMaxRequestSize": "1000kb"
+    "port": 3001,
+    "allowProxyFor": [
+        "arcgis.com",
+        "argo.jcommops.org",
+        "services.arcgisonline.com",
+        "gis.ente.regione.emr.it",
+        "www502.regione.toscana.it",
+        "wms.cartografia.marche.it",
+        "wms.cartografia.agenziaentrate.gov.it",
+        "dati.emilia-romagna.it",
+        "servizigis.arpae.it",
+        "ags.unionevallesavio.it",
+        "geoportale.regione.emilia-romagna.it",
+        "mappegis.regione.emilia-romagna.it",
+        "vm449srv.ente.regione.emr.it:6443",
+        "vm448srv.ente.regione.emr.it",
+        "vm437srv.ente.regione.emr.it",
+        "vm353srv.ente.regione.emr.it:9474",
+        "vm82srv.ente.regione.emr.it:9474",
+        "servizigistest.regione.emilia-romagna.it",
+        "servizigis.regione.emilia-romagna.it",
+        "pcn.minambiente.it",
+        "geomap.reteunitaria.piemonte.it",
+        "drive.google.com",
+        "viewer.globalland.vgt.vito.be",
+        "image.discomap.eea.europa.eu",
+        "isprambiente.it",
+        "labgis.gm.ingv.it",
+        "idt2-geoserver.regione.veneto.it",
+        "webgis.regione.sardegna.it",
+        "opengis.csi.it",
+        "geonext.comune.modena.it"
+    ],
+    "shareUrlPrefixes": {
+        "g": {
+            "service": "gist",
+            "accessToken": "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"
+        }
+    },
+    "newShareUrlPrefix": "g",
+    "shareMaxRequestSize": "1000kb"
 }

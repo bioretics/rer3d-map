@@ -19,6 +19,7 @@
       "text": "Disclaimer: questa mappa non può essere usata per la navigazione o calcoli di elevata precisione. @Regione Emilia-Romagna",
       "url": ""
     },
+
     // Text that will be added to any pages printed from your site.
     "printDisclaimer": {
       "text": "@Regione Emilia-Romagna",
@@ -91,6 +92,12 @@
       "fallbackLanguage": "en"
     },
     "helpContent": [
+      {
+        "title": "About",
+        "itemName": "gettingstarted_22",
+        "paneMode": "videoAndContent",
+        "markdownText": "**rer3d-map** è il visualizzatore cartografico 3D ufficiale per la consultazione e visualizzazione sul web di dati GIS della Regione Emilia-Romagna. [Clicca qui per maggiori informazioni](about.html)."
+      },
       {
         "title": "translate#gettingstarted.title",
         "itemName": "gettingstarted",
