@@ -18,6 +18,8 @@ import updateApplicationOnHashChange from "terriajs/lib/ViewModels/updateApplica
 import updateApplicationOnMessageFromParentWindow from "terriajs/lib/ViewModels/updateApplicationOnMessageFromParentWindow";
 import ViewState from "terriajs/lib/ReactViewModels/ViewState";
 import BingMapsSearchProviderViewModel from "terriajs/lib/Models/SearchProviders/BingMapsSearchProvider";
+import RerSearchProviderViewModel from "rer3d-terriajs/lib/ViewModels/RerSearchProviderViewModel.js";
+import NominatimSearchProviderViewModel from "rer3d-terriajs/lib/ViewModels/NominatimSearchProviderViewModel";
 // import GazetteerSearchProviderViewModel from 'terriajs/lib/ViewModels/GazetteerSearchProviderViewModel.js';
 // import GnafSearchProviderViewModel from 'terriajs/lib/ViewModels/GnafSearchProviderViewModel.js';
 // import defined from 'terriajs-cesium/Source/Core/defined';
@@ -90,7 +92,9 @@ module.exports = terria
 
     try {
       viewState.searchState.locationSearchProviders = [
-        new RerSearchProviderViewModel({ terria: terria }),
+        new RerSearchProviderViewModel({
+          terria: terria
+        }),
         new NominatimSearchProviderViewModel({
           terria: terria,
           countryCodes: "it"
