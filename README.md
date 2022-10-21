@@ -1,8 +1,8 @@
-RER3D-MAP
-======
+# RER3D-MAP
+
 ![Regione Emilia-Romagna logo](wwwroot/images/320px-Logo_orizzontale_Regione_Emilia-Romagna.jpg "Regione Emilia-Romagna logo")  
 ![Bioretics logo](bioretics_logo.jpg "Bioretics logo")  
-![Terria logo](terria-logo.png "Terria logo")  
+![Terria logo](terria-logo.png "Terria logo")
 
 The **rer3d-map** is a website for map-based access to italian [Emilia-Romagna region](http://www.regione.emilia-romagna.it) spatial data from local government agencies.
 Customizations and improvements has been developed and customized by [Bioretics srl](http://www.bioretics.com).

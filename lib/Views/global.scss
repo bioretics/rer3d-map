@@ -1,5 +1,5 @@
 @import "~terriajs-variables";
-@import "~rer3d-terriajs/lib/Sass/global/global";
+@import "~terriajs/lib/Sass/global/global";
 
 body {
   margin: 0;
@@ -16,7 +16,7 @@ body {
 
   // To customise the look of your Terria Map, uncomment this section and make changes to your heart's content
   // You will also want to uncomment and change values in lib/Styles/variables.scss
-
+  /*
   // Import any custom fonts here
   //@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700);
   @import url(https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700);
@@ -165,4 +165,5 @@ body {
   .tjs-tabs__btn--tab:hover {
     color: $color-secondary;
   }
+  */
 }

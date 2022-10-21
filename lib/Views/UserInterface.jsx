@@ -2,11 +2,11 @@ import PropTypes from "prop-types";
 import React from "react";
 import RelatedMaps from "terriajs/lib/ReactViews/RelatedMaps/RelatedMaps";
 import {
-  //Nav,
+  Nav,
   ExperimentalMenu,
   MenuLeft
 } from "terriajs/lib/ReactViews/StandardUserInterface/customizable/Groups";
-//import MeasureTool from "rer3d-terriajs/lib/ReactViews/Map/Navigation/MeasureTool";
+import MeasureTool from "terriajs/lib/ReactViews/Map/Navigation/Items/MeasureTool";
 import MenuItem from "terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuItem";
 import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface";
 import version from "../../version";
@@ -35,14 +35,14 @@ export default function UserInterface(props) {
 
   return (
     <StandardUserInterface {...props} version={version}>
-      /*
+      {/*
       <MenuLeft>
         <MenuItem caption="About" href="about.html" key="about-link" />
         {relatedMaps && relatedMaps.length > 0 ? (
           <RelatedMaps relatedMaps={relatedMaps} />
         ) : null}
       </MenuLeft>
-      */
+      */}
       <Nav>
         <MeasureTool
           terria={props.viewState.terria}

@@ -10,7 +10,7 @@
   },
   "name": "rer3d-map",
   "version": "2.0.0",
-  "description": ""Regione Emilia-Romagna customization of TerriaMap, a catalog-based web geospatial visualisation platform based on TerriaJS and CesiumJS.",
+  "description": "Regione Emilia-Romagna customization of TerriaMap, a catalog-based web geospatial visualisation platform based on TerriaJS and CesiumJS.",
   "license": "Apache-2.0",
   "engines": {
     "node": ">= 14.0.0"
