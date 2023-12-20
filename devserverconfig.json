@@ -7,6 +7,8 @@
     "gis.ente.regione.emr.it",
     "www502.regione.toscana.it",
     "wms.cartografia.marche.it",
+    "regione.marche.it",
+    "wmscartografia.regione.marche.it",
     "wms.cartografia.agenziaentrate.gov.it",
     "dati.emilia-romagna.it",
     "servizigis.arpae.it",
@@ -30,7 +32,11 @@
     "idt2-geoserver.regione.veneto.it",
     "webgis.regione.sardegna.it",
     "opengis.csi.it",
-    "geonext.comune.modena.it"
+    "protezionecivile.it",
+    "geonext.comune.modena.it",
+    "nationalmap.nicta.com.au",
+    "nominatim.openstreetmap.org",
+    "restart.geoland.planetek.it"
   ],
   "shareUrlPrefixes": {
     "g": {
