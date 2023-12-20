@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import RelatedMaps from "terriajs/lib/ReactViews/RelatedMaps/RelatedMaps";
+//import RelatedMaps from "terriajs/lib/ReactViews/RelatedMaps/RelatedMaps";
 import {
   Nav,
   ExperimentalMenu,
@@ -31,18 +31,29 @@ export default function UserInterface(props) {
   // Print version to console
   console.log("rer3d-map v." + require("../../package.json").version);
 
-  const relatedMaps = props.viewState.terria.configParameters.relatedMaps;
+  //const relatedMaps = props.viewState.terria.configParameters.relatedMaps;
 
   return (
     <StandardUserInterface {...props} version={version}>
-      {/*
       <MenuLeft>
-        <MenuItem caption="About" href="about.html" key="about-link" />
+        {props.viewState.terria.configParameters.userProfileLoginServiceUrl && (
+          <MenuItem
+            target="_self"
+            key="login-link"
+            caption={!props.viewState.terria.userProfile ? "Login" : "Logout"}
+            href={
+              !props.viewState.terria.userProfile
+                ? props.viewState.terria.configParameters
+                    .userProfileLoginServiceUrl + document.baseURI
+                : document.baseURI
+            }
+          />
+        )}
+        {/*<MenuItem caption="About" href="about.html" key="about-link" />
         {relatedMaps && relatedMaps.length > 0 ? (
           <RelatedMaps relatedMaps={relatedMaps} />
-        ) : null}
+        ) : null}*/}
       </MenuLeft>
-      */}
       <Nav>
         <MeasureTool
           terria={props.viewState.terria}
