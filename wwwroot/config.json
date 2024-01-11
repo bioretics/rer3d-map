@@ -53,13 +53,13 @@
 
     /* Text that appears at the bottom of the map */
     "disclaimer": {
-      "text": "Disclaimer: questa mappa non può essere usata per la navigazione o calcoli di elevata precisione. @Regione Emilia-Romagna",
+      "text": "Disclaimer: questa mappa non può essere usata per la navigazione o calcoli di elevata precisione. @Regione Marche",
       "url": ""
     },
 
     // Text that will be added to any pages printed from your site.
     "printDisclaimer": {
-      "text": "@Regione Emilia-Romagna",
+      "text": "@Regione Marche",
       "url": "#"
     },
 
@@ -92,7 +92,7 @@
       "<a target=\"_blank\" href=\"https://www.regione.marche.it\"><img src=\"images/regione_marche_logo_bianco.png\" alt=\"Regione Marche\"  height=\"52\" title=\"Regione Marche\" /></a>"
     ],
     // Shown when things go wrong.
-    "supportEmail": "infogeoportale@regione.emilia-romagna.it",
+    "supportEmail": "mirco.sturari@regione.marche.it",
     // You probably shouldn't change this.
     "proj4ServiceBaseUrl": "proj4def/",
     // Or this
@@ -132,7 +132,7 @@
         "title": "About",
         "itemName": "gettingstarted_22",
         "paneMode": "videoAndContent",
-        "markdownText": "**rer3d-map** è il visualizzatore cartografico 3D ufficiale per la consultazione e visualizzazione sul web di dati GIS della Regione Emilia-Romagna. [Clicca qui per maggiori informazioni](about.html)."
+        "markdownText": "**rer3d-map** è il visualizzatore cartografico 3D ufficiale per la consultazione e visualizzazione sul web di dati GIS della Regione Marche. [Clicca qui per maggiori informazioni](about.html)."
       },
       {
         "title": "translate#gettingstarted.title",
