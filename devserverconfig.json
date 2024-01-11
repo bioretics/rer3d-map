@@ -36,7 +36,8 @@
     "geonext.comune.modena.it",
     "nationalmap.nicta.com.au",
     "nominatim.openstreetmap.org",
-    "restart.geoland.planetek.it"
+    "restart.geoland.planetek.it",
+    "image.discomap.eea.europa.eu"
   ],
   "shareUrlPrefixes": {
     "g": {

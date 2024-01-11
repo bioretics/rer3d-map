@@ -11,6 +11,20 @@
     "googleAnalyticsKey": null,
     "googleAnalyticsOptions": null,
 
+    "customSearchProviderUrl": "eGeoCoding",
+    /*"whereAmIParams": {
+      "urlFast": "https://servizigis.regione.emilia-romagna.it/geoags/rest/services/portale/where/MapServer/0/query?geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIndexIntersects&outFields=OBJECTID,LOCALIZZAZ,DETTAGLIO&returnGeometry=false&f=pjson",
+      "urlSlowButAccurate": "https://servizigis.regione.emilia-romagna.it/geoags/rest/services/portale/where/MapServer/0/query?geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID,LOCALIZZAZ,DETTAGLIO&returnGeometry=false&f=pjson",
+      "fieldId": "OBJECTID",
+      "fieldResult": "LOCALIZZAZ",
+      "fieldResultDetailed": "DETTAGLIO"
+    },*/
+    //"coordsConverterUrl": "http://servizigis.regione.emilia-romagna.it/arcgis/rest/services/Utilities/Geometry/GeometryServer/project",
+    "useMyLocationFromDesktop": true,
+    "mouseAsInfoDefaultValue": false,
+    "useElevationMeanSeaLevel": false,
+
+
     // Log ConsoleAnalytics events to console
     // logToConsole: true,
 
