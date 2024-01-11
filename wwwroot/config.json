@@ -20,10 +20,33 @@
       "fieldResultDetailed": "DETTAGLIO"
     },*/
     //"coordsConverterUrl": "http://servizigis.regione.emilia-romagna.it/arcgis/rest/services/Utilities/Geometry/GeometryServer/project",
-    "useMyLocationFromDesktop": true,
-    "mouseAsInfoDefaultValue": false,
+    "useMyLocationFromDesktop": false,
+    "mouseAsInfoDefaultValue": true,
     "useElevationMeanSeaLevel": false,
 
+    "userProfileLoginServiceUrl": "https://gis.regione.marche.it/infrastrutture/Account/Login?ReturnUrl=",
+    "userProfilesDefinition": {
+      "undefined": {
+        "isAdmin": false,
+        "allowed": []
+      },
+      "Cittadino": {
+        "isAdmin": false,
+        "allowed": []
+      },
+      "Consultatore": {
+        "isAdmin": false,
+        "allowed": ["QueryData"]
+      },
+      "Utente": {
+        "isAdmin": false,
+        "allowed": ["QueryData"]
+      },
+      "Amministratore": {
+        "isAdmin": true,
+        "allowed": ["DownloadQueryData"]
+      }
+    },
 
     // Log ConsoleAnalytics events to console
     // logToConsole: true,
@@ -62,12 +85,11 @@
 
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
-      "<a target=\"_blank\" href=\"https://www.regione.emilia-romagna.it\"><img src=\"https://mappe.regione.emilia-romagna.it/init/logo/LogoRER52x52.png\" alt=\"Regione //Emilia-Romagna\"  height=\"52\" title=\"Regione Emilia-Romagna\" /></a>",
-      "<a target=\"_blank\" href=\"https://mappe.regione.emilia-romagna.it\"><img src=\"https://mappe.regione.emilia-romagna.it/init/logo/LogoGeoportale218x52.png\" height=\"52\"  alt=\"Geportale 3D - Emilia-Romagna\" title=\"Geoportale 3D - Regione Emilia-Romagna\" /></a>",
-      "<a target=\"_blank\" href=\"https://digitale.regione.emilia-romagna.it\"><img src=\"https://mappe.regione.emilia-romagna.it/init/logo/LogoDV60x52.png\" alt=\"Data Valley Emilia-Romagna\" height=\"52\" title=\"Data valley Bene Comune - Regione Emilia-Romagna\" /></a>"
+      "<a target=\"_blank\" href=\"https://www.regione.marche.it\"><img src=\"images/regione_marche_logo_bianco.png\" alt=\"Regione //Marche\"  height=\"52\" title=\"Regione Marche\" /></a>",
+      "<a target=\"_blank\" href=\"https://www.regione.marche.it\"><img src=\"images/logo-infra.png\" alt=\"Regione //Marche\"  height=\"32\" title=\"Regione Marche\" /></a>"
     ],
     "brandBarSmallElements": [
-      "<a target=\"_blank\" href=\"https://www.regione.emilia-romagna.it\"><img src=\"https://mappe.regione.emilia-romagna.it/init/logo/LogoRER52x52.png\" alt=\"Regione Emilia-Romagna\"  height=\"52\" title=\"Regione Emilia-Romagna\" /></a>"
+      "<a target=\"_blank\" href=\"https://www.regione.marche.it\"><img src=\"images/regione_marche_logo_bianco.png\" alt=\"Regione Marche\"  height=\"52\" title=\"Regione Marche\" /></a>"
     ],
     // Shown when things go wrong.
     "supportEmail": "infogeoportale@regione.emilia-romagna.it",
