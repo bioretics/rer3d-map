@@ -88,9 +88,6 @@ module.exports = terria
 
     try {
       viewState.searchState.locationSearchProviders = [
-        new RerSearchProviderViewModel({
-          terria: terria
-        }),
         new NominatimSearchProviderViewModel({
           terria: terria,
           countryCodes: "it"
@@ -102,6 +99,14 @@ module.exports = terria
         // new GazetteerSearchProviderViewModel({terria}),
         // new GnafSearchProviderViewModel({terria})
       ];
+
+      if (terria.configParameters.customSearchProviderUrl) {
+        viewState.searchState.locationSearchProviders.unshift(
+          new RerSearchProviderViewModel({
+            terria: terria
+          })
+        );
+      }
 
       // Automatically update Terria (load new catalogs, etc.) when the hash part of the URL changes.
       updateApplicationOnHashChange(terria, window);
