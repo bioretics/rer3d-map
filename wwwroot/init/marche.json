@@ -1,733 +1,785 @@
 {
-    "homeCamera": {
-        "west": 12.0,
-        "south": 42.70,
-        "east": 14.0,
-        "north": 43.90
-    },
-    "workbench": [],
-    "settings": {
-        "depthTestAgainstTerrainEnabled": false
-    },
-    "catalog": [
+  "homeCamera": {
+    "west": 12.0,
+    "south": 42.7,
+    "east": 14.0,
+    "north": 43.9
+  },
+  "workbench": ["fd532s"],
+  "settings": {
+    "depthTestAgainstTerrainEnabled": false
+  },
+  "catalog": [
+    {
+      "id": "yQevWF",
+      "type": "group",
+      "name": "Catalogo Regione Marche",
+      "members": [
         {
-            "id": "yQevWF",
-            "type": "group",
-            "name": "Catalogo Regione Marche",
-            "members": [
-                {
-                    "type": "group",
-                    "name": "Mappe base",
-                    "members": [
-                        {
-                            "type": "wms",
-                            "name": "CTR 4Colori",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "CTR_4Colori"
-                        },
-                        {
-                            "type": "wms",
-                            "name": "CTR BN",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "CTR_BN"
-                        },
-                        {
-                            "type": "wms",
-                            "name": "CTR Grigio",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "CTR_Grigio"
-                        },
-                        {
-                            "type": "wms",
-                            "name": "Ortofoto 1978",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "Ortofoto78"
-                        },
-                        {
-                            "type": "wms",
-                            "name": "Ortofoto 1988",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "Ortofoto88"
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "name": "Limiti amministrativi",
-                    "members": [
-                        {
-                            "type": "wms",
-                            "name": "Limiti amministrativi",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "LimitiAmministrativi"
-                        },
-                        {
-                            "type": "wms",
-                            "name": "Regione",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "LimitiRegionali"
-                        },
-                        {
-                            "type": "wms",
-                            "name": "Province",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "LimitiProvinciali"
-                        },
-                        {
-                            "type": "wms",
-                            "name": "Comuni",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "LimitiComunali"
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "name": "Strade",
-                    "members": [
-                        {
-                            "type": "wms",
-                            "name": "Autostrada",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "AutostradaA14"
-                        },
-                        {
-                            "type": "wms",
-                            "name": "Strade Anas",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "StradeAnas"
-                        },
-                        {
-                            "type": "wms",
-                            "name": "Strade Regionali",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "StradeRegionali"
-                        },
-                        {
-                            "type": "wms",
-                            "name": "Strade Provinciali",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "StradeProvinciali"
-                        },
-                        {
-                            "type": "wms",
-                            "name": "Strade Comunali",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "StradeComunali"
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "name": "Ferrovie",
-                    "members": [
-                        {
-                            "type": "wms",
-                            "name": "Rete ferroviaria",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "ReteFerroviaria"
-                        },
-                        {
-                            "type": "wms",
-                            "name": "Stazioni ferroviarie",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "StazioniFerroviarie"
-                        },
-                        {
-                            "type": "wms",
-                            "name": "Passaggi a livello",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "PassaggiLivello"
-                        }
-                    ]
-                },
-                {
-                    "id": "f94ll0",
-                    "name": "WMS",
-                    "type": "wms-group",
-                    "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms"
-                },
-                {
-                    "id": "fd532s",
-                    "name": "Interventi",
-                    "type": "wfs",
-                    "url": "https://wmscartografia.regione.marche.it/geoserver/geoportale.intra/wfs?&request=GetFeature&typeNames=geoportale.intra:interventi",
-                    "maxFeatures": 2000,
-                    "disableExport": true,
-                    "featureInfoTemplate": {
-                        "name": "{{nome_infrastruttura}}",
-                        "template": "<table><tbody><tr><td>Id</td><td>{{id}}</td></tr><tr><td>Codice</td><td>{{codice_intervento}}</td></tr><tr><td>Nome</td><td>{{nome_intervento}}</td></tr><tr><td>Descrizione</td><td>{{descrizione_intervento}}</td></tr><tr><td>Note</td><td>{{note_intervento}}</td></tr><tr><td>Tipo intervento</td><td>{{tipo_intervento}}</td></tr><tr><td>Nome infrastruttura</td><td>{{nome_infrastruttura}}</td></tr><tr><td>Tipo infrastruttura</td><td>{{tipo_infrastruttura}}</td></tr><tr><td>Province</td><td>{{localizzazione_province}}</td></tr><tr><td>Comuni</td><td>{{localizzazione_comuni}}</td></tr><tr><td>Descrizione posizione</td><td>{{centroide_descrizione}}</td></tr><tr><td>Responsabile procedimento</td><td>{{responsabile_procedimento}}</td></tr><tr><td>Riferimento normativo</td><td>{{riferimento_normativo}}</td></tr><tr><td>Tipo finanziamento</td><td>{{tipo_finanziamento}}</td></tr><tr><td>Fonte finanziamento</td><td>{{fonte_finanziamento}}</td></tr><tr><td>Soggetto attuatore</td><td>{{soggetto_attuatore}}</td></tr><tr><td>Tipo soggetto attuatore</td><td>{{tipo_soggetto_attuatore}}</td></tr><tr><td>Avanzamento %</td><td>{{percentuale_avanzamento}}</td></tr><tr><td>Tipo stato avanzamento</td><td>{{tipo_stato_avanzamento}}</td></tr><tr><td>Descrizione stato avanzamento</td><td>{{descrizione_tipo_stato_avanzamento}}</td></tr><tr><td>Fase cronoprogramma</td><td>{{fase_cronoprogramma}}</td></tr><tr><td>Note cronoprogramma</td><td>{{note_cronoprogramma}}</td></tr><tr><td>Programma non rispettato</td><td>{{programma_non_rispettato}}</td></tr><tr><td>Foto</td><td>{{media_immagine}}</td></tr><tr><td>Pdf</td><td>{{media_scheda_pdf}}</td></tr><tr><td>Link</td><td>{{media_url}}</td></tr><tr><td>Costo complessivo previsto (€)</td><td>{{costo_complessivo_previsto}}</td></tr><tr><td>Finanziamento regionale previsto (€)</td><td>{{finanziamento_regione_previsto}}</td></tr><tr><td>Costo complessivo effettivo (€)</td><td>{{costo_complessivo_effettivo}}</td></tr><tr><td>Finanziamento regionale effettivo (€)</td><td>{{finanziamento_regione_effettivo}}</td></tr><tr><td>Contributo erogato (€)</td><td>{{contributo_erogato}}</td></tr><tr><td>Costo realizzato (€)</td><td>{{costo_realizzato}}</td></tr><tr><td>Codice CLP</td><td>{{codice_clp}}</td></tr><tr><td>Codice CUP</td><td>{{codice_cup}}</td></tr><tr><td>Data riferimento</td><td>{{data_riferimento}}</td></tr><tr><td>Note</td><td>{{note}}</td></tr></table></tbody>",
-                        "formats": {
-                            "costo_complessivo_previsto": {
-                                "type": "number",
-                                "useGrouping": true
-                            },
-                            "costo_complessivo_effettivo": {
-                                "type": "number",
-                                "useGrouping": true
-                            },
-                            "finanziamento_regione_previsto": {
-                                "type": "number",
-                                "useGrouping": true
-                            },
-                            "finanziamento_regione_effettivo": {
-                                "type": "number",
-                                "useGrouping": true
-                            },
-                            "costo_realizzato": {
-                                "type": "number",
-                                "useGrouping": true
-                            },
-                            "contributo_erogato": {
-                                "type": "number",
-                                "useGrouping": true
-                            },
-                            "percentuale_avanzamento": {
-                                "type": "number"
-                            },
-                            "dataora_modifica": {
-                                "type": "dateTime",
-                                "format": "dd-mm-yyyy HH:MM:ss"
-                            },
-                            "data_riferimento": {
-                                "type": "dateTime",
-                                "format": "dd-mm-yyyy HH:MM:ss"
-                            }
-                        },
-                        "perProfileInfoFields": {
-                            "undefined": [
-                                "nome_intervento",
-                                "nome_infrastruttura",
-                                "costo_complessivo_previsto",
-                                "costo_complessivo_effettivo",
-                                "tipo_infrastruttura",
-                                "tipo_stato_avanzamento",
-                                "localizzazione_comuni",
-                                "localizzazione_province"
-                            ],
-                            "Cittadino": [
-                                "nome_intervento",
-                                "nome_infrastruttura",
-                                "costo_complessivo_previsto",
-                                "costo_complessivo_effettivo",
-                                "tipo_infrastruttura",
-                                "tipo_stato_avanzamento",
-                                "localizzazione_comuni",
-                                "localizzazione_province"
-                            ],
-                            "Consultatore": [
-                                "nome_intervento",
-                                "nome_infrastruttura",
-                                "costo_complessivo_previsto",
-                                "costo_complessivo_effettivo",
-                                "tipo_infrastruttura",
-                                "tipo_stato_avanzamento",
-                                "localizzazione_comuni",
-                                "localizzazione_province"
-                            ],
-                            "Utente": [
-                                "nome_intervento",
-                                "nome_infrastruttura",
-                                "costo_complessivo_previsto",
-                                "costo_complessivo_effettivo",
-                                "tipo_infrastruttura",
-                                "tipo_stato_avanzamento",
-                                "localizzazione_comuni",
-                                "localizzazione_province"
-                            ]
-                        },
-                        "webServiceUrlProfileCheck": "https://gis.regione.marche.it/infrastrutture/Account/Check"
-                    },
-                    "nameOfCatalogItemSearchField": "nome_intervento",
-                    "clusterize": true,
-                    "queryableProperties": [
-                        {
-                            "propertyName": "tipo_infrastruttura",
-                            "propertyLabel": "Tipo",
-                            "propertyType": "enum",
-                            "canAggregate": true
-                        },
-                        {
-                            "propertyName": "data_riferimento",
-                            "propertyLabel": "Data",
-                            "propertyType": "date"
-                        },
-                        {
-                            "propertyName": "localizzazione_province",
-                            "propertyLabel": "Provincia",
-                            "propertyType": "enum",
-                            "canAggregate": true,
-                            "enumMultiValue": true
-                        },
-                        {
-                            "propertyName": "localizzazione_comuni",
-                            "propertyLabel": "Comune",
-                            "propertyType": "enum",
-                            "canAggregate": true,
-                            "enumMultiValue": true
-                        },
-                        {
-                            "propertyName": "tipo_stato_avanzamento",
-                            "propertyLabel": "Avanzamento",
-                            "propertyType": "enum",
-                            "canAggregate": true
-                        },
-                        {
-                            "propertyName": "costo_complessivo_previsto",
-                            "propertyLabel": "Costo complessivo previsto",
-                            "propertyType": "number",
-                            "propertyMeasureUnit": "€",
-                            "sumOnAggregation": true
-                        },
-                        {
-                            "propertyName": "costo_complessivo_effettivo",
-                            "propertyLabel": "Costo complessivo effettivo",
-                            "propertyType": "number",
-                            "propertyMeasureUnit": "€",
-                            "sumOnAggregation": true
-                        }
-                    ],
-                    "legends": [
-                        {
-                            "title": "Legenda",
-                            "items": [
-                                {
-                                    "title": "Programmazione",
-                                    "color": "orange"
-                                },
-                                {
-                                    "title": "Progettazione",
-                                    "color": "yellow"
-                                },
-                                {
-                                    "title": "Procedura di gara",
-                                    "color": "steelblue"
-                                },
-                                {
-                                    "title": "Lavori in corso",
-                                    "color": "lime"
-                                },
-                                {
-                                    "title": "Fine lavori",
-                                    "color": "green"
-                                },
-                                {
-                                    "title": "Bike park",
-                                    "marker": "bicycle-share",
-                                    "color": "white"
-                                },
-                                {
-                                    "title": "Caselli autostradali",
-                                    "marker": "highway",
-                                    "color": "white"
-                                },
-                                {
-                                    "title": "Ciclovie",
-                                    "marker": "bicycle",
-                                    "color": "white"
-                                },
-                                {
-                                    "title": "Fermate TPL",
-                                    "marker": "bus",
-                                    "color": "white"
-                                },
-                                {
-                                    "title": "Infrastrutture ferroviarie",
-                                    "marker": "rail",
-                                    "color": "white"
-                                },
-                                {
-                                    "title": "Infrastrutture scolastiche",
-                                    "marker": "college",
-                                    "color": "white"
-                                },
-                                {
-                                    "title": "Ospedali (I liv, II liv, comunità)",
-                                    "marker": "hospital",
-                                    "color": "white"
-                                },
-                                {
-                                    "title": "Percorsi verticali",
-                                    "marker": "elevator",
-                                    "color": "white"
-                                },
-                                {
-                                    "title": "Ponte / Viadotto",
-                                    "marker": "bridge",
-                                    "color": "white"
-                                },
-                                {
-                                    "title": "Porti",
-                                    "marker": "harbor",
-                                    "color": "white"
-                                },
-                                {
-                                    "title": "Strada",
-                                    "marker": "car",
-                                    "color": "white"
-                                },
-                                {
-                                    "title": "Altri edifici pubblici",
-                                    "marker": "building",
-                                    "color": "white"
-                                },
-                                {
-                                    "title": "Altri interventi di mobilità sostenibile",
-                                    "marker": "marker-stroked",
-                                    "color": "white"
-                                },
-                                {
-                                    "title": "Altri spazi pubblici",
-                                    "marker": "garden",
-                                    "color": "white"
-                                },
-                                {
-                                    "title": "Altri interventi",
-                                    "marker": "marker",
-                                    "color": "white"
-                                }
-                            ]
-                        }
-                    ],
-                    "style": {
-                        "marker-size": "medium",
-                        "marker-color": "white",
-                        "marker-symbol": "marker"
-                    },
-                    "perPropertyStyles": [
-                        {
-                            "properties": {
-                                "tipo_stato_avanzamento": "Programmazione"
-                            },
-                            "style": {
-                                "marker-color": "orange"
-                            },
-                            "caseSensitive": true
-                        },
-                        {
-                            "properties": {
-                                "tipo_stato_avanzamento": "Progettazione"
-                            },
-                            "style": {
-                                "marker-color": "yellow"
-                            },
-                            "caseSensitive": true
-                        },
-                        {
-                            "properties": {
-                                "tipo_stato_avanzamento": "Procedura di gara"
-                            },
-                            "style": {
-                                "marker-color": "steelblue"
-                            },
-                            "caseSensitive": true
-                        },
-                        {
-                            "properties": {
-                                "tipo_stato_avanzamento": "Lavori in corso"
-                            },
-                            "style": {
-                                "marker-color": "lime"
-                            },
-                            "caseSensitive": true
-                        },
-                        {
-                            "properties": {
-                                "tipo_stato_avanzamento": "Fine lavori"
-                            },
-                            "style": {
-                                "marker-color": "green"
-                            },
-                            "caseSensitive": true
-                        },
-                        {
-                            "properties": {
-                                "tipo_infrastruttura": "Strada"
-                            },
-                            "style": {
-                                "marker-symbol": "car"
-                            },
-                            "caseSensitive": true
-                        },
-                        {
-                            "properties": {
-                                "tipo_infrastruttura": "Infrastrutture scolastiche"
-                            },
-                            "style": {
-                                "marker-symbol": "college"
-                            },
-                            "caseSensitive": true
-                        },
-                        {
-                            "properties": {
-                                "tipo_infrastruttura": "Infrastrutture ferroviarie"
-                            },
-                            "style": {
-                                "marker-symbol": "rail"
-                            },
-                            "caseSensitive": true
-                        },
-                        {
-                            "properties": {
-                                "tipo_infrastruttura": "Fermate TPL"
-                            },
-                            "style": {
-                                "marker-symbol": "bus"
-                            },
-                            "caseSensitive": true
-                        },
-                        {
-                            "properties": {
-                                "tipo_infrastruttura": "Ciclovia"
-                            },
-                            "style": {
-                                "marker-symbol": "bicycle"
-                            },
-                            "caseSensitive": true
-                        },
-                        {
-                            "properties": {
-                                "tipo_infrastruttura": "Bike park"
-                            },
-                            "style": {
-                                "marker-symbol": "bicycle-share"
-                            },
-                            "caseSensitive": true
-                        },
-                        {
-                            "properties": {
-                                "tipo_infrastruttura": "Caselli autostradali"
-                            },
-                            "style": {
-                                "marker-symbol": "highway"
-                            },
-                            "caseSensitive": true
-                        },
-                        {
-                            "properties": {
-                                "tipo_infrastruttura": "Altri edifici pubblici"
-                            },
-                            "style": {
-                                "marker-symbol": "building"
-                            },
-                            "caseSensitive": true
-                        },
-                        {
-                            "properties": {
-                                "tipo_infrastruttura": "Altri spazi pubblici"
-                            },
-                            "style": {
-                                "marker-symbol": "garden"
-                            },
-                            "caseSensitive": true
-                        },
-                        {
-                            "properties": {
-                                "tipo_infrastruttura": "Altri interventi di mobilità sostenibile"
-                            },
-                            "style": {
-                                "marker-symbol": "marker-stroked"
-                            },
-                            "caseSensitive": true
-                        },
-                        {
-                            "properties": {
-                                "tipo_infrastruttura": "Percorsi verticali"
-                            },
-                            "style": {
-                                "marker-symbol": "elevator"
-                            },
-                            "caseSensitive": true
-                        },
-                        {
-                            "properties": {
-                                "tipo_infrastruttura": "Ponte / Viadotto"
-                            },
-                            "style": {
-                                "marker-symbol": "bridge"
-                            },
-                            "caseSensitive": true
-                        },
-                        {
-                            "properties": {
-                                "tipo_infrastruttura": "Ospedali (I liv, II liv, comunità)"
-                            },
-                            "style": {
-                                "marker-symbol": "hospital"
-                            },
-                            "caseSensitive": true
-                        },
-                        {
-                            "properties": {
-                                "tipo_infrastruttura": "Porti"
-                            },
-                            "style": {
-                                "marker-symbol": "harbor"
-                            },
-                            "caseSensitive": true
-                        }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "name": "Ciclovie",
-                    "members": [
-                        {
-                            "type": "wms",
-                            "name": "Ciclovie percorsi",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "Ciclovie"
-                        },
-                        {
-                            "type": "wms",
-                            "name": "Ciclovie interventi WMS",
-                            "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                            "layers": "interventi_puntuali"
-                        },
-                        {
-                            "type": "geojson",
-                            "name": "Ciclovie interventi WFS",
-                            "url": "data/interventi.geojson",
-                            "clampToGround": true,
-                            "activeStyle": "ciao",
-                            "styles": [
-                                {
-                                    "id": "ciao",
-                                    "title": "urca",
-                                    "point": {
-                                        "null": {
-                                            "marker": "bicycle",
-                                            "pixelOffset": [
-                                                0,
-                                                -40
-                                            ],
-                                            "width": 50,
-                                            "height": 50
-                                        }
-                                    },
-                                    "color": {
-                                        "colorColumn": "tipo_stato_avanzamento",
-                                        "mapType": "enum",
-                                        "enumColors": [
-                                            {
-                                                "value": "PFTE",
-                                                "color": "cyan"
-                                            },
-                                            {
-                                                "value": "Progettazione definitiva",
-                                                "color": "yellow"
-                                            },
-                                            {
-                                                "value": "Stato",
-                                                "color": "green"
-                                            },
-                                            {
-                                                "value": "Fine Lavori",
-                                                "color": "red"
-                                            }
-                                        ]
-                                    }
-                                }
-                            ],
-                            "featureInfoTemplate": {
-                                "template": "<b>{{nome_intervento}}</b><br>Infrastruttura: {{nome_infrastruttura}}<br>Stato: {{tipo_stato_avanzamento}}"
-                            },
-                            "legends": [
-                                {
-                                    "title": "Ciclovie",
-                                    "items": [
-                                        {
-                                            "title": "Progettazione fattibilità",
-                                            "marker": "bicycle",
-                                            "color": "lime"
-                                        },
-                                        {
-                                            "title": "Progettazione definitiva",
-                                            "marker": "bicycle",
-                                            "color": "green"
-                                        },
-                                        {
-                                            "title": "Progettazione esecutiva",
-                                            "marker": "bicycle",
-                                            "color": "darkGreen"
-                                        },
-                                        {
-                                            "title": "Gara attivata/Appalto integrato",
-                                            "marker": "bicycle",
-                                            "color": "lightgoldenrodyellow"
-                                        },
-                                        {
-                                            "title": "Gara aggiudicata",
-                                            "marker": "bicycle",
-                                            "color": "yellow"
-                                        },
-                                        {
-                                            "title": "Inizio lavori",
-                                            "marker": "bicycle",
-                                            "color": "turquoise"
-                                        },
-                                        {
-                                            "title": "Fine lavori",
-                                            "marker": "bicycle",
-                                            "color": "steelblue"
-                                        },
-                                        {
-                                            "title": "Collaudo",
-                                            "marker": "bicycle",
-                                            "color": "blue"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "type": "geojson",
-                            "name": "Ponti ciclopedonali",
-                            "url": "test/ponti_ciclopedonali.json",
-                            "clampToGround": true,
-                            "style": {
-                                "marker-symbol": "bicycle",
-                                "marker-size": "medium"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "wms",
-                    "name": "Centri comunali",
-                    "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                    "layers": "CentriComunali"
-                },
-                {
-                    "type": "wms",
-                    "name": "Porti",
-                    "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                    "layers": "Porti"
-                },
-                {
-                    "type": "wms",
-                    "name": "Scuole",
-                    "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
-                    "layers": "Scuole"
-                }
-            ]
+          "type": "group",
+          "name": "Mappe base",
+          "members": [
+            {
+              "type": "wms",
+              "name": "CTR 4Colori",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "CTR_4Colori"
+            },
+            {
+              "type": "wms",
+              "name": "CTR BN",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "CTR_BN"
+            },
+            {
+              "type": "wms",
+              "name": "CTR Grigio",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "CTR_Grigio"
+            },
+            {
+              "type": "wms",
+              "name": "Ortofoto 1978",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "Ortofoto78"
+            },
+            {
+              "type": "wms",
+              "name": "Ortofoto 1988",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "Ortofoto88"
+            }
+          ]
         },
         {
-            "id": "sv6vWQ",
-            "type": "group",
-            "name": "Altri dati",
-            "members": [
+          "type": "group",
+          "name": "Limiti amministrativi",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Limiti amministrativi",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "LimitiAmministrativi"
+            },
+            {
+              "type": "wms",
+              "name": "Regione",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "LimitiRegionali"
+            },
+            {
+              "type": "wms",
+              "name": "Province",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "LimitiProvinciali"
+            },
+            {
+              "type": "wms",
+              "name": "Comuni",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "LimitiComunali"
+            },
+            {
+              "type": "wms",
+              "name": "Centri comunali",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "CentriComunali"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Catasto",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Cartografia",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "CatastoCartografia"
+            },
+            {
+              "type": "wms",
+              "name": "Acque",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "CatastoAcque"
+            },
+            {
+              "type": "wms",
+              "name": "Fabbricati",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "CatastoFabbricati"
+            },
+            {
+              "type": "wms",
+              "name": "Fogli",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "CatastoFogli"
+            },
+            {
+              "type": "wms",
+              "name": "Particelle",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "CatastoParticelle"
+            },
+            {
+              "type": "wms",
+              "name": "Province",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "CatastoProvince"
+            },
+            {
+              "type": "wms",
+              "name": "Simboli",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "CatastoSimboli"
+            },
+            {
+              "type": "wms",
+              "name": "Strade",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "CatastoStrade"
+            },
+            {
+              "type": "wms",
+              "name": "Vestizioni",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "CatastoVestizioni"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Reticoli",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Reticolo RDN",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "ReticoloMarcheRDN"
+            },
+            {
+              "type": "wms",
+              "name": "Reticolo 10000 fogli",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "Reticolo10000Fogli"
+            },
+            {
+              "type": "wms",
+              "name": "Reticolo 10000 sezioni",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "Reticolo10000Sezioni"
+            },
+            {
+              "type": "wms",
+              "name": "Reticolo RDN 1000m",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "ReticoloMarcheRDN1000m"
+            },
+            {
+              "type": "wms",
+              "name": "Reticolo RDN 100m",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "ReticoloMarcheRDN100m"
+            },
+            {
+              "type": "wms",
+              "name": "Reticolo RDN 10m",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "ReticoloMarcheRDN10m"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Ferrovie",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Rete ferroviaria",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "ReteFerroviaria"
+            },
+            {
+              "type": "wms",
+              "name": "Stazioni ferroviarie",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "StazioniFerroviarie"
+            },
+            {
+              "type": "wms",
+              "name": "Passaggi a livello",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "PassaggiLivello"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Strade",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Autostrada",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "AutostradaA14"
+            },
+            {
+              "type": "wms",
+              "name": "Strade Anas",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "StradeAnas"
+            },
+            {
+              "type": "wms",
+              "name": "Strade Regionali",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "StradeRegionali"
+            },
+            {
+              "type": "wms",
+              "name": "Strade Provinciali",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "StradeProvinciali"
+            },
+            {
+              "type": "wms",
+              "name": "Strade Comunali",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "StradeComunali"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Ciclovie 2032",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Ciclovie",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "Ciclovie"
+            }
+          ]
+        },
+        {
+          "id": "fd532s",
+          "name": "Interventi",
+          "type": "wfs",
+          "url": "https://wmscartografia.regione.marche.it/geoserver/geoportale.intra/wfs?&request=GetFeature&typeNames=geoportale.intra:interventi",
+          "maxFeatures": 2000,
+          "disableExport": true,
+          "featureInfoTemplate": {
+            "name": "{{nome_infrastruttura}}",
+            //"template": "<table><tbody><tr><td>Id</td><td>{{id}}</td></tr><tr><td>Codice</td><td>{{codice_intervento}}</td></tr><tr><td>{{#terria.partialByName}}nome_intervento{{/terria.partialByName}}</td><td>{{{nome_intervento}}}</td></tr><tr><td>Descrizione</td><td>{{descrizione_intervento}}</td></tr><tr><td>Note</td><td>{{note_intervento}}</td></tr><tr><td>Tipo intervento</td><td>{{tipo_intervento}}</td></tr><tr><td>Nome infrastruttura</td><td>{{nome_infrastruttura}}</td></tr><tr><td>Tipo infrastruttura</td><td>{{tipo_infrastruttura}}</td></tr><tr><td>Province</td><td>{{localizzazione_province}}</td></tr><tr><td>Comuni</td><td>{{localizzazione_comuni}}</td></tr><tr><td>Descrizione posizione</td><td>{{centroide_descrizione}}</td></tr><tr><td>Responsabile procedimento</td><td>{{responsabile_procedimento}}</td></tr><tr><td>Riferimento normativo</td><td>{{riferimento_normativo}}</td></tr><tr><td>Tipo finanziamento</td><td>{{tipo_finanziamento}}</td></tr><tr><td>Fonte finanziamento</td><td>{{fonte_finanziamento}}</td></tr><tr><td>Soggetto attuatore</td><td>{{soggetto_attuatore}}</td></tr><tr><td>Tipo soggetto attuatore</td><td>{{tipo_soggetto_attuatore}}</td></tr><tr><td>Avanzamento %</td><td>{{percentuale_avanzamento}}</td></tr><tr><td>Tipo stato avanzamento</td><td>{{tipo_stato_avanzamento}}</td></tr><tr><td>Descrizione stato avanzamento</td><td>{{descrizione_tipo_stato_avanzamento}}</td></tr><tr><td>Fase cronoprogramma</td><td>{{fase_cronoprogramma}}</td></tr><tr><td>Note cronoprogramma</td><td>{{note_cronoprogramma}}</td></tr><tr><td>Programma non rispettato</td><td>{{programma_non_rispettato}}</td></tr><tr><td>Foto</td><td>{{media_immagine}}</td></tr><tr><td>Pdf</td><td>{{media_scheda_pdf}}</td></tr><tr><td>Link</td><td>{{media_url}}</td></tr><tr><td>Costo complessivo previsto (€)</td><td>{{costo_complessivo_previsto}}</td></tr><tr><td>Finanziamento regionale previsto (€)</td><td>{{finanziamento_regione_previsto}}</td></tr><tr><td>Costo complessivo effettivo (€)</td><td>{{costo_complessivo_effettivo}}</td></tr><tr><td>Finanziamento regionale effettivo (€)</td><td>{{finanziamento_regione_effettivo}}</td></tr><tr><td>Contributo erogato (€)</td><td>{{contributo_erogato}}</td></tr><tr><td>Costo realizzato (€)</td><td>{{costo_realizzato}}</td></tr><tr><td>Codice CLP</td><td>{{codice_clp}}</td></tr><tr><td>Codice CUP</td><td>{{codice_cup}}</td></tr><tr><td>Data riferimento</td><td>{{data_riferimento}}</td></tr><tr><td>Note</td><td>{{note}}</td></tr></table></tbody>",
+            //"template": "<table><tbody><tr><td>{{#terria.partialByName}}id{{/terria.partialByName}}</td><td>{{id}}</td></tr><tr><td>{{#terria.partialByName}}codice{{/terria.partialByName}}</td><td>{{codice_intervento}}</td></tr><tr><td>{{#terria.partialByName}}nome_intervento{{/terria.partialByName}}</td><td>{{{nome_intervento}}}</td></tr><tr><td>{{#terria.partialByName}}descrizione_intervento{{/terria.partialByName}}</td><td>{{descrizione_intervento}}</td></tr><tr><td>{{#terria.partialByName}}note_intervento{{/terria.partialByName}}</td><td>{{note_intervento}}</td></tr><tr><td>{{#terria.partialByName}}tipo_intervento{{/terria.partialByName}}</td><td>{{tipo_intervento}}</td></tr><tr><td>{{#terria.partialByName}}nome_infrastruttura{{/terria.partialByName}}</td><td>{{nome_infrastruttura}}</td></tr><tr><td>{{#terria.partialByName}}tipo_infrastruttura{{/terria.partialByName}}</td><td>{{tipo_infrastruttura}}</td></tr><tr><td>{{#terria.partialByName}}localizzazione_province{{/terria.partialByName}}</td><td>{{localizzazione_province}}</td></tr><tr><td>{{#terria.partialByName}}localizzazione_comuni{{/terria.partialByName}}</td><td>{{localizzazione_comuni}}</td></tr><tr><td>{{#terria.partialByName}}centroide_descrizione{{/terria.partialByName}}</td><td>{{centroide_descrizione}}</td></tr><tr><td>{{#terria.partialByName}}responsabile_procedimento{{/terria.partialByName}}</td><td>{{responsabile_procedimento}}</td></tr><tr><td>{{#terria.partialByName}}riferimento_normativo{{/terria.partialByName}}</td><td>{{riferimento_normativo}}</td></tr><tr><td>{{#terria.partialByName}}tipo_finanziamento{{/terria.partialByName}}</td><td>{{tipo_finanziamento}}</td></tr><tr><td>{{#terria.partialByName}}fonte_finanziamento{{/terria.partialByName}}</td><td>{{fonte_finanziamento}}</td></tr><tr><td>{{#terria.partialByName}}soggetto_attuatore{{/terria.partialByName}}</td><td>{{soggetto_attuatore}}</td></tr><tr><td>{{#terria.partialByName}}tipo_soggetto_attuatore{{/terria.partialByName}}</td><td>{{tipo_soggetto_attuatore}}</td></tr><tr><td>{{#terria.partialByName}}percentuale_avanzamento{{/terria.partialByName}}</td><td>{{percentuale_avanzamento}}</td></tr><tr><td>{{#terria.partialByName}}tipo_stato_avanzamento{{/terria.partialByName}}</td><td>{{tipo_stato_avanzamento}}</td></tr><tr><td>{{#terria.partialByName}}descrizione_tipo_stato_avanzamento{{/terria.partialByName}}</td><td>{{descrizione_tipo_stato_avanzamento}}</td></tr><tr><td>{{#terria.partialByName}}fase_cronoprogramma{{/terria.partialByName}}</td><td>{{fase_cronoprogramma}}</td></tr><tr><td>{{#terria.partialByName}}note_cronoprogramma{{/terria.partialByName}}</td><td>{{note_cronoprogramma}}</td></tr><tr><td>{{#terria.partialByName}}programma_non_rispettato{{/terria.partialByName}}</td><td>{{programma_non_rispettato}}</td></tr><tr><td>{{#terria.partialByName}}media_immagine{{/terria.partialByName}}</td><td>{{media_immagine}}</td></tr><tr><td>{{#terria.partialByName}}media_scheda_pdf{{/terria.partialByName}}</td><td>{{media_scheda_pdf}}</td></tr><tr><td>{{#terria.partialByName}}media_url{{/terria.partialByName}}</td><td>{{media_url}}</td></tr><tr><td>{{#terria.partialByName}}costo_complessivo_previsto{{/terria.partialByName}}</td><td>{{costo_complessivo_previsto}}</td></tr><tr><td>{{#terria.partialByName}}finanziamento_regione_previsto{{/terria.partialByName}}</td><td>{{finanziamento_regione_previsto}}</td></tr><tr><td>{{#terria.partialByName}}costo_complessivo_effettivo{{/terria.partialByName}}</td><td>{{costo_complessivo_effettivo}}</td></tr><tr><td>{{#terria.partialByName}}finanziamento_regione_effettivo{{/terria.partialByName}}</td><td>{{finanziamento_regione_effettivo}}</td></tr><tr><td>{{#terria.partialByName}}contributo_erogato{{/terria.partialByName}}</td><td>{{contributo_erogato}}</td></tr><tr><td>{{#terria.partialByName}}costo_realizzato{{/terria.partialByName}}</td><td>{{costo_realizzato}}</td></tr><tr><td>{{#terria.partialByName}}codice_clp{{/terria.partialByName}}</td><td>{{codice_clp}}</td></tr><tr><td>{{#terria.partialByName}}codice_cup{{/terria.partialByName}}</td><td>{{codice_cup}}</td></tr><tr><td>{{#terria.partialByName}}data_riferimento{{/terria.partialByName}}</td><td>{{data_riferimento}}</td></tr><tr><td>{{#terria.partialByName}}note{{/terria.partialByName}}</td><td>{{note}}</td></tr><tr><td>{{#terria.partialByName}}tipo_piano{{/terria.partialByName}}</td><td>{{tipo_piano}}</td></tr></table></tbody>",
+            "partials": {
+              "id": "Id",
+              "codice": "Codice",
+              "nome_intervento": "Nome intervento",
+              "descrizione_intervento": "Descrizione intervento",
+              "note_intervento": "Note intervento",
+              "tipo_intervento": "Tipo intervento",
+              "nome_infrastruttura": "Nome infrastruttura",
+              "tipo_infrastruttura": "Tipo infrastruttura",
+              "localizzazione_province": "Province",
+              "localizzazione_comuni": "Comuni",
+              "centroide_descrizione": "Descrizione posizione",
+              "responsabile_procedimento": "Responsabile procedimento",
+              "riferimento_normativo": "Riferimento normativo",
+              "tipo_finanziamento": "Tipo finanziamento",
+              "fonte_finanziamento": "Fonte finanziamento",
+              "soggetto_attuatore": "Soggetto attuatore",
+              "tipo_soggetto_attuatore": "Tipo soggetto attuatore",
+              "percentuale_avanzamento": "Avanzamento %",
+              "tipo_stato_avanzamento": "Stato avanzamento",
+              "descrizione_tipo_stato_avanzamento": "Descrizione stato avanzamento",
+              "fase_cronoprogramma": "Fase cronoprogramma",
+              "note_cronoprogramma": "Note cronoprogramma",
+              "programma_non_rispettato": "Programma non rispettato",
+              "media_immagine": "Foto",
+              "media_scheda_pdf": "Pdf",
+              "media_url": "Link",
+              "costo_complessivo_previsto": "Costo complessivo previsto (€)",
+              "finanziamento_regione_previsto": "Finanziamento regionale previsto (€)",
+              "costo_complessivo_effettivo": "Costo complessivo effettivo (€)",
+              "finanziamento_regione_effettivo": "Finanziamento regionale effettivo (€)",
+              "contributo_erogato": "Contributo erogato (€)",
+              "costo_realizzato": "Costo realizzato (€)",
+              "codice_clp": "Codice CLP",
+              "codice_cup": "Codice CUP",
+              "data_riferimento": "Data riferimento",
+              "note": "Note",
+              "tipo_piano": "Piano Marche 2032"
+            },
+            "formats": {
+              "costo_complessivo_previsto": {
+                "type": "number",
+                "useGrouping": true
+              },
+              "costo_complessivo_effettivo": {
+                "type": "number",
+                "useGrouping": true
+              },
+              "finanziamento_regione_previsto": {
+                "type": "number",
+                "useGrouping": true
+              },
+              "finanziamento_regione_effettivo": {
+                "type": "number",
+                "useGrouping": true
+              },
+              "costo_realizzato": {
+                "type": "number",
+                "useGrouping": true
+              },
+              "contributo_erogato": {
+                "type": "number",
+                "useGrouping": true
+              },
+              "percentuale_avanzamento": {
+                "type": "number"
+              },
+              "dataora_modifica": {
+                "type": "dateTime",
+                "format": "dd-mm-yyyy HH:MM:ss"
+              },
+              "data_riferimento": {
+                "type": "dateTime",
+                "format": "dd-mm-yyyy HH:MM:ss"
+              }
+            },
+            "perProfileInfoFields": {
+              "undefined": [
+                "nome_intervento",
+                "nome_infrastruttura",
+                "costo_complessivo_previsto",
+                "costo_complessivo_effettivo",
+                "tipo_infrastruttura",
+                "tipo_stato_avanzamento",
+                "localizzazione_comuni",
+                "localizzazione_province"
+              ],
+              "Cittadino": [
+                "nome_intervento",
+                "nome_infrastruttura",
+                "costo_complessivo_previsto",
+                "costo_complessivo_effettivo",
+                "tipo_infrastruttura",
+                "tipo_stato_avanzamento",
+                "localizzazione_comuni",
+                "localizzazione_province"
+              ],
+              "Consultatore": [
+                "nome_intervento",
+                "nome_infrastruttura",
+                "costo_complessivo_previsto",
+                "costo_complessivo_effettivo",
+                "tipo_infrastruttura",
+                "tipo_stato_avanzamento",
+                "localizzazione_comuni",
+                "localizzazione_province"
+              ],
+              "Utente": [
+                "nome_intervento",
+                "nome_infrastruttura",
+                "costo_complessivo_previsto",
+                "costo_complessivo_effettivo",
+                "tipo_infrastruttura",
+                "tipo_stato_avanzamento",
+                "localizzazione_comuni",
+                "localizzazione_province"
+              ]
+            },
+            "webServiceUrlProfileCheck": "https://gis.regione.marche.it/infrastrutture/Account/Check"
+          },
+          "nameOfCatalogItemSearchField": "nome_intervento",
+          "clusterize": true,
+          "queryableProperties": [
+            {
+              "propertyName": "tipo_infrastruttura",
+              "propertyLabel": "Tipo",
+              "propertyType": "enum",
+              "canAggregate": true
+            },
+            {
+              "propertyName": "tipo_piano",
+              "propertyLabel": "Piano",
+              "propertyType": "enum",
+              "canAggregate": true
+            },
+            {
+              "propertyName": "data_riferimento",
+              "propertyLabel": "Data",
+              "propertyType": "date"
+            },
+            {
+              "propertyName": "localizzazione_province",
+              "propertyLabel": "Provincia",
+              "propertyType": "enum",
+              "canAggregate": true,
+              "enumMultiValue": true
+            },
+            {
+              "propertyName": "localizzazione_comuni",
+              "propertyLabel": "Comune",
+              "propertyType": "enum",
+              "canAggregate": true,
+              "enumMultiValue": true
+            },
+            {
+              "propertyName": "tipo_stato_avanzamento",
+              "propertyLabel": "Avanzamento",
+              "propertyType": "enum",
+              "canAggregate": true
+            },
+            {
+              "propertyName": "costo_complessivo_previsto",
+              "propertyLabel": "Costo complessivo previsto",
+              "propertyType": "number",
+              "propertyMeasureUnit": "€",
+              "sumOnAggregation": true
+            },
+            {
+              "propertyName": "costo_complessivo_effettivo",
+              "propertyLabel": "Costo complessivo effettivo",
+              "propertyType": "number",
+              "propertyMeasureUnit": "€",
+              "sumOnAggregation": true
+            },
+            {
+              "propertyName": "ripartizione_comunale",
+              "propertyLabel": "Ripartizione",
+              "propertyType": "dictionary",
+              "distributionOnAggregation": true,
+              "dictionaryKeyProperties": [
                 {
-                    "name": "Cesium OSM Buildings",
-                    "type": "3d-tiles",
-                    "ionAssetId": 96188,
-                    "style": {
-                        "color": "Boolean(${feature['cesium#color']}) ? color(${feature['cesium#color']}) : rgb(255,255,255)"
-                    },
-                    "colorBlendMode": "HIGHLIGHT",
-                    "id": "4g8K2P"
+                  "key": "comuni",
+                  "alias": "comune",
+                  "queryProperty": "localizzazione_comuni",
+                  "valueProperty": "percentuale"
+                },
+                {
+                  "key": "province",
+                  "alias": "provincia",
+                  "queryProperty": "localizzazione_province",
+                  "valueProperty": "percentuale"
                 }
-            ]
+              ]
+            }
+          ],
+          "legends": [
+            {
+              "title": "Legenda",
+              "items": [
+                {
+                  "title": "Programmazione",
+                  "color": "orange"
+                },
+                {
+                  "title": "Progettazione",
+                  "color": "yellow"
+                },
+                {
+                  "title": "Procedura di gara",
+                  "color": "steelblue"
+                },
+                {
+                  "title": "Lavori in corso",
+                  "color": "lime"
+                },
+                {
+                  "title": "Fine lavori",
+                  "color": "green"
+                },
+                {
+                  "title": "Bike park",
+                  "marker": "bicycle-share",
+                  "color": "white"
+                },
+                {
+                  "title": "Caselli autostradali",
+                  "marker": "highway",
+                  "color": "white"
+                },
+                {
+                  "title": "Ciclovie",
+                  "marker": "bicycle",
+                  "color": "white"
+                },
+                {
+                  "title": "Fermate TPL",
+                  "marker": "bus",
+                  "color": "white"
+                },
+                {
+                  "title": "Impianti sciistici",
+                  "marker": "skiing",
+                  "color": "white"
+                },
+                {
+                  "title": "Infrastrutture ferroviarie",
+                  "marker": "rail",
+                  "color": "white"
+                },
+                {
+                  "title": "Infrastrutture scolastiche",
+                  "marker": "college",
+                  "color": "white"
+                },
+                {
+                  "title": "Ospedali",
+                  "marker": "hospital",
+                  "color": "white"
+                },
+                {
+                  "title": "Percorsi verticali",
+                  "marker": "elevator",
+                  "color": "white"
+                },
+                {
+                  "title": "Ponte / Viadotto",
+                  "marker": "bridge",
+                  "color": "white"
+                },
+                {
+                  "title": "Porti",
+                  "marker": "harbor",
+                  "color": "white"
+                },
+                {
+                  "title": "Strada",
+                  "marker": "car",
+                  "color": "white"
+                },
+                {
+                  "title": "Altri edifici pubblici",
+                  "marker": "building",
+                  "color": "white"
+                },
+                {
+                  "title": "Altri interventi di mobilità sostenibile",
+                  "marker": "marker-stroked",
+                  "color": "white"
+                },
+                {
+                  "title": "Altri spazi pubblici",
+                  "marker": "garden",
+                  "color": "white"
+                },
+                {
+                  "title": "Altri interventi",
+                  "marker": "marker",
+                  "color": "white"
+                }
+              ]
+            }
+          ],
+          "style": {
+            "marker-size": "medium",
+            "marker-color": "white",
+            "marker-symbol": "marker"
+          },
+          "perPropertyStyles": [
+            {
+              "properties": {
+                "tipo_stato_avanzamento": "Programmazione"
+              },
+              "style": {
+                "marker-color": "orange"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_stato_avanzamento": "Progettazione"
+              },
+              "style": {
+                "marker-color": "yellow"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_stato_avanzamento": "Procedura di gara"
+              },
+              "style": {
+                "marker-color": "steelblue"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_stato_avanzamento": "Lavori in corso"
+              },
+              "style": {
+                "marker-color": "lime"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_stato_avanzamento": "Fine lavori"
+              },
+              "style": {
+                "marker-color": "green"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_infrastruttura": "Strada"
+              },
+              "style": {
+                "marker-symbol": "car"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_infrastruttura": "Infrastrutture scolastiche"
+              },
+              "style": {
+                "marker-symbol": "college"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_infrastruttura": "Infrastrutture ferroviarie"
+              },
+              "style": {
+                "marker-symbol": "rail"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_infrastruttura": "Fermate TPL"
+              },
+              "style": {
+                "marker-symbol": "bus"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_infrastruttura": "Ciclovia"
+              },
+              "style": {
+                "marker-symbol": "bicycle"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_infrastruttura": "Bike park"
+              },
+              "style": {
+                "marker-symbol": "bicycle-share"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_infrastruttura": "Caselli autostradali"
+              },
+              "style": {
+                "marker-symbol": "highway"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_infrastruttura": "Altri edifici pubblici"
+              },
+              "style": {
+                "marker-symbol": "building"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_infrastruttura": "Altri spazi pubblici"
+              },
+              "style": {
+                "marker-symbol": "garden"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_infrastruttura": "Altri interventi di mobilità sostenibile"
+              },
+              "style": {
+                "marker-symbol": "marker-stroked"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_infrastruttura": "Percorsi verticali"
+              },
+              "style": {
+                "marker-symbol": "elevator"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_infrastruttura": "Impianti sciistici"
+              },
+              "style": {
+                "marker-symbol": "skiing"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_infrastruttura": "Ponte / Viadotto"
+              },
+              "style": {
+                "marker-symbol": "bridge"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_infrastruttura": "Ospedali"
+              },
+              "style": {
+                "marker-symbol": "hospital"
+              },
+              "caseSensitive": true
+            },
+            {
+              "properties": {
+                "tipo_infrastruttura": "Porti"
+              },
+              "style": {
+                "marker-symbol": "harbor"
+              },
+              "caseSensitive": true
+            }
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "sv6vWQ",
+      "type": "group",
+      "name": "Altri dati",
+      "members": [
+        {
+          "name": "Cesium OSM Buildings",
+          "type": "3d-tiles",
+          "ionAssetId": 96188,
+          "style": {
+            "color": "Boolean(${feature['cesium#color']}) ? color(${feature['cesium#color']}) : rgb(255,255,255)"
+          },
+          "colorBlendMode": "HIGHLIGHT",
+          "id": "4g8K2P"
+        }
+      ]
+    }
+  ]
 }

@@ -89,7 +89,7 @@
       "<a target=\"_blank\" href=\"https://www.regione.marche.it\"><img src=\"images/logo-infra.png\" alt=\"Regione //Marche\"  height=\"32\" title=\"Regione Marche\" /></a>"
     ],
     "brandBarSmallElements": [
-      "<a target=\"_blank\" href=\"https://www.regione.marche.it\"><img src=\"images/regione_marche_logo_bianco.png\" alt=\"Regione Marche\"  height=\"52\" title=\"Regione Marche\" /></a>"
+      //"<a target=\"_blank\" href=\"https://www.regione.marche.it\"><img src=\"images/regione_marche_logo_bianco.png\" alt=\"Regione Marche\"  height=\"52\" title=\"Regione Marche\" /></a>"
     ],
     // Shown when things go wrong.
     "supportEmail": "mirco.sturari@regione.marche.it",
@@ -105,14 +105,14 @@
     // Disable it if things go wrong with the experimental features or your users aren't robust to features which might change or disapear completly.
     "experimentalFeatures": true,
     // To enable welcome message when map first loads
-    // "showWelcomeMessage": true,
+    "showWelcomeMessage": true,
     // To override the welcome message video displayed on the welcome message
     // By default, the Getting Started to Terria video is displayed
-    // "welcomeMessageVideo": {
-    //     "videoTitle": "Getting started with the map",
-    //     "videoUrl": "https://www.youtube-nocookie.com/embed/NTtSM70rIvI", // use an embedded video link
-    //     "placeholderImage": "https://img.youtube.com/vi/NTtSM70rIvI/maxresdefault.jpg"
-    // },
+    "welcomeMessageVideo": {
+      "videoTitle": "",
+      "videoUrl": "", // use an embedded video link
+      "placeholderImage": ""
+    },
 
     // True to display in-app guides.
     "showInAppGuides": true,
