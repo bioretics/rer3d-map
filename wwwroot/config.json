@@ -1,6 +1,9 @@
 {
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
-  "initializationUrls": ["basemaps", "emiro_v8"],
+  "initializationUrls": [
+    "basemaps",
+    "marche"
+  ],
   "parameters": {
     "cesiumIonAccessToken": "",
     "cesiumTerrainAssetId": 754445,
@@ -86,17 +89,18 @@
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
       "<a target=\"_blank\" href=\"https://www.regione.marche.it\"><img src=\"images/regione_marche_logo_bianco.png\" alt=\"Regione //Marche\"  height=\"52\" title=\"Regione Marche\" /></a>",
-      "<a target=\"_blank\" href=\"https://www.regione.marche.it\"><img src=\"images/logo-infra.png\" alt=\"Regione //Marche\"  height=\"32\" title=\"Regione Marche\" /></a>"
+      "<a target=\"_blank\" href=\"https://marche2032.regione.marche.it\"><img src=\"images/logo-infra.png\" alt=\"Regione //Marche\"  height=\"32\" title=\"Regione Marche\" /></a>"
     ],
     "brandBarSmallElements": [
       //"<a target=\"_blank\" href=\"https://www.regione.marche.it\"><img src=\"images/regione_marche_logo_bianco.png\" alt=\"Regione Marche\"  height=\"52\" title=\"Regione Marche\" /></a>"
     ],
     // Shown when things go wrong.
-    "supportEmail": "mirco.sturari@regione.marche.it",
+    "supportEmail": "dipartimento.infrastruttureterritorio@regione.marche.it",
     // You probably shouldn't change this.
     "proj4ServiceBaseUrl": "proj4def/",
     // Or this
-    //"feedbackUrl": "feedback",
+    "feedbackUrl": "mailto:dipartimento.infrastruttureterritorio@regione.marche.it",
+    "feedbackPreamble": "Invio segnalazione geoportale",
 
     // Default mobile viewer mode when loading the map for the first time on mobile platforms.
     // Options are: "3DTerrain", "3DSmooth", "2D"

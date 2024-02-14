@@ -48,6 +48,20 @@
               "name": "Ortofoto 1988",
               "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
               "layers": "Ortofoto88"
+            },
+            {
+              "type": "wms",
+              "name": "Ortofoto 1997",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "OrtofotoAIMA97",
+              "maxScaleDenominator": 20000
+            },
+            {
+              "type": "wms",
+              "name": "Ortofoto 2010",
+              "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+              "layers": "OrtofotoAGEA2010",
+              "maxScaleDenominator": 25000
             }
           ]
         },
@@ -55,12 +69,12 @@
           "type": "group",
           "name": "Limiti amministrativi",
           "members": [
-            {
+            /*{
               "type": "wms",
               "name": "Limiti amministrativi",
               "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
               "layers": "LimitiAmministrativi"
-            },
+            },*/
             {
               "type": "wms",
               "name": "Regione",
@@ -761,6 +775,12 @@
               "caseSensitive": true
             }
           ]
+        },
+        {
+          "type": "wms",
+          "name": "Urbanizzato",
+          "url": "http://wms.cartografia.marche.it/geoserver/geoportale.intra/wms",
+          "layers": "UrbanizzatoPerAnno"
         }
       ]
     },
