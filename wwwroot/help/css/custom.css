@@ -46,6 +46,14 @@ body {
   color: #484848;
 }
 
+a {
+  text-decoration: underline;
+}
+
+p {
+  line-height: 1.5;
+}
+
 .content {
   margin-top: 20px;
 }

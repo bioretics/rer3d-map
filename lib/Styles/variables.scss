@@ -28,9 +28,14 @@ $color-primary-dark: darken($color-primary, 10%);
 $dark-darker: hsl(208, 12%, 21%);
 */
 
+//$color-primary: maroon;
 $color-primary: #2c7987;
 $dark: #005252;
-$dark-with-overlay: #39979c;
+//$dark-with-overlay: #39979c;
+$dark-with-overlay: #2c686a;
+//$dark-with-overlay: #1C484A;
+
+$modal-highlight: #317aa2;
 
 $focus-border-light-color: $text-light;
 $focus-border-dark-color: $text-dark;
