@@ -5,8 +5,7 @@
     "marche"
   ],
   "parameters": {
-    "cesiumIonAccessToken": "",
-    "cesiumTerrainAssetId": 754445,
+    "cesiumTerrainAssetId": 1,
     "useCesiumIonTerrain": false,
     "bingMapsKey": "",
     "useCesiumIonBingImagery": false,
@@ -25,7 +24,9 @@
     //"coordsConverterUrl": "http://servizigis.regione.emilia-romagna.it/arcgis/rest/services/Utilities/Geometry/GeometryServer/project",
     "useMyLocationFromDesktop": false,
     "mouseAsInfoDefaultValue": true,
-    "useElevationMeanSeaLevel": false,
+    "useElevationMeanSeaLevel": true,
+
+    "pickSize": 4,
 
     "userProfileLoginServiceUrl": "https://gis.regione.marche.it/infrastrutture/Account/Login?ReturnUrl=",
     "userProfilesDefinition": {
@@ -83,6 +84,14 @@
       "text": "Bioretics srl",
       "link": "http://www.bioretics.com"
     },
+    "relatedMaps": [
+      {
+        "imageUrl": "images/logo-infra.png",
+        "url": "http://marche2032.regione.marche.it/",
+        "title": "Marche 2032",
+        "description": "Consultazione semplificata e accessibile delle opere infrastrutturali della Regione Marche"
+      }
+    ],
     // This is used in various text messages. You should also set <title> in index.html
     "appName": "Geoportale 3D",
 
