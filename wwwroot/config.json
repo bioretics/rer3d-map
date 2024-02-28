@@ -1,6 +1,6 @@
 {
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
-  "initializationUrls": ["basemaps", "emiro_v8"],
+  "initializationUrls": ["basemaps", "0_emiro_init", "1_emiro_rapido"],
   "parameters": {
     "cesiumIonAccessToken": "",
     "cesiumTerrainAssetId": 754445,
@@ -12,18 +12,19 @@
     "googleAnalyticsOptions": null,
 
     "customSearchProviderUrl": "eGeoCoding",
-    /*"whereAmIParams": {
+    "whereAmIParams": {
       "urlFast": "https://servizigis.regione.emilia-romagna.it/geoags/rest/services/portale/where/MapServer/0/query?geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIndexIntersects&outFields=OBJECTID,LOCALIZZAZ,DETTAGLIO&returnGeometry=false&f=pjson",
       "urlSlowButAccurate": "https://servizigis.regione.emilia-romagna.it/geoags/rest/services/portale/where/MapServer/0/query?geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID,LOCALIZZAZ,DETTAGLIO&returnGeometry=false&f=pjson",
       "fieldId": "OBJECTID",
       "fieldResult": "LOCALIZZAZ",
       "fieldResultDetailed": "DETTAGLIO"
-    },*/
-    //"coordsConverterUrl": "http://servizigis.regione.emilia-romagna.it/arcgis/rest/services/Utilities/Geometry/GeometryServer/project",
+    },
+    "coordsConverterUrl": "http://servizigis.regione.emilia-romagna.it/arcgis/rest/services/Utilities/Geometry/GeometryServer/project",
     "useMyLocationFromDesktop": true,
     "mouseAsInfoDefaultValue": false,
     "useElevationMeanSeaLevel": false,
 
+    "pickSize": 10,
 
     // Log ConsoleAnalytics events to console
     // logToConsole: true,
