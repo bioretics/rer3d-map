@@ -28,6 +28,13 @@
 
     "pickSize": 4,
 
+    "extraCreditLinks": [
+      {
+        "url": "",
+        "text": "Dichiarazione di accessibilità"
+      }
+    ],
+
     "userProfileLoginServiceUrl": "https://gis.regione.marche.it/infrastrutture/Account/Login?ReturnUrl=",
     "userProfilesDefinition": {
       "undefined": {
