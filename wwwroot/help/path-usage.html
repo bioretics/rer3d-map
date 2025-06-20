@@ -129,7 +129,7 @@
         <p>Se selezioniamo lo strumento di misura di punti (cliccando sull'icona <img src="img/measure_point.svg"
             alt="Measure points icon" height="24" />), cliccando sulla mappa, verranno aggiunti dei punti corrispondenti alla posizione del cursore al momento del click.</p>
 
-        <p>Una volta definiti i punti desiderati, dal pannello, possiamo visualizzarne l'altitudine e aggiungere a ciascuno di essi una descrizione per attribuirgli un significato (la descrizione di ciascun punto verrà inclusa nel file di esportazione).</p>
+        <p>Una volta definiti i punti desiderati, dal pannello, possiamo visualizzarne l'altitudine e aggiungere a ciascuno di essi una descrizione per attribuirgli un significato (la descrizione di ciascun punto verrà inclusa nel file finale di esportazione).</p>
         <img src="img/measure_point.png" alt="Measure point" class="screenshot img-responsive" />
 
         <h3>Misuratore lineare</h3>
@@ -197,38 +197,51 @@
 
         <p>Il pannello dei grafici si aggiorna automaticamente quando sulla mappa viene modificata in qualche modo una tappa(spostata, rimossa).</p>
 
+        <h2>Trasformazione</h2></p>
+        <p>All'interno del pannello dei grafici è presente un pulsante <b>Trasformazione</b>, che consente di convertire temporaneamente un percorso in un layer, sotto forma di file di catalogo all’interno del <i>workbench</i>. </p>
+        <img src="img/meaure-transform.png" alt="Path transformation" class="screenshot img-responsive" />
+        <p>Una volta trasformato il percorso, cliccando sull’icona con i tre puntini sarà possibile accedere a diverse azioni relative al percorso, tra cui:</p>
+        <img src="img/workbench-catalog-options.png" alt="Workbench catalog options" class="screenshot img-responsive" />
+        <ul>
+          <li>
+            <b>Esporta</b>(vedi sotto): consente di esportare il percorso (o multipercorso) mediante l'apposito pannello. Quindi sarà necessario inserire il nome del file e il relativo formato che si desidera
+            <img src="img/download-panel.png" alt="Download panel" class="screenshot img-responsive" />
+          </li>
+          <li>
+            <b>Avvia percorso (Play Path)</b>(vedi sotto): consente di visualizzare il percorso trasformato sulla mappa;
+            <img src="img/play-path-panel.png" alt="Play Path panel" class="screenshot img-responsive" />
+          </li>
+          <li><b>Percorso</b>: consente di riaprire il pannello di misure per visualizzare i dati del percorso (o multipercorso) in maniera più dettagliata;</li>
+        </ul>
+
         <h2>Esportazione</h2>
-        <p>Nel pannello dei grafici è presente il bottone <b>Download</b> grazie al quale è possibile scaricare uno screenshot del grafico.
-        
-        Nel pannello di misura invece, è presente il bottone <b>Esporta</b> tramite il quale è possibile esportare i dati e le informazioni del percorso(o multipercorso) corrente in GeoJSON, CSV o KML.</p>
+        <h4>Esportazione del grafico di un percorso</h4>
+        <p>Una volta aperto il pannello delle misure, sarà possibile esportare il grafico accedendo al pannello dedicato ai grafici, all’interno del quale si trova il pulsante <b>Download</b>, che consente di scaricare uno screenshot del grafico.</p>
 
-        <img src="img/measure-download.jpg" alt="Path export" class="screenshot img-responsive" />
+        <h4>Esportazione di un percorso in dettaglio</h4>
+        <p>Come già preannunciato, tramite il workbench, è possibile aprire il pannello di download ed esportare il percorso (o multipercorso) in uno dei formati supportati (GeoJSON, CSV, KML o GPX).</p>
 
-        <p>L'esportazione consiste nel salvare uno o più file del formato scelto tra quelli disponibili. Questi file potranno poi essere usati in qualsiasi software GIS (ad esempio QGIS) o essere reimportati in <b>rer3d-map</b> (vedi sotto).</p>
+        <p>L'esportazione consiste nel salvare uno o più file del formato scelto tra quelli disponibili. Questi file potranno poi essere usati in qualsiasi software GIS (ad esempio QGIS) o essere reimportati in <b>rer3d-map</b>:</p>
 
         <p>L'esportazione in CSV salva un file con un nome definito dall'utente, con formato <code>.csv</code> con i dati delle tappe ed eventuali note. I percorsi esportati in CSV saranno caricati dai GIS come layer di punti.
         </p>
 
-        <p>L'esportazione in GeoJSON salva un file con un nome definito dall'utente, con formato <code>.geojson</code> con i dati delle tappe ed eventuali note. I percorsi esportati in GeoJSON saranno caricati dai GIS come layer di linee.</p>
+        <p>L'esportazione in GeoJSON salva un file con un nome definito dall'utente, con formato <code>.geojson</code> con i dati delle tappe ed eventuali note. I percorsi esportati in GeoJSON saranno caricati dai GIS come layer di punti, linee o poligoni.</p>
 
-        <p>L'esportazione in KML salva un file con un nome definito dall'utente, con formato <code>.kml</code> con i dati delle tappe ed eventuali note. I percorsi esportati in KML saranno caricati dai GIS come layer di linee.</p>
+        <p>L'esportazione in GPX salva un file con un nome definito dall'utente, con formato <code>.gpx</code> con i dati delle tappe ed eventuali note. I percorsi esportati in GPX saranno caricati dai GIS come layer di punti o linee (non anche di poligoni a causa di limitazioni del formato).</p>
 
-        <img src="img/measure-download_formats.jpg" alt="Path view" class="screenshot img-responsive" />
+        <p>L'esportazione in KML salva un file con un nome definito dall'utente, con formato <code>.kml</code> con i dati delle tappe ed eventuali note. I percorsi esportati in KML saranno caricati dai GIS come layer di punti, linee o poligoni.</p>
+
+        <h2>Avvia percorso</h2>
+        <p>Il pannello di avvio del percorso permette di visualizzare il tragitto direttamente sulla mappa, facendolo "scorrere" punto per punto. </p>
+        <p>La camera si <b>muove automaticamente</b> lungo tutti i punti campionati fino a raggiungere la fine del percorso. Una volta avviata la riproduzione, è possibile metterla in pausa e riprenderla in un secondo momento, oppure interromperla definitivamente. Per determinare il punto di partenza, viene scelto uno dei due estremi del percorso (inizio o fine), in base a quello più vicino alla posizione attuale della camera.</p>
+        <img src="img/play-path-panel2.png" alt="Play Path panel" class="screenshot img-responsive" />
+        <p>È possibile modificare la <b>velocità</b> di scorrimento del percorso, così da permettere all’utente di adattare la visualizzazione alle proprie esigenze. Inoltre, al primo avvio del percorso (ma non durante la ripresa di uno già in corso), verrà mostrato un <b>countdown</b> per consentire all’utente di prepararsi alla riproduzione.</p>
 
         <h2>Importazione</h2>
         <p>È possibile, in certe condizioni, importare un file da un layer caricato in <b>rer3d-map</b>.</p>
 
         <p>I dati supportati per l'importazioni sono i file di percorsi o multi percorsi che hanno un certo formato, al momento sono supportati i file: <code>.kml</code>, <code>.geojson</code>, <code>.json</code>, <code>.gpx</code> ed infine <code>.csv</code>.</p>
-
-        <img src="img/import_path.jpg" alt="Path import" class="screenshot img-responsive" />
-
-        <p>Cliccando su <b>Percorso</b> dai dati dell'unica geometria del layer viene prodotto e caricato il
-          <em>percorso</em>, di cui sono visibili i dati ed i grafici.
-        </p>
-
-        <p>Se il percorso importato ha valori altitudine, sono usati quelli, altrimenti sono letti dal modello del
-          terreno di <b>rer3d-map</b>.</p>
-
       </div>
 
     </div><!-- End col-md-8 -->
