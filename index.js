@@ -87,27 +87,31 @@ module.exports = terria
     terria.loadInitSources().then((result) => result.raiseError(terria));
 
     try {
-      viewState.searchState.locationSearchProviders = [
-        new NominatimSearchProviderViewModel({
-          terria: terria,
-          countryCodes: "it"
-        }),
-        new BingMapsSearchProviderViewModel({
-          terria: terria,
-          key: terria.configParameters.bingMapsKey
-        })
-        // new GazetteerSearchProviderViewModel({terria}),
-        // new GnafSearchProviderViewModel({terria})
-      ];
-
-      if (terria.configParameters.customSearchProviderUrl) {
-        viewState.searchState.locationSearchProviders.unshift(
-          new RerSearchProviderViewModel({
-            terria: terria
+      runInAction(() => {
+        viewState.searchState.locationSearchProviders.push(
+          new NominatimSearchProviderViewModel({
+            terria: terria,
+            countryCodes: "it"
           })
         );
-      }
 
+        if (terria.configParameters?.bingMapsKey) {
+          viewState.searchState.locationSearchProviders.push(
+            new BingMapsSearchProviderViewModel({
+              terria: terria,
+              key: terria.configParameters.bingMapsKey
+            })
+          );
+        }
+
+        if (terria.configParameters.customSearchProviderUrl) {
+          viewState.searchState.locationSearchProviders.unshift(
+            new RerSearchProviderViewModel({
+              terria: terria
+            })
+          );
+        }
+      });
       // Automatically update Terria (load new catalogs, etc.) when the hash part of the URL changes.
       updateApplicationOnHashChange(terria, window);
       updateApplicationOnMessageFromParentWindow(terria, window);

@@ -6,7 +6,12 @@ import {
   ExperimentalMenu,
   MenuLeft
 } from "terriajs/lib/ReactViews/StandardUserInterface/customizable/Groups";
-import MeasureTool from "terriajs/lib/ReactViews/Map/Navigation/Items/MeasureTool";
+//import MeasureTool from "terriajs/lib/ReactViews/Map/Navigation/Items/MeasureTool";
+
+import { MeasureToolsController } from "terriajs/lib/ReactViews/Map/MapNavigation/Items/MeasureTools";
+
+// lib\ReactViews\Map\MapNavigation\Items\MeasureTools.tsx
+
 import MenuItem from "terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuItem";
 import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface";
 import version from "../../version";
@@ -55,8 +60,9 @@ export default function UserInterface(props) {
         ) : null}
       </MenuLeft>
       <Nav>
-        <MeasureTool
+        <MeasureToolsController
           terria={props.viewState.terria}
+          viewState={props.viewState}
           mouseCoords={props.viewState.mouseCoords}
           key="measure-tool"
         />

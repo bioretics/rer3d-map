@@ -13,6 +13,8 @@ var path = require("path");
 var PluginError = require("plugin-error");
 var minimist = require("minimist");
 
+var terriajsServerGulpTask = require("terriajs/buildprocess/terriajsServerGulpTask");
+
 var knownOptions = {
   string: ["baseHref"],
   default: { baseHref: "/" }
@@ -261,7 +263,15 @@ function checkForDuplicateCesium() {
   }
 }
 
+gulp.task("terriajs-server", terriajsServerGulpTask(3001));
+
 gulp.task("build", gulp.series("copy-terriajs-assets", "build-app"));
 gulp.task("release", gulp.series("copy-terriajs-assets", "release-app"));
 gulp.task("watch", gulp.parallel("watch-terriajs-assets", "watch-app"));
+
+gulp.task(
+  "dev",
+  gulp.parallel(gulp.series("render-index", "terriajs-server"), "watch")
+);
+
 gulp.task("default", gulp.series("lint", "build"));
