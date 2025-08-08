@@ -271,7 +271,117 @@
             ]
           }
         ]
+      },
+      {
+        "title": "translate#playpathguide.title",
+        "itemName": "playpathguide",
+        "paneMode": "trainer",
+        "markdownText": "translate#playpathguide.markdownText",
+        "icon": "oneTwoThree",
+        "trainerItems": [
+          {
+            "title": "translate#playpathguide.gettingstarted.title",
+            "steps": [
+              {
+                "title": "translate#playpathguide.gettingstarted.step1.title",
+                "markdownDescription": "translate#playpathguide.gettingstarted.step1.markdownDescription"
+              },
+              {
+                "title": "translate#playpathguide.gettingstarted.step2.title",
+                "markdownDescription": "translate#playpathguide.gettingstarted.step2.markdownDescription"
+              },
+              {
+                "title": "translate#playpathguide.gettingstarted.step3.title",
+                "markdownDescription": "translate#playpathguide.gettingstarted.step3.markdownDescription"
+              },
+              {
+                "title": "translate#playpathguide.gettingstarted.step4.title",
+                "markdownDescription": "translate#playpathguide.gettingstarted.step4.markdownDescription"
+              },
+              {
+                "title": "translate#playpathguide.gettingstarted.step5.title",
+                "markdownDescription": "translate#playpathguide.gettingstarted.step5.markdownDescription"
+              },
+              {
+                "title": "translate#playpathguide.gettingstarted.step6.title",
+                "markdownDescription": "translate#playpathguide.gettingstarted.step6.markdownDescription"
+              },
+              {
+                "title": "translate#playpathguide.gettingstarted.step7.title",
+                "markdownDescription": "translate#playpathguide.gettingstarted.step7.markdownDescription"
+              },
+              {
+                "title": "translate#playpathguide.gettingstarted.step8.title",
+                "markdownDescription": "translate#playpathguide.gettingstarted.step8.markdownDescription"
+              }
+            ]
+          },
+          {
+            "title": "translate#playpathguide.playbackcontrols.title",
+            "steps": [
+              {
+                "title": "translate#playpathguide.playbackcontrols.step1.title",
+                "markdownDescription": "translate#playpathguide.playbackcontrols.step1.markdownDescription"
+              },
+              {
+                "title": "translate#playpathguide.playbackcontrols.step2.title",
+                "markdownDescription": "translate#playpathguide.playbackcontrols.step2.markdownDescription"
+              },
+              {
+                "title": "translate#playpathguide.playbackcontrols.step3.title",
+                "markdownDescription": "translate#playpathguide.playbackcontrols.step3.markdownDescription"
+              },
+              {
+                "title": "translate#playpathguide.playbackcontrols.step4.title",
+                "markdownDescription": "translate#playpathguide.playbackcontrols.step4.markdownDescription"
+              }
+            ]
+          },
+          {
+            "title": "translate#playpathguide.cameraandview.title",
+            "steps": [
+              {
+                "title": "translate#playpathguide.cameraandview.step1.title",
+                "markdownDescription": "translate#playpathguide.cameraandview.step1.markdownDescription"
+              },
+              {
+                "title": "translate#playpathguide.cameraandview.step2.title",
+                "markdownDescription": "translate#playpathguide.cameraandview.step2.markdownDescription"
+              },
+              {
+                "title": "translate#playpathguide.cameraandview.step3.title",
+                "markdownDescription": "translate#playpathguide.cameraandview.step3.markdownDescription"
+              },
+              {
+                "title": "translate#playpathguide.cameraandview.step4.title",
+                "markdownDescription": "translate#playpathguide.cameraandview.step4.markdownDescription"
+              }
+            ]
+          },
+          {
+            "title": "translate#playpathguide.tips.title",
+            "steps": [
+              {
+                "title": "translate#playpathguide.tips.step1.title",
+                "markdownDescription": "translate#playpathguide.tips.step1.markdownDescription"
+              },
+              {
+                "title": "translate#playpathguide.tips.step2.title",
+                "markdownDescription": "translate#playpathguide.tips.step2.markdownDescription"
+              },
+              {
+                "title": "translate#playpathguide.tips.step3.title",
+                "markdownDescription": "translate#playpathguide.tips.step3.markdownDescription"
+              },
+              {
+                "title": "translate#playpathguide.tips.step4.title",
+                "markdownDescription": "translate#playpathguide.tips.step4.markdownDescription"
+              }
+            ]
+          }
+        ]
       }
+
       // For maps with satellite imagery, also see `showInAppGuides`
       // {
       //     "itemName": "satelliteimagery",

@@ -158,6 +158,86 @@
       }
     }
   },
+  "playpathguide": {
+    "title": "Play Path guide",
+    "markdownText": "## Play Path guide\n\nLaunch a guide for common Play Path workflows below:",
+    "gettingstarted": {
+      "title": "Getting started with Play Path",
+      "step1": {
+        "markdownDescription": "The Play Path panel is available after loading or transforming a path into a catalog layer.",
+        "title": "Open the Play Path panel"
+      },
+      "step2": {
+        "markdownDescription": "You can draw a path directly on the map using Measurable Tools or import path files (GPX, KML, GeoJSON). Imported files appear in the Play Path list and can be selected for playback.",
+        "title": "Draw a path or import a file"
+      },
+      "step3": {
+        "markdownDescription": "Select the path you want to play from the list and click 'Play Path'.",
+        "title": "Select the path to preview"
+      },
+      "step4": {
+        "markdownDescription": "Move near the start point (first or last) and start the playback in a specific direction(start-to-end or end-to-start).",
+        "title": "Set start point and direction"
+      },
+      "step5": {
+        "markdownDescription": "Adjust the playback speed using the speed slider (typical range: 0.5x to 3x).",
+        "title": "Adjust speed and playback options"
+      },
+      "step6": {
+        "markdownDescription": "Press Play to start, Pause to halt mid-route, and Stop to reset the camera to the chosen start point.",
+        "title": "Play, pause and stop playback"
+      }
+    },
+    "playbackcontrols": {
+      "title": "Playback controls",
+      "step1": {
+        "title": "Play/Pause button",
+        "markdownDescription": "Start or pause the animation. While playing, the camera can be set to follow the moving marker."
+      },
+      "step2": {
+        "title": "Stop button",
+        "markdownDescription": "Stop playback and reset the camera to the chosen start point. Useful to reorient or restart the animation."
+      },
+      "step3": {
+        "title": "Speed slider",
+        "markdownDescription": "Drag the speed slider to increase or decrease animation speed. The current speed label updates in real time."
+      },
+      "step4": {
+        "title": "Loop and direction controls",
+        "markdownDescription": "Toggle loop mode to automatically replay when the end is reached. Use direction controls to reverse playback."
+      }
+    },
+    "cameraandview": {
+      "title": "Camera and view settings",
+      "step1": {
+        "title": "Position the camera near the start",
+        "markdownDescription": "Place the camera close to the chosen start point (either true start or end) so the animation begins framed correctly."
+      },
+      "step2": {
+        "title": "Adjust zoom, pitch and bearing",
+        "markdownDescription": "Set zoom and pitch to suit the terrain: a more top-down view for flat areas, and a less extreme low pitch in mountainous regions."
+      },
+      "step3": {
+        "title": "Smooth camera transitions",
+        "markdownDescription": "Transitions between camera positions are eased for a smooth playback experience. Use Stop/Reset to create abrupt cuts between segments if needed."
+      }
+    },
+    "tips": {
+      "title": "Tips and troubleshooting",
+      "step1": {
+        "title": "Improve performance",
+        "markdownDescription": "If playback is choppy, try lowering speed, simplifying the path, closing other heavy layers, or splitting the route into smaller segments."
+      },
+      "step2": {
+        "title": "Fix camera framing issues",
+        "markdownDescription": "If the camera doesn't start where expected, use the 'reset camera' control or manually pan/zoom to the correct start point before pressing Play."
+      },
+      "step3": {
+        "title": "Avoid low pitch in steep terrain",
+        "markdownDescription": "In mountainous areas, avoid very low camera pitch angles—raise the pitch or zoom out to maintain context and prevent clipping."
+      }
+    }
+  },
   "helpContentTerm1": {
     "term": "dataset",
     "aliases": ["data set", "data sets", "datasets"],
