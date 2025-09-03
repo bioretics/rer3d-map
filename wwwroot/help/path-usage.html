@@ -103,126 +103,147 @@
 
         <h2>Misure sulla mappa</h2>
 
-        <p><b>rer3d-map</b> è dotato di uno strumento di misura tramite cui è possibile misurare distanze e superfici.
+        <p><b>rer3d-map</b> è dotato di una famiglia di strumenti  di misura tramite cui è possibile misurare distanze, superfici, elevazione e angolazione tra diversi punti.
         </p>
 
-        <p>Lo strumento di misura si attiva (o disattiva) cliccando sul bottone <img src="img/measure.svg"
-            alt="Measure icon" height="24" /></p>
+        <p>Gli strumenti di misura si attivano (o disattivano) cliccando sul bottone <img src="img/measure-tools.svg"
+            alt="Measure tools icon" height="24" />.</p>
 
-        <img src="img/path_01.jpg" alt="Path example" class="screenshot img-responsive" />
+        <img src="img/generic_screen.jpg" alt="Path example" class="screenshot img-responsive" />
 
-        <p>Una volta attivato lo strumento di misura, cliccare sulla mappa per posizionare i vertici (o tappe) che
-          definiscono la <em>linea spezzata</em> di cui misurare la lunghezza. Man mano che si posizionano i vertici,
-          sulla mappa viene disegnata la linea spezzata e viene
-          aggiornata la lunghezza corrente.</p>
+        <p>Una volta attivati gli strumenti di misura, cliccare sullo strumento specifico che si vuole utilizzare e successivamente cliccare sulla mappa per posizionare i vertici (o tappe). Man mano che si posizionano i vertici, avremo un comportamento specifico sulla base dello strumento selezionato.</p>
 
-        <img src="img/path_02.jpg" alt="Measure length" class="screenshot img-responsive" />
+        <p>Per ciascuno strumento rimane sempre possibile cambiare il livello di zoom o spostare la mappa tramite drag&drop (prendi e trascina) per posizionarsi in modo opportuno.</p>
 
-        <p>Rimane sempre possibile cambiare il livello di zoom o spostare la mappa tramite drag&drop (prendi e trascina)
-          per posizionarsi in modo opportuno.</p>
+        <p>Di ogni vertice è possibile visualizzare informazioni dettagliate, come l'altitudine, la dislocazione, la distanza geodetica, la distanza al suolo e la pendenza.</p>
+
+        <p>E' possibile, inoltre avere più percorsi (o elementi) che vengono gestiti all'interno del pannello di misure di ciascun strumento tranne per il misuratore angolare essendo che l'angolo interessato viene visualizzato direttamente sulla mappa.</p>
+
+        <img src="img/multi-path.jpg" alt="Multi path" class="screenshot img-responsive" />
 
         <p>Cliccando su un vertice già posizionato, questo viene rimosso; se invece lo si prende e trascina (drag&drop)
           verrà cambiata la sua posizione.</p>
 
-        <p>Posizionando l'ultimo vertice sopra il primo, la <em>linea spezzata</em> viene chiusa e viene definito
-          automaticamente un
-          <em>poligono</em>, di cui viene misurata la superficie.
-        </p>
+        <p>Una volta aperto il pannello di misura sarà possibile <b>ridimensionarlo</b> e <b>spostarlo</b> liberamente nella finestra.</p>
 
-        <img src="img/path_09.jpg" alt="Measure area" class="screenshot img-responsive" />
+        <h3>Misuratore di punti</h3>
 
+        <p>Se selezioniamo lo strumento di misura di punti (cliccando sull'icona <img src="img/measure_point.svg"
+            alt="Measure points icon" height="24" />), cliccando sulla mappa, verranno aggiunti dei punti corrispondenti alla posizione del cursore al momento del click.</p>
+
+        <p>Una volta definiti i punti desiderati, dal pannello, possiamo visualizzarne l'altitudine e aggiungere a ciascuno di essi una descrizione per attribuirgli un significato (la descrizione di ciascun punto verrà inclusa nel file finale di esportazione).</p>
+        <img src="img/measure_point.png" alt="Measure point" class="screenshot img-responsive" />
+
+        <h3>Misuratore lineare</h3>
+
+        <p>Se selezioniamo lo strumento di misura lineare (cliccando sull'icona <img src="img/measure.svg"
+            alt="Measure linear icon" height="24" />), cliccando sulla mappa, verranno aggiunti dei punti corrispondenti alla posizione del cursore al momento del click. Una volta che abbiamo inserito almeno 2 punti sulla mappa verrà disegnata una linea e aggiunta la distanza per ogni coppia di punti.</p>
+
+        <p>Tramite questo strumento è possibile visualizzare sulla mappa le distanze tra ogni coppia di punti (funzionalità disattivabile), insieme ad altre informazioni accessibili direttamente dal pannello. All'interno di quest'ultimo è presente anche la gestione dei <b>passi di campionamento</b>, che consente di definire un livello di precisione variabile. Dopo aver modificato il valore, è necessario cliccare sul pulsante '<b>Cambia</b>' per applicare le modifiche. Per analizzare più nel dettaglio le modifiche, è consigliabile aprire il grafico utilizzando l'apposito pulsante presente nel pannello.</p>
+        <img src="img/measure_lines.png" alt="Measure line" class="screenshot img-responsive" />
+
+        <h3>Misuratore di area</h3>
+
+        <p>Se selezioniamo lo strumento di misura di area (cliccando sull'icona <img src="img/measure_polygon.svg"
+            alt="Measure polygon icon" height="24" />), cliccando sulla mappa, verranno aggiunti dei punti corrispondenti alla posizione del cursore al momento del click. Una volta che abbiamo inserito almeno 3 punti sulla mappa verrà disegnato il perimetro della figura chiusa con la sua area colorata, viene quindi definito un <b>poligono</b>.</p>
+
+        <p>Continuando a cliccare sulla mappa, si andranno ad aggiungere nuovi vertici al poligono.</p>
+
+        <p>Anche per questo strumento valgono le stesse considerazioni fatte per il misuratore lineare: la gestione dei passi di campionamento, il grafico e le distanze tra i vari punti vengono trattati come in un misuratore lineare applicato a un percorso chiuso.</p>
+        <img src="img/measure_polygon.png" alt="Measure area" class="screenshot img-responsive" />
+
+        <h3>Misuratore angolare</h3>
+
+        <p>Se selezioniamo lo strumento di misura angolare (cliccando sull'icona <img src="img/measure_angle.svg"
+            alt="Measure angle icon" height="24" />), cliccando sulla mappa, verranno aggiunti dei punti corrispondenti alla posizione del cursore al momento del click. Una volta che abbiamo inserito almeno 3 punti sulla mappa verrà disegnato l'angolo racchiuso tra i tre vertici e indicato il relativo valore.</p>
+
+        <p>A differenza degli altri, questo strumento funziona senza l’utilizzo del pannello delle misure, poiché l’angolo viene visualizzato direttamente sulla mappa. Si selezionano tre punti e viene calcolato l’angolo tra il primo e l’ultimo. Continuando a cliccare sulla mappa, l’ultimo punto selezionato viene sostituito da quello nuovo.</p>
+
+        <img src="img/measure_angle.png" alt="Measure angle" class="screenshot img-responsive" />
 
         <h2>Percorsi</h2>
-        <p>Dal momento in cui viene posizionato il secondo vertice della <em>linea spezzata</em>, questa viene
+        <p>Dal momento in cui viene posizionato il secondo vertice, viene mostrata la linea congiungente e viene
           considerata, oltre che in funzione della misura, anche come <em>percorso</em>.</p>
+
+        <p>Possiamo distinguere due tipologie di percorsi: il percorso <b>aperto</b>, che corrisponde all’insieme di punti collegati tramite il misuratore lineare, e il percorso <b>chiuso</b>, definito dal misuratore di aree.</p>
 
         <p>A sinistra della mappa si apre un pannello con i dati del percorso:</p>
 
         <ol>
-          <li>lunghezza 3D del percorso;</li>
-          <li>altitudine minima e massima;</li>
-          <li>rotta (angolo rispetto al Nord della linea passante per la prima e ultima tappa del percorso);</li>
-          <li>dislivello tra prima e ultima tappa;</li>
-          <li>dettaglio di ogni tappa (altitudine, dislivello rispetto alla tappa precedente, distanza dall'inizio del
+          <li>Lunghezza 3D del percorso;</li>
+          <li>Altitudine minima e massima;</li>
+          <li>Rotta (angolo rispetto al Nord della linea passante per la prima e ultima tappa del percorso);</li>
+          <li>Dislivello tra prima e ultima tappa;</li>
+          <li>Dettaglio di ogni tappa (altitudine, dislivello rispetto alla tappa precedente, distanza dall'inizio del
             percorso).</li>
         </ol>
 
-        <p>I dati dei punti 1. e 2. vanno calcolati esplicitamente cliccando sul bottone <b>Calcola</b> campionando in
-          modo automatico a intervalli regolari e molto fitti il perocrso in modo da trarne l'altitudine e la lunghezza
-          non solo nelle tappe (di conseguenza la distanza calcolata in questo modo è sempre maggiore o uguali a quella
-          calcolata usando solo le tappe).</p>
-
-        <img src="img/path_03.jpg" alt="Data path" class="screenshot img-responsive" />
-
+        <p>I dati dei punti 1. e 2. devono essere calcolati esplicitamente cliccando sul pulsante <b>Cambia</b>, che applica il nuovo valore del passo di campionamento inserito nel pannello. Il percorso viene quindi campionato automaticamente a intervalli regolari e molto fitti, così da ricavarne altitudine e lunghezza non solo nei punti tappa. Di conseguenza, la distanza calcolata in questo modo risulta sempre maggiore o uguale rispetto a quella ottenuta utilizzando esclusivamente le tappe.</p>
 
         <h2>Grafici</h2>
-        <p>Nel pannello dei percorsi è presente il bottone <b>Grafico</b> che mostra (o nasconde) il pannello dei
+        <p>Nel pannello dei percorsi è presente il bottone <b>Grafico <img src="img/line-chart.svg"
+            alt="Chart icon" height="24" /></b> che mostra (o nasconde) il pannello dei
           grafici del percorso.</p>
 
-        <p>I grafici sono di due tipi e vengono sovrapposti: quello bianco ("altitudine") rappresenta le tappe (i
-          vertici) del percorso attuale, quello blu ("altitudine dettaglio") invece rappresenta il campionamento del
-          percorso generato con il bottone <b>Calcola</b>.</p>
+        <p>I grafici sono di due tipi e vengono sovrapposti: quello rosso rappresenta le tappe del percorso attuale, quello verde invece rappresenta il campionamento del
+          percorso generato con un passo di campionamento di default oppure definito manualmente.</p>
 
-        <img src="img/path_04.jpg" alt="Graph of path" class="screenshot img-responsive" />
+        <img src="img/measure-graph.jpg" alt="Graph of path" class="screenshot img-responsive" />
 
         <p>Per entrambi i grafici sulle ascisse abbiamo la distanza del punto dall'inizio del percorso e sulle ordinate
-          abbiamo l'altitudie del punto.</p>
+          abbiamo l'altitudine del punto.</p>
 
-        <p>Può capitare che il dato di dettaglio (quello blu) copra una maggior distanza rispetto a quello bianco,
+        <p>Può capitare che il dato di dettaglio (quello verde) copra una maggior distanza rispetto a quello rosso,
           poichè più realisticamente considera l'andamento del terreno anche fra una tappa e l'altra (mentre quello
-          bianco rappresenta solo le tappe).</p>
+          rosso rappresenta solo le tappe in aria).</p>
 
-        <p>Il pannello dei grafici si aggiorna automaticamente quando sulla mappa viene modificata la <em>linea
-            spezzata</em> del percorso.</p>
+        <p>Il pannello dei grafici si aggiorna automaticamente quando sulla mappa viene modificata in qualche modo una tappa(spostata, rimossa).</p>
 
-        <img src="img/path_06.jpg" alt="Path view" class="screenshot img-responsive" />
-
+        <h2>Trasformazione</h2></p>
+        <p>All'interno del pannello dei grafici è presente un pulsante <b>Trasformazione</b>, che consente di convertire temporaneamente un percorso in un layer, sotto forma di file di catalogo all’interno del <i>workbench</i>. </p>
+        <img src="img/meaure-transform.png" alt="Path transformation" class="screenshot img-responsive" />
+        <p>Una volta trasformato il percorso, cliccando sull’icona con i tre puntini sarà possibile accedere a diverse azioni relative al percorso, tra cui:</p>
+        <img src="img/workbench-catalog-options.png" alt="Workbench catalog options" class="screenshot img-responsive" />
+        <ul>
+          <li>
+            <b>Esporta</b>(vedi sotto): consente di esportare il percorso (o multipercorso) mediante l'apposito pannello. Quindi sarà necessario inserire il nome del file e il relativo formato che si desidera
+            <img src="img/download-panel.png" alt="Download panel" class="screenshot img-responsive" />
+          </li>
+          <li>
+            <b>Avvia percorso (Play Path)</b>(vedi sotto): consente di visualizzare il percorso trasformato sulla mappa;
+            <img src="img/play-path-panel.png" alt="Play Path panel" class="screenshot img-responsive" />
+          </li>
+          <li><b>Percorso</b>: consente di riaprire il pannello di misure per visualizzare i dati del percorso (o multipercorso) in maniera più dettagliata;</li>
+        </ul>
 
         <h2>Esportazione</h2>
-        <p>Nel pannello dei grafici è presente il bottone <b>Download</b> grazie al quale è possibile esportare i dati
-          del percorso corrente in GeoJSON, CSV o KML.</p>
+        <h4>Esportazione del grafico di un percorso</h4>
+        <p>Una volta aperto il pannello delle misure, sarà possibile esportare il grafico accedendo al pannello dedicato ai grafici, all’interno del quale si trova il pulsante <b>Download</b>, che consente di scaricare uno screenshot del grafico.</p>
 
-        <img src="img/path_05.jpg" alt="Path export" class="screenshot img-responsive" />
+        <h4>Esportazione di un percorso in dettaglio</h4>
+        <p>Come già preannunciato, tramite il workbench, è possibile aprire il pannello di download ed esportare il percorso (o multipercorso) in uno dei formati supportati (GeoJSON, CSV, KML o GPX).</p>
 
-        <p>L'esportazione consiste nel salvare sul pc o device dell'utente uno o più file del formato scelto tra quelli
-          disponibili. Questi file potranno poi essere usati in qualsiasi software GIS (ad esempio QGIS) o essere
-          reimportati in <b>rer3d-map</b> (vedi sotto).</p>
+        <p>L'esportazione consiste nel salvare uno o più file del formato scelto tra quelli disponibili. Questi file potranno poi essere usati in qualsiasi software GIS (ad esempio QGIS) o essere reimportati in <b>rer3d-map</b>:</p>
 
-        <p>L'esportazione in CSV salva un file <code>elevation_step.csv</code> con i dati delle tappe e, se è stato
-          calcolato il dettaglio altimetrico (bottone <b>Calcola</b>), salva due file aggiuntivi:
-          <code>elevation_detail.csv</code> con i dati del percorso campionato e <code>elevation_resume.csv</code> con i
-          dati riassuntivi del percorso (altitudine minima e massima, rotta, ecc.). I percorsi esportati in CSV saranno
-          caricati dai GIS come layer di punti.
+        <p>L'esportazione in CSV salva un file con un nome definito dall'utente, con formato <code>.csv</code> con i dati delle tappe ed eventuali note. I percorsi esportati in CSV saranno caricati dai GIS come layer di punti.
         </p>
 
-        <p>L'esportazione in GeoJSON salva un file <code>elevation_step.geojson</code> con i dati delle tappe e, se è
-          stato calcolato il dettaglio altimetrico, un file <code>elevation_detail.geojson</code> con i dati del
-          percorso campionato; i dati riassuntivi del percorso sono presenti all'interno di entrambi i file. I percorsi
-          esportati in GeoJSON saranno caricati dai GIS come layer di linee.</p>
+        <p>L'esportazione in GeoJSON salva un file con un nome definito dall'utente, con formato <code>.geojson</code> con i dati delle tappe ed eventuali note. I percorsi esportati in GeoJSON saranno caricati dai GIS come layer di punti, linee o poligoni.</p>
 
-        <p>L'esportazione in KML salva un file <code>elevation_step.kml</code> con i dati delle tappe e, se è stato
-          calcolato il dettaglio altimetrico, un file <code>elevation_detail.kml</code> con i dati del percorso
-          campionato. I percorsi esportati in KML saranno caricati dai GIS come layer di linee.</p>
+        <p>L'esportazione in GPX salva un file con un nome definito dall'utente, con formato <code>.gpx</code> con i dati delle tappe ed eventuali note. I percorsi esportati in GPX saranno caricati dai GIS come layer di punti o linee (non anche di poligoni a causa di limitazioni del formato).</p>
 
-        <img src="img/path_07.jpg" alt="Path view" class="screenshot img-responsive" />
+        <p>L'esportazione in KML salva un file con un nome definito dall'utente, con formato <code>.kml</code> con i dati delle tappe ed eventuali note. I percorsi esportati in KML saranno caricati dai GIS come layer di punti, linee o poligoni.</p>
+
+        <h2>Avvia percorso</h2>
+        <p>Il pannello di avvio del percorso permette di visualizzare il tragitto direttamente sulla mappa, facendolo "scorrere" punto per punto. </p>
+        <p>La camera si <b>muove automaticamente</b> lungo tutti i punti campionati fino a raggiungere la fine del percorso. Una volta avviata la riproduzione, è possibile metterla in pausa e riprenderla in un secondo momento, oppure interromperla definitivamente. Per determinare il punto di partenza, viene scelto uno dei due estremi del percorso (inizio o fine), in base a quello più vicino alla posizione attuale della camera.</p>
+        <img src="img/play-path-panel2.png" alt="Play Path panel" class="screenshot img-responsive" />
+        <p>È possibile modificare la <b>velocità</b> di scorrimento del percorso, così da permettere all’utente di adattare la visualizzazione alle proprie esigenze. Inoltre, al primo avvio del percorso (ma non durante la ripresa di uno già in corso), verrà mostrato un <b>countdown</b> per consentire all’utente di prepararsi alla riproduzione.</p>
 
         <h2>Importazione</h2>
-        <p>È possibile, in certe condizioni, importare un percorso da un layer caricato in <b>rer3d-map</b>.</p>
+        <p>È possibile, in certe condizioni, importare un file da un layer caricato in <b>rer3d-map</b>.</p>
 
-        <p>Perchè sia possibile importare un percorso è necessario che il layer contenga una sola geometria di tipo
-          lineare (attualmente non è possibile importare poligoni e non è possibile scegliere una geometria fra tante,
-          deve essercene solo una presente nel layer); quando questo prerequisito è rispettato, il layer in questione è
-          dotato nell'interfaccia di un bottone in più: <b>Misura percorso</b></p>
-
-        <img src="img/path_08.jpg" alt="Path import" class="screenshot img-responsive" />
-
-        <p>Cliccando su <b>Misura percorso</b> dai dati dell'unica geometria del layer viene prodotto e caricato il
-          <em>percorso</em>, di cui sono visibili i dati ed i grafici.
-        </p>
-
-        <p>Se il percorso importato ha valori altitudine, sono usati quelli, altrimenti sono letti dal modello del
-          terreno di <b>rer3d-map</b>.</p>
-
+        <p>I dati supportati per l'importazioni sono i file di percorsi o multi percorsi che hanno un certo formato, al momento sono supportati i file: <code>.kml</code>, <code>.geojson</code>, <code>.json</code>, <code>.gpx</code> ed infine <code>.csv</code>.</p>
       </div>
 
     </div><!-- End col-md-8 -->

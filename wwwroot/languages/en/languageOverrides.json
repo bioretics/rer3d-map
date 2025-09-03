@@ -80,6 +80,84 @@
       }
     }
   },
+  "measuretoolsguide": {
+    "title": "Measurement Tools guide",
+    "markdownText": "## Measurement Tools guide\n\nLaunch a guide for various popular workflows below:",
+    "gettingstarted": {
+      "title": "Learn the measurement tools",
+      "step1": {
+        "markdownDescription": "You can find the measurement tools in the panel on the right (on desktop) or at the bottom (on mobile devices).",
+        "title": "Click on the measuring tools icon, to view all available tools."
+      },
+      "step2": {
+        "markdownDescription": "After opening the measurement tools, select the one best suited to your needs!",
+        "title": "Select the measurement tool you want to use"
+      },
+      "step3": {
+        "markdownDescription": "The measurement tools are designed to measure points elevation, distance, area, and angle. After selecting a tool, click on the map to make measurements.\n- The point (or elevation) tool measures the elevation of different points on the map\n- The line tool measures the distance between two or more points on the map\n- The polygon tool measures the area of a polygon you draw on the map\n- The angle tool measures the angle between three points on the map",
+        "title": "After selecting a tool, click on the map to make measurements."
+      },
+      "step4": {
+        "title": "Check and view the measurement tool information.",
+        "markdownDescription": "You will now see a panel appear with information about the measuring tool being used (such as a list of points added on the map), along with a white panel that will allow you to close the tool. With the Angle Measure Tool, however, the angle will be displayed directly on the map without opening the information panel, although the white panel will still appear."
+      },
+      "step5": {
+        "title": "Interact with the data via the measure panel.",
+        "markdownDescription": "You can move the order of the sequence of the various points inserted by changing their path, add more paths and create multi-paths, export them in various formats."
+      },
+      "step6": {
+        "title": "Click on the chart icon in measure panel to open a graph based on the sampled points and monitor the elevation.",
+        "markdownDescription": "You can adjust the sampling steps by modifying the number of points in the measure panel."
+      },
+      "step7": {
+        "title": "You can take a screenshot of the graph by clicking the download button in the top left corner of the graph."
+      },
+      "step8": {
+        "title": "From the Measure Panel you can export your measurements in various formats.",
+        "markdownDescription": "You can choose from various formats such as CSV, GEOJSON, or KML. And you can choose to export the single path or all paths (if you have multiple paths)."
+      }
+    },
+    "satelliteimagery": {
+      "title": "Adding satellite imagery",
+      "footnote": "Important: Satellite imagery can take a little while to load so please be patient. If images don’t seem to be loading, zoom out a little bit",
+      "step1": {
+        "title": "Find the location to view satellite imagery",
+        "markdownDescription": "- Use the location search or zoom and pan around the map using your mouse or the zoom controls"
+      },
+      "step2": {
+        "title": "Add the satellite imagery to the map",
+        "markdownDescription": "- Open the data catalogue using \"Explore map data\" button\n- Navigate through datasets to select your satellite option: Landsat or Sentinel, and daily or composite images. This can depend on resolution of the image you need (10m or 25m) and whether you want daily, 16 day composite, or annual average images\n - Select \"Add to the map\" to view the satellite imagery"
+      },
+      "step3": {
+        "title": "Filter images to find satellite imagery",
+        "markdownDescription": "- Filter images by location to quickly find satellite images for that location\n - Satellites circle the globe many times a day. You can expect satellite imagery to be available for one location every two weeks\n - If you haven't already selected your point of interest on the map, zoom in to select one. You will see the filter applied in blue in the Workbench on the left"
+      },
+      "step4": {
+        "title": "Select a time and date",
+        "markdownDescription": "- Use the date picker to select a time and date. Cycle backwards through previous years using the back arrow\n - Choose another date if your imagery is obscured by clouds. You can quickly cycle back and forward using the arrows next to the date picker"
+      }
+    },
+    "comparetimeseries": {
+      "title": "View and compare different points in time",
+      "footnote": "Important: Any time series data can be compared using the Split Screen Mode, not just satellite imagery",
+      "step1": {
+        "title": "Add a time series dataset to the map",
+        "markdownDescription": "- Satellite imagery is a good example of time series data, with many satellites going back decades\n- Find your location of interest and filter available imagery by this location\n-See our Adding Satellite Imagery to the Map guide for more"
+      },
+      "step2": {
+        "title": "Select the time and date",
+        "markdownDescription": "- In the workbench on the left, select the time and date which will open the date picker\n- Select a year, month and date, or navigate back to other years and even centuries using the back arrow\n- Available dates appear in blue"
+      },
+      "step3": {
+        "title": "Compare different dates at one location",
+        "markdownDescription": "- From the 3 dots drop-down menu in the workbench, press 'Compare' to activate Split Screen Mode\n- A duplicate copy of your dataset will appear in the workbench\n- Choose the dates you want to compare on the left and right of the screen\n- Drag the slider using the white button to swipe and compare the two image dates"
+      },
+      "step4": {
+        "title": "Close Split Screen Mode",
+        "markdownDescription": "- Escape the Split Screen Mode by pressing the 'x' of Split Screen Mode title in the workbench\n- Remove the duplicate copy of your dataset in the workbench using the 3 dots drop-down menu"
+      }
+    }
+  },
   "helpContentTerm1": {
     "term": "dataset",
     "aliases": ["data set", "data sets", "datasets"],
