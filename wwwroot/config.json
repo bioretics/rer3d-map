@@ -2,19 +2,30 @@
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
   "initializationUrls": ["simple"],
   "parameters": {
-    "useMyLocationFromDesktop": false,
-    "leafletMaxZoom": 21,
-    "mapViewers": [
-      "3d",
-      "2d"
-    ],
-    "extraCreditLinks": [],
+    "cesiumGlobeColor": "white",
     "aboutButtonHrefUrl": null,
+    "extraCreditLinks": [],
     "relatedMaps": null,
-
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
     "googleAnalyticsOptions": null,
+    "customSearchProviderUrl": "eGeoCoding",
+    "whereAmIParams": {
+      "urlFast": "https://servizigis.regione.emilia-romagna.it/geoags/rest/services/portale/where/MapServer/0/query?geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIndexIntersects&outFields=OBJECTID,LOCALIZZAZ,DETTAGLIO&returnGeometry=false&f=pjson",
+      "urlSlowButAccurate": "https://servizigis.regione.emilia-romagna.it/geoags/rest/services/portale/where/MapServer/0/query?geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID,LOCALIZZAZ,DETTAGLIO&returnGeometry=false&f=pjson",
+      "fieldId": "OBJECTID",
+      "fieldResult": "LOCALIZZAZ",
+      "fieldResultDetailed": "DETTAGLIO"
+    },
+    "coordsConverterUrl": "http://servizigis.regione.emilia-romagna.it/arcgis/rest/services/Utilities/Geometry/GeometryServer/project",
+    "useMyLocationFromDesktop": false,
+    "mouseAsInfoDefaultValue": false,
+    "useElevationMeanSeaLevel": true,
+    "wgs84vsMeanSeaLevelRoughDiff": 42,
+    "leafletMaxZoom": 21,
+    "pickSize": 10,
+    "polylineWidth": 4,
+    "playPathCameraPitchThreshold": 30,
     // Log ConsoleAnalytics events to console
     // logToConsole: true,
     /* Text that appears at the bottom of the map */
@@ -47,9 +58,6 @@
     "appName": "Geoportale 3D",
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
-      /*"",
-      "<a target=\"_blank\" href=\"https://terria.io\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
-      ""*/
       "<a target=\"_blank\" href=\"https://www.regione.emilia-romagna.it\"><img src=\"https://mappe.regione.emilia-romagna.it/init/logo/LogoRER52x52.png\" alt=\"Regione //Emilia-Romagna\"  height=\"52\" title=\"Regione Emilia-Romagna\" /></a>",
       "<a target=\"_blank\" href=\"https://mappe.regione.emilia-romagna.it\"><img src=\"https://mappe.regione.emilia-romagna.it/init/logo/LogoGeoportale218x52.png\" height=\"52\"  alt=\"Geportale 3D - Emilia-Romagna\" title=\"Geoportale 3D - Regione Emilia-Romagna\" /></a>",
       "<a target=\"_blank\" href=\"https://digitale.regione.emilia-romagna.it\"><img src=\"https://mappe.regione.emilia-romagna.it/init/logo/LogoDV60x52.png\" alt=\"Data Valley Emilia-Romagna\" height=\"52\" title=\"Data valley Bene Comune - Regione Emilia-Romagna\" /></a>"
@@ -58,7 +66,7 @@
       "<a target=\"_blank\" href=\"https://www.regione.emilia-romagna.it\"><img src=\"https://mappe.regione.emilia-romagna.it/init/logo/LogoRER52x52.png\" alt=\"Regione Emilia-Romagna\"  height=\"52\" title=\"Regione Emilia-Romagna\" /></a>"
     ],
     // Shown when things go wrong.
-    "supportEmail": "infogeoportale@regione.emilia-romagna.it",
+    "supportEmail": "mappe@regione.emilia-romagna.it",
     // You probably shouldn't change this.
     "proj4ServiceBaseUrl": "proj4def/",
     // Or this
@@ -80,7 +88,7 @@
       "placeholderImage": "https://i.ytimg.com/vi/5iBZpiQhLJo/mqdefault.jpg"
     },
     // True to display in-app guides.
-    // "showInAppGuides": false,
+    "showInAppGuides": true,
     // see `languageOverrides.json` in languages/en
     "languageConfiguration": {
       "enabled": true,
@@ -94,26 +102,20 @@
     "searchBarConfig": {},
     "searchProviders": [
       {
-        "id": "search-provider/cesium-ion",
-        "type": "cesium-ion-search-provider",
-        "name": "Cesium",
-        "flightDurationSeconds": 2,
-        "minCharacters": 3
-      },
-      {
         "id": "search-provider/rer",
         "type": "rer-search-provider",
         "name": "RER",
         "flightDurationSeconds": 2,
-        "minCharacters": 3
+        "minCharacters": 3,
+        "url": "https://servizigistest.regione.emilia-romagna.it/normalizzatore/eGeoCoding"
       },
-      {
+      /*{
         "id": "search-provider/bing",
         "type": "bing-maps-search-provider",
         "name": "Bing",
         "flightDurationSeconds": 2,
         "minCharacters": 3
-      },
+      },*/
       {
         "id": "search-provider/nominatim",
         "type": "nominatim-search-provider",
@@ -121,6 +123,13 @@
         "flightDurationSeconds": 2,
         "minCharacters": 3,
         "countryCodes": "it"
+      },
+      {
+        "id": "search-provider/cesium-ion",
+        "type": "cesium-ion-search-provider",
+        "name": "Cesium",
+        "flightDurationSeconds": 2,
+        "minCharacters": 3
       }
     ],
     "helpContent": [
@@ -128,10 +137,7 @@
         "title": "translate#gettingstarted.title",
         "itemName": "gettingstarted",
         "paneMode": "videoAndContent",
-        "markdownText": "translate#gettingstarted.markdownText",
-        "icon": "video",
-        "videoUrl": "translate#gettingstarted.videoUrl",
-        "placeholderImage": "translate#gettingstarted.placeholderImage"
+        "markdownText": "translate#gettingstarted.markdownText"
       },
       {
         "title": "translate#stepbystepguide.title",
@@ -157,64 +163,77 @@
                 "markdownDescription": "translate#stepbystepguide.gettingstarted.step3.markdownDescription"
               },
               {
-                "title": "translate#stepbystepguide.gettingstarted.step4.title"
+                "title": "translate#stepbystepguide.gettingstarted.step4.title",
+                "markdownDescription": "translate#stepbystepguide.gettingstarted.step4.markdownDescription"
               },
               {
-                "title": "translate#stepbystepguide.gettingstarted.step5.title"
+                "title": "translate#stepbystepguide.gettingstarted.step5.title",
+                "markdownDescription": "translate#stepbystepguide.gettingstarted.step5.markdownDescription"
               },
               {
-                "title": "translate#stepbystepguide.gettingstarted.step6.title"
+                "title": "translate#stepbystepguide.gettingstarted.step6.title",
+                "markdownDescription": "translate#stepbystepguide.gettingstarted.step6.markdownDescription"
               },
               {
-                "title": "translate#stepbystepguide.gettingstarted.step7.title"
+                "title": "translate#stepbystepguide.gettingstarted.step7.title",
+                "markdownDescription": "translate#stepbystepguide.gettingstarted.step7.markdownDescription"
               },
               {
-                "title": "translate#stepbystepguide.gettingstarted.step8.title"
+                "title": "translate#stepbystepguide.gettingstarted.step8.title",
+                "markdownDescription": "translate#stepbystepguide.gettingstarted.step8.markdownDescription"
+              },
+              {
+                "title": "translate#stepbystepguide.gettingstarted.step9.title",
+                "markdownDescription": "translate#stepbystepguide.gettingstarted.step9.markdownDescription"
+              },
+              {
+                "title": "translate#stepbystepguide.gettingstarted.step10.title",
+                "markdownDescription": "translate#stepbystepguide.gettingstarted.step10.markdownDescription"
               }
             ]
           }
           // -- Uncomment to enable the following trainer guides --
           // {
-          //   "title": "translate#stepbystepguide.satelliteimagery.title",
-          //   "footnote": "translate#stepbystepguide.satelliteimagery.footnote",
+          //   "title": "stepbystepguide.satelliteimagery.title",
+          //   "footnote": "stepbystepguide.satelliteimagery.footnote",
           //   "steps": [
           //     {
-          //       "title": "translate#stepbystepguide.satelliteimagery.step1.title",
-          //       "markdownDescription": "translate#stepbystepguide.satelliteimagery.step1.markdownDescription"
+          //       "title": "stepbystepguide.satelliteimagery.step1.title",
+          //       "markdownDescription": "stepbystepguide.satelliteimagery.step1.markdownDescription"
           //     },
           //     {
-          //       "title": "translate#stepbystepguide.satelliteimagery.step2.title",
-          //       "markdownDescription": "translate#stepbystepguide.satelliteimagery.step2.markdownDescription"
+          //       "title": "stepbystepguide.satelliteimagery.step2.title",
+          //       "markdownDescription": "stepbystepguide.satelliteimagery.step2.markdownDescription"
           //     },
           //     {
-          //       "title": "translate#stepbystepguide.satelliteimagery.step3.title",
-          //     "markdownDescription": "translate#stepbystepguide.satelliteimagery.step3.markdownDescription"
+          //       "title": "stepbystepguide.satelliteimagery.step3.title",
+          //     "markdownDescription": "stepbystepguide.satelliteimagery.step3.markdownDescription"
           //     },
           //     {
-          //       "title": "translate#stepbystepguide.satelliteimagery.step4.title",
-          //       "markdownDescription": "translate#stepbystepguide.satelliteimagery.step4.markdownDescription"
+          //       "title": "stepbystepguide.satelliteimagery.step4.title",
+          //       "markdownDescription": "stepbystepguide.satelliteimagery.step4.markdownDescription"
           //     }
           //   ]
           // },
           // {
-          //   "title": "translate#stepbystepguide.comparetimeseries.title",
-          //   "footnote": "translate#stepbystepguide.comparetimeseries.footnote",
+          //   "title": "stepbystepguide.comparetimeseries.title",
+          //   "footnote": "stepbystepguide.comparetimeseries.footnote",
           //   "steps": [
           //     {
-          //       "title": "translate#stepbystepguide.comparetimeseries.step1.title",
-          //       "markdownDescription": "translate#stepbystepguide.comparetimeseries.step1.markdownDescription"
+          //       "title": "stepbystepguide.comparetimeseries.step1.title",
+          //       "markdownDescription": "stepbystepguide.comparetimeseries.step1.markdownDescription"
           //     },
           //     {
-          //       "title": "translate#stepbystepguide.comparetimeseries.step2.title",
-          //       "markdownDescription": "translate#stepbystepguide.comparetimeseries.step2.markdownDescription"
+          //       "title": "stepbystepguide.comparetimeseries.step2.title",
+          //       "markdownDescription": "stepbystepguide.comparetimeseries.step2.markdownDescription"
           //     },
           //     {
-          //       "title": "translate#stepbystepguide.comparetimeseries.step3.title",
-          //       "markdownDescription": "translate#stepbystepguide.comparetimeseries.step3.markdownDescription"
+          //       "title": "stepbystepguide.comparetimeseries.step3.title",
+          //       "markdownDescription": "stepbystepguide.comparetimeseries.step3.markdownDescription"
           //     },
           //     {
-          //       "title": "translate#stepbystepguide.comparetimeseries.step4.title",
-          //       "markdownDescription": "translate#stepbystepguide.comparetimeseries.step4.markdownDescription"
+          //       "title": "stepbystepguide.comparetimeseries.step4.title",
+          //       "markdownDescription": "stepbystepguide.comparetimeseries.step4.markdownDescription"
           //     }
           //   ]
           // }
@@ -411,9 +430,7 @@
       },
       {
         "term": "translate#helpContentTerm5.term",
-        "aliases": [
-          "catalogue"
-        ],
+        "aliases": ["catalogue"],
         "content": "translate#helpContentTerm5.content"
       },
       {
