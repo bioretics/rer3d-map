@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>rer3d-map - Help & FAQ - Play Path</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/custom.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://rer3d.regione.emilia-romagna.it">
+          <img alt="Brand" src="../public/img/logo-regione.png">
+        </a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="../about.html">About</a></li>
+          <li class="active"><a href="help.html">Help & FAQ</a></li>
+          <!--<li><a href="privacy.html">Privacy</a></li>-->
+          <li><a href="http://rer3d.regione.emilia-romagna.it/" target="blank">Apri rer3d-map</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <!-- Begin page content -->
+  <div class="container content">
+    <div class="row">
+
+      <nav class="side-nav navbar-right col-md-3 col-md-offset-1">
+
+        <div data-spy="affix">
+
+          <h4 class="nav-header">Come...</h4>
+          <ul class="how-to">
+            <li><a href="help.html">Come iniziare</a></li>
+            <li><a href="help.html#add-data">Come caricare nuovi layer non presenti nel catalogo</a></li>
+            <li><a href="help.html#share">Come condividere la mappa con altri</a></li>
+          </ul>
+
+          <h4 class="nav-header">Key Features</h4>
+          <ul class="key-features">
+            <li><a href="map-navigation.html">Mappa</a></li>
+            <li><a href="data-catalogue.html">Catalogo</a></li>
+            <li><a href="data-workbench.html">Workbench</a></li>
+            <li><a href="path-usage.html">Misure e percorsi</a></li>
+            <li><a href="coordinates.html">Coordinate</a></li>
+            <li><a href="play-path.html">Play Path</a></li>
+          </ul>
+
+          <h4 class="nav-header">Frequently Asked Questions</h4>
+          <ul class="faq">
+            <li><a href="faq.html">rer3d-map</a></li>
+            <li><a href="faq.html#nm-systemdata">Dati</a></li>
+            <li><a href="faq.html#nm-reportingissues">Segnalazioni</a></li>
+          </ul>
+
+        </div>
+
+      </nav>
+
+      <div class="col-md-8">
+
+        <h1>Play Path</h1>
+
+        <h2>Cos'è Play Path</h2>
+
+        <p><strong>Play Path</strong> è una funzionalità avanzata di <b>rer3d-map</b> che consente di visualizzare dinamicamente un percorso misurato sulla mappa 3D. Questa funzione permette di "volare" automaticamente lungo il tragitto definito, offrendo una visualizzazione immersiva dell'itinerario con movimento fluido della telecamera.</p>
+
+        <p>La funzione Play Path trasforma un percorso statico in un'esperienza di navigazione cinematografica, particolarmente utile per:</p>
+        <ul>
+          <li>Presentazioni di progetti e piani territoriali</li>
+          <li>Analisi di percorsi e tracciati</li>
+          <li>Visualizzazione di itinerari turistici o escursionistici</li>
+        </ul>
+
+        <img src="img/play-path-panel.png" width="50%" alt="Play Path panel" class="screenshot img-responsive" />
+
+        <h2>Come attivare Play Path</h2>
+
+        <p>Per utilizzare la funzione Play Path è necessario seguire questi passaggi preliminari:</p>
+
+        <ol>
+          <li><strong>Creare un percorso</strong>: Utilizzare gli strumenti di misura lineare <img src="img/measure.svg" alt="Measure linear icon" height="24" /> per definire un percorso sulla mappa</li>
+          <li><strong>Trasformare il percorso</strong>: Dal pannello dei grafici, cliccare sul pulsante "Trasformazione" per convertire il percorso in un layer nel workbench</li>
+          <li><strong>Accedere alle opzioni</strong>: Nel workbench, cliccare sull'icona con i tre puntini accanto al percorso trasformato</li>
+          <li><strong>Avviare Play Path</strong>: Selezionare "Avvia percorso (Play Path)" dal menu delle opzioni</li>
+        </ol>
+
+        <img src="img/workbench-catalog-options.png" width="50%" alt="Workbench catalog options" class="screenshot img-responsive" />
+
+        <h2>Pannello di controllo Play Path</h2>
+
+        <p>Una volta attivata la funzione, si aprirà il pannello di controllo Play Path che presenta i seguenti elementi:</p>
+
+        <h3>Controlli principali</h3>
+        <ul>
+          <li><strong>Pulsante Play/Pausa</strong> <img src="img/play.svg" alt="Play icon" height="20" /><img src="img/pause.svg" alt="Play icon" height="20" />: Avvia o mette in pausa la riproduzione del percorso</li>
+          <li><strong>Pulsante Stop</strong> <img src="img/revert.svg" alt="Stop icon" height="20" />: Interrompe la riproduzione e riporta la telecamera al punto di partenza</li>
+        </ul>
+
+        <h3>Controllo velocità</h3>
+        <p>Il pannello include uno slider per regolare la velocità di riproduzione:</p>
+        <ul>
+          <li><strong>Range</strong>: da 0.5x a 3.0x la velocità normale</li>
+          <li><strong>Incrementi</strong>: 0.1x per una regolazione precisa</li>
+          <li><strong>Indicatore</strong>: mostra il valore corrente della velocità</li>
+        </ul>
+
+        <img src="img/play-path-panel2.png" width="50%" alt="Play Path detailed panel" class="screenshot img-responsive" />
+
+        <h2>Funzionamento automatico</h2>
+
+        <h3>Selezione del punto di partenza</h3>
+        <p>Il sistema determina automaticamente il punto di partenza del percorso analizzando la posizione attuale della telecamera:</p>
+        <ul>
+          <li>Calcola la distanza dalla telecamera a entrambi gli estremi del percorso</li>
+          <li>Seleziona come punto di partenza l'estremo più vicino alla posizione attuale</li>
+          <li>Imposta automaticamente la direzione di percorrenza (normale o inversa)</li>
+        </ul>
+
+        <h3>Ottimizzazione del percorso</h3>
+        <p>Prima della riproduzione, il sistema applica diversi algoritmi di ottimizzazione:</p>
+        <ul>
+          <li><strong>Semplificazione</strong>: Riduce i punti ridondanti mantenendo la forma del percorso</li>
+          <li><strong>Interpolazione</strong>: Aggiunge punti intermedi per garantire un movimento fluido</li>
+          <li><strong>Campionamento adattivo</strong>: Utilizza i punti campionati dal sistema di misura per maggiore precisione</li>
+        </ul>
+
+        <h3>Countdown di avvio</h3>
+        <p>Al primo avvio della riproduzione (ma non quando si riprende una riproduzione in pausa), viene mostrato un countdown di 3 secondi che consente all'utente di prepararsi alla visualizzazione ed eventualmente liberare la schermata da pannelli superflui.</p>
+
+        <h2>Controllo della telecamera</h2>
+
+        <h3>Movimento automatico</h3>
+        <p>Durante la riproduzione, la telecamera si muove automaticamente:</p>
+        <ul>
+          <li><strong>Posizionamento</strong>: La telecamera segue il percorso punto per punto</li>
+          <li><strong>Orientamento</strong>: L'orientamento viene calcolato in base alla direzione del percorso</li>
+          <li><strong>Distanza</strong>: Mantiene una distanza appropriata dal terreno per una visualizzazione ottimale</li>
+          <li><strong>Inclinazione</strong>: Regola automaticamente l'angolo di visuale (pitch) per seguire il terreno</li>
+        </ul>
+
+        <h3>Requisiti di inclinazione</h3>
+        <p>Per il corretto funzionamento di Play Path, è necessario che la telecamera abbia un'inclinazione minima:</p>
+        <ul>
+          <li><strong>Inclinazione minima richiesta</strong>: È necessaria una inclinazione minima, ad esempio 45° (π/4 radianti).</li>
+          <li><strong>Avviso automatico</strong>: Se l'inclinazione è insufficiente, viene mostrato un messaggio di avviso</li>
+          <li><strong>Blocco funzione</strong>: Il pulsante Play è disabilitato se l'inclinazione è troppo bassa</li>
+        </ul>
+
+        <div class="alert alert-warning">
+          <strong>Attenzione:</strong> Se la telecamera è posizionata con un'inclinazione troppo bassa (vista troppo dall'alto), il sistema mostrerà il messaggio "L'inclinazione della telecamera è troppo bassa." e impedirà l'avvio della riproduzione.
+        </div>
+
+        <h2>Gestione dello stato di riproduzione</h2>
+
+        <h3>Stati della riproduzione</h3>
+        <ul>
+          <li><strong>Fermo</strong>: Percorso non avviato, telecamera nella posizione iniziale</li>
+          <li><strong>In riproduzione</strong>: Telecamera in movimento automatico lungo il percorso</li>
+          <li><strong>In pausa</strong>: Riproduzione interrotta temporaneamente, posizione mantenuta</li>
+          <li><strong>Movimento manuale</strong>: L'utente sta spostando manualmente la telecamera</li>
+        </ul>
+
+        <h3>Ripresa della riproduzione</h3>
+        <p>Quando si riprende una riproduzione dopo una pausa:</p>
+        <ul>
+          <li>Non viene mostrato il countdown</li>
+          <li>La riproduzione riprende dal punto in cui è stata interrotta</li>
+          <li>Vengono mantenute tutte le impostazioni di velocità</li>
+        </ul>
+
+        <h2>Sincronizzazione con il caricamento tiles</h2>
+
+        <p>Play Path include un sistema avanzato di sincronizzazione con il caricamento dei dati della mappa:</p>
+
+        <h3>Monitoraggio del progresso</h3>
+        <ul>
+          <li><strong>Indicatore percentuale</strong>: Mostra la percentuale di tiles caricati</li>
+          <li><strong>Attesa automatica</strong>: La riproduzione attende che ogni frame sia completamente caricato</li>
+          <li><strong>Modalità indeterminata</strong>: Gestisce situazioni in cui il progresso non è quantificabile</li>
+        </ul>
+
+        <h3>Ottimizzazione delle prestazioni</h3>
+        <p>Il sistema implementa diverse strategie per ottimizzare le prestazioni:</p>
+        <ul>
+          <li>Attende il caricamento completo prima di passare al punto successivo</li>
+          <li>Monitora lo stato di caricamento in tempo reale</li>
+          <li>Evita movimenti quando i dati non sono ancora disponibili</li>
+        </ul>
+
+        <h2>Gestione degli errori e casi particolari</h2>
+
+        <h3>Controllo automatico dei percorsi</h3>
+        <ul>
+          <li><strong>Cambio percorso</strong>: Se viene selezionato un percorso diverso, Play Path si resetta automaticamente</li>
+          <li><strong>Percorsi vuoti</strong>: La funzione viene disabilitata se non ci sono punti sufficienti</li>
+          <li><strong>Interruzione forzata</strong>: È sempre possibile interrompere la riproduzione in qualsiasi momento</li>
+        </ul>
+
+        <h3>Gestione della finestra</h3>
+        <p>Il pannello Play Path è completamente mobile e ridimensionabile:</p>
+        <ul>
+          <li><strong>Trascinamento</strong>: Il pannello può essere spostato liberamente nella finestra</li>
+          <li><strong>Vincoli</strong>: Il movimento è limitato ai bordi della finestra del browser</li>
+          <li><strong>Dimensioni adaptive</strong>: Si adatta automaticamente alle dimensioni del contenuto e del dispositivo</li>
+        </ul>
+
+        <h2>Consigli per l'utilizzo ottimale</h2>
+
+        <h3>Impostazioni della telecamera</h3>
+        <ul>
+          <li>Posizionare la telecamera con un'inclinazione adeguata prima di avviare</li>
+          <li>Assicurarsi di avere una buona visuale del punto di partenza del percorso</li>
+          <li>Evitare di manipolare manualmente la telecamera durante la riproduzione automatica</li>
+        </ul>
+
+        <h3>Ottimizzazione delle prestazioni</h3>
+        <ul>
+          <li>Utilizzare velocità moderate (1x-2x) per percorsi complessi</li>
+          <li>Attendere il caricamento completo dei dati prima di avviare percorsi lunghi</li>
+          <li>Chiudere pannelli non necessari per migliorare la visualizzazione della presentazione</li>
+        </ul>
+
+        <h2>Integrazione con altre funzionalità</h2>
+
+        <p>Play Path si integra perfettamente con le altre funzionalità di <b>rer3d-map</b>:</p>
+
+        <ul>
+          <li><strong>Strumenti di misura</strong>: Utilizza i percorsi creati con gli strumenti di misura lineare</li>
+          <li><strong>Workbench</strong>: Richiede la trasformazione del percorso in layer tramite il workbench</li>
+          <li><strong>Esportazione</strong>: I percorsi visualizzati possono essere esportati nei formati standard</li>
+        </ul>
+
+      </div>
+
+    </div><!-- End col-md-8 -->
+  </div><!-- End container -->
+
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">&copy; Regione Emilia-Romagna 2017-2024</p>
+      <!--<p><strong><a href="../about.html#terms">Terms and conditions</a></strong> – <strong><a href="privacy.html">Privacy</a></strong></p>-->
+
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
