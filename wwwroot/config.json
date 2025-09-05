@@ -134,6 +134,12 @@
     ],
     "helpContent": [
       {
+        "title": "About",
+        "itemName": "gettingstarted_22",
+        "paneMode": "videoAndContent",
+        "markdownText": "**rer3d-map** è il visualizzatore cartografico 3D ufficiale per la consultazione e visualizzazione sul web di dati GIS della Regione Emilia-Romagna. [Clicca qui per maggiori informazioni](about.html)."
+      },
+      {
         "title": "translate#gettingstarted.title",
         "itemName": "gettingstarted",
         "paneMode": "videoAndContent",
