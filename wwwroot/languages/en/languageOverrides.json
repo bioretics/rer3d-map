@@ -173,7 +173,7 @@
       },
       "step3": {
         "markdownDescription": "Choose the path you want to play from the list and click 'Play Path'.",
-        "title": "Choose the path to preview"
+        "title": "Choose the path to play"
       },
       "step4": {
         "markdownDescription": "Move near the start point (first or last) and start the playback in a specific direction (start-to-end or end-to-start).",
@@ -192,7 +192,7 @@
       "title": "Playback controls",
       "step1": {
         "title": "Play/Pause button",
-        "markdownDescription": "Start or pause the animation. While playing, the camera can be set to follow the moving marker."
+        "markdownDescription": "Start or pause the animation of the following path."
       },
       "step2": {
         "title": "Stop button",
