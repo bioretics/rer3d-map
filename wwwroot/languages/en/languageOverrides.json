@@ -169,7 +169,7 @@
       },
       "step2": {
         "markdownDescription": "You can draw a path directly on the map using Measurable Tools and then click on \"Transform into a temporary layer\" or import path files (GPX, KML, GeoJSON). Once you perform either of these actions, the path will appear in the catalog data",
-        "title": "Draw a path or import a file"
+        "title": "Draw and transform a path or import one from a file"
       },
       "step3": {
         "markdownDescription": "Choose the path you want to play from the list and click 'Play Path'.",
