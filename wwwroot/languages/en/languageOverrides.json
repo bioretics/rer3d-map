@@ -164,19 +164,19 @@
     "gettingstarted": {
       "title": "Getting started with Play Path",
       "step1": {
-        "markdownDescription": "The Play Path panel is available after loading or transforming a path into a catalog layer.",
-        "title": "Open the Play Path panel"
+        "markdownDescription": "The Play Path panel is available after loading a file of a path or transforming a drawn path into a catalog layer.",
+        "title": "Play Path panel availability"
       },
       "step2": {
-        "markdownDescription": "You can draw a path directly on the map using Measurable Tools or import path files (GPX, KML, GeoJSON). Imported files appear in the Play Path list and can be selected for playback.",
+        "markdownDescription": "You can draw a path directly on the map using Measurable Tools and then click on \"Transform into a temporary layer\" or import path files (GPX, KML, GeoJSON). Once you perform either of these actions, the path will appear in the catalog data",
         "title": "Draw a path or import a file"
       },
       "step3": {
-        "markdownDescription": "Select the path you want to play from the list and click 'Play Path'.",
-        "title": "Select the path to preview"
+        "markdownDescription": "Choose the path you want to play from the list and click 'Play Path'.",
+        "title": "Choose the path to preview"
       },
       "step4": {
-        "markdownDescription": "Move near the start point (first or last) and start the playback in a specific direction(start-to-end or end-to-start).",
+        "markdownDescription": "Move near the start point (first or last) and start the playback in a specific direction (start-to-end or end-to-start).",
         "title": "Set start point and direction"
       },
       "step5": {
@@ -196,15 +196,11 @@
       },
       "step2": {
         "title": "Stop button",
-        "markdownDescription": "Stop playback and reset the camera to the chosen start point. Useful to reorient or restart the animation."
+        "markdownDescription": "Stop playback and reset the camera to the chosen start point."
       },
       "step3": {
         "title": "Speed slider",
         "markdownDescription": "Drag the speed slider to increase or decrease animation speed. The current speed label updates in real time."
-      },
-      "step4": {
-        "title": "Loop and direction controls",
-        "markdownDescription": "Toggle loop mode to automatically replay when the end is reached. Use direction controls to reverse playback."
       }
     },
     "cameraandview": {
