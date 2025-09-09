@@ -103,14 +103,9 @@
 
         <h2>Cos'è Play Path</h2>
 
-        <p><strong>Play Path</strong> è una funzionalità avanzata di <b>rer3d-map</b> che consente di visualizzare dinamicamente un percorso misurato sulla mappa 3D. Questa funzione permette di "volare" automaticamente lungo il tragitto definito, offrendo una visualizzazione immersiva dell'itinerario con movimento fluido della telecamera.</p>
+        <p>Lo strumento <strong>Play Path</strong> è una funzionalità avanzata del <b>Geoportale</b> che consente di visualizzare dinamicamente un percorso misurato sulla mappa. Questa funzione permette di "volare" automaticamente lungo il tragitto definito, offrendo una visualizzazione immersiva dell'itinerario con movimento fluido della telecamera.</p>
 
-        <p>La funzione Play Path trasforma un percorso statico in un'esperienza di navigazione cinematografica, particolarmente utile per:</p>
-        <ul>
-          <li>Presentazioni di progetti e piani territoriali</li>
-          <li>Analisi di percorsi e tracciati</li>
-          <li>Visualizzazione di itinerari turistici o escursionistici</li>
-        </ul>
+        <p>La funzione Play Path trasforma un percorso statico in un'esperienza di navigazione animata, particolarmente utile per eventuali presentazioni di progetti e piani territoriali o per effettuare delle analisi di percorsi e tracciati.</p>
 
         <img src="img/play-path-panel.png" width="50%" alt="Play Path panel" class="screenshot img-responsive" />
 
@@ -135,6 +130,7 @@
         <ul>
           <li><strong>Pulsante Play/Pausa</strong> <img src="img/play.svg" alt="Play icon" height="20" /><img src="img/pause.svg" alt="Play icon" height="20" />: Avvia o mette in pausa la riproduzione del percorso</li>
           <li><strong>Pulsante Stop</strong> <img src="img/revert.svg" alt="Stop icon" height="20" />: Interrompe la riproduzione e riporta la telecamera al punto di partenza</li>
+          <li><strong>Pulsante Help</strong> <img src="img/help-thick.svg" alt="Guide icon" height="20" />: Mostra la guida per l'uso del Play Path</li>
         </ul>
 
         <h3>Controllo velocità</h3>
@@ -155,14 +151,6 @@
           <li>Calcola la distanza dalla telecamera a entrambi gli estremi del percorso</li>
           <li>Seleziona come punto di partenza l'estremo più vicino alla posizione attuale</li>
           <li>Imposta automaticamente la direzione di percorrenza (normale o inversa)</li>
-        </ul>
-
-        <h3>Ottimizzazione del percorso</h3>
-        <p>Prima della riproduzione, il sistema applica diversi algoritmi di ottimizzazione:</p>
-        <ul>
-          <li><strong>Semplificazione</strong>: Riduce i punti ridondanti mantenendo la forma del percorso</li>
-          <li><strong>Interpolazione</strong>: Aggiunge punti intermedi per garantire un movimento fluido</li>
-          <li><strong>Campionamento adattivo</strong>: Utilizza i punti campionati dal sistema di misura per maggiore precisione</li>
         </ul>
 
         <h3>Countdown di avvio</h3>
@@ -230,13 +218,6 @@
 
         <h2>Gestione degli errori e casi particolari</h2>
 
-        <h3>Controllo automatico dei percorsi</h3>
-        <ul>
-          <li><strong>Cambio percorso</strong>: Se viene selezionato un percorso diverso, Play Path si resetta automaticamente</li>
-          <li><strong>Percorsi vuoti</strong>: La funzione viene disabilitata se non ci sono punti sufficienti</li>
-          <li><strong>Interruzione forzata</strong>: È sempre possibile interrompere la riproduzione in qualsiasi momento</li>
-        </ul>
-
         <h3>Gestione della finestra</h3>
         <p>Il pannello Play Path è completamente mobile e ridimensionabile:</p>
         <ul>
@@ -263,7 +244,7 @@
 
         <h2>Integrazione con altre funzionalità</h2>
 
-        <p>Play Path si integra perfettamente con le altre funzionalità di <b>rer3d-map</b>:</p>
+        <p>Play Path si integra perfettamente con le altre funzionalità del <b>Geoportale</b>:</p>
 
         <ul>
           <li><strong>Strumenti di misura</strong>: Utilizza i percorsi creati con gli strumenti di misura lineare</li>
