@@ -116,7 +116,7 @@
 
         <p>Per ciascuno strumento rimane sempre possibile cambiare il livello di zoom o spostare la mappa tramite drag&drop (prendi e trascina) per posizionarsi in modo opportuno.</p>
 
-        <p>Di ogni vertice è possibile visualizzare informazioni dettagliate, come l'altitudine, la dislocazione, la distanza geodetica, la distanza al suolo e la pendenza.</p>
+        <p>Di ogni vertice è possibile visualizzare <b>informazioni dettagliate</b>, come l'altitudine, il dislivello, la distanza geodetica, la distanza al suolo, la distanza in aria e la pendenza.</p>
 
         <p>E' possibile, inoltre avere più percorsi (o elementi) che vengono gestiti all'interno del pannello di misure di ciascun strumento tranne per il misuratore angolare essendo che l'angolo interessato viene visualizzato direttamente sulla mappa.</p>
 
@@ -171,7 +171,7 @@
         <p>A sinistra della mappa si apre un pannello con i dati del percorso:</p>
 
         <ol>
-          <li>Lunghezza 3D del percorso;</li>
+          <li>Distanza (geodetica, al suolo e in aria) del percorso;</li>
           <li>Altitudine minima e massima;</li>
           <li>Rotta (angolo rispetto al Nord della linea passante per la prima e ultima tappa del percorso);</li>
           <li>Dislivello tra prima e ultima tappa;</li>
@@ -212,7 +212,7 @@
           </li>
           <li>
             <b>Avvia percorso (Play Path)</b>(vedi sotto): consente di visualizzare il percorso trasformato sulla mappa;
-            <img src="img/play-path-panel.png" width="50%" alt="Play Path panel" class="screenshot img-responsive" />
+            <img src="img/play-path-panel.png" width="40%" alt="Play Path panel" class="screenshot img-responsive" />
           </li>
           <li><b>Percorso</b>: consente di riaprire il pannello di misure per visualizzare i dati del percorso (o multipercorso) in maniera più dettagliata;</li>
         </ul>
@@ -222,9 +222,9 @@
         <p>Una volta aperto il pannello delle misure, sarà possibile esportare il grafico accedendo al pannello dedicato ai grafici, all’interno del quale si trova il pulsante <b>Download</b>, che consente di scaricare uno screenshot del grafico.</p>
 
         <h4>Esportazione di un percorso in dettaglio</h4>
-        <p>Come già preannunciato, tramite il workbench, è possibile aprire il pannello di download ed esportare il percorso (o multipercorso) in uno dei formati supportati (GeoJSON, CSV, KML o GPX).</p>
+        <p>Come già preannunciato, tramite il catalogo dei dati, è possibile aprire il pannello di download ed esportare il percorso (o multipercorso) in uno dei formati supportati (GeoJSON, CSV, KML o GPX).</p>
 
-        <p>L'esportazione consiste nel salvare uno o più file del formato scelto tra quelli disponibili. Questi file potranno poi essere usati in qualsiasi software GIS (ad esempio QGIS) o essere reimportati in <b>rer3d-map</b>:</p>
+        <p>L'esportazione consiste nel salvare uno o più file del formato scelto tra quelli disponibili. Questi file potranno poi essere usati in qualsiasi software GIS (ad esempio QGIS) o essere reimportati nel <b>Geoportale</b>:</p>
 
         <p>L'esportazione in CSV salva un file con un nome definito dall'utente, con formato <code>.csv</code> con i dati delle tappe ed eventuali note. I percorsi esportati in CSV saranno caricati dai GIS come layer di punti.
         </p>
@@ -235,10 +235,10 @@
 
         <p>L'esportazione in KML salva un file con un nome definito dall'utente, con formato <code>.kml</code> con i dati delle tappe ed eventuali note. I percorsi esportati in KML saranno caricati dai GIS come layer di punti, linee o poligoni.</p>
 
-        <h2>Avvia percorso</h2>
+        <h2>Avvia percorso (o Play Path)</h2>
         <p>Il pannello di avvio del percorso permette di visualizzare il tragitto direttamente sulla mappa, facendolo "scorrere" punto per punto. </p>
         <p>La camera si <b>muove automaticamente</b> lungo tutti i punti campionati fino a raggiungere la fine del percorso. Una volta avviata la riproduzione, è possibile metterla in pausa e riprenderla in un secondo momento, oppure interromperla definitivamente. Per determinare il punto di partenza, viene scelto uno dei due estremi del percorso (inizio o fine), in base a quello più vicino alla posizione attuale della camera.</p>
-        <img src="img/play-path-panel2.png" width="50%" alt="Play Path panel" class="screenshot img-responsive" />
+        <img src="img/play-path-panel2.png" width="40%" alt="Play Path panel" class="screenshot img-responsive" />
         <p>È possibile modificare la <b>velocità</b> di scorrimento del percorso, così da permettere all’utente di adattare la visualizzazione alle proprie esigenze. Inoltre, al primo avvio del percorso (ma non durante la ripresa di uno già in corso), verrà mostrato un <b>countdown</b> per consentire all’utente di prepararsi alla riproduzione.</p>
 
         <h2>Importazione</h2>
