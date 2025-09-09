@@ -298,6 +298,10 @@
               {
                 "title": "translate#measuretoolsguide.gettingstarted.step8.title",
                 "markdownDescription": "translate#measuretoolsguide.gettingstarted.step8.markdownDescription"
+              },
+              {
+                "title": "translate#measuretoolsguide.gettingstarted.step9.title",
+                "markdownDescription": "translate#measuretoolsguide.gettingstarted.step9.markdownDescription"
               }
             ]
           }

@@ -99,21 +99,25 @@
       },
       "step4": {
         "title": "Check and view the measurement tool information.",
-        "markdownDescription": "You will now see a panel appear with information about the measuring tool being used (such as a list of points added on the map), along with a white panel that will allow you to close the tool. With the Angle Measure Tool, however, the angle will be displayed directly on the map without opening the information panel, although the white panel will still appear."
+        "markdownDescription": "You will now see a panel appear with information about the measuring tool being used (such as a list of points added on the map). With the Angle Measure Tool, however, the angle will be displayed directly on the map without opening the information panel."
       },
       "step5": {
-        "title": "Interact with the data via the measure panel.",
-        "markdownDescription": "You can move the order of the sequence of the various points inserted by changing their path, add more paths and create multi-paths, export them in various formats."
+        "title": "Edit paths through the Measure Panel.",
+        "markdownDescription": "You can edit the path by reordering the points in the panel, adjusting their positions, adding new points to the map, creating multiple paths, and exporting them in different formats."
       },
       "step6": {
         "title": "Click on the chart icon in measure panel to open a graph based on the sampled points and monitor the elevation.",
-        "markdownDescription": "You can adjust the sampling steps by modifying the number of points in the measure panel."
+        "markdownDescription": "You can adjust the sampling steps by modifying the number of points in the measure panel and then click on 'Change'."
       },
       "step7": {
         "title": "You can take a screenshot of the graph by clicking the download button in the top left corner of the graph."
       },
       "step8": {
-        "title": "From the Measure Panel you can export your measurements in various formats.",
+        "title": "From the Measure Panel you can transform your path into a temporary layer.",
+        "markdownDescription": "You can transform the path you draw into a temporary layer by simply selecting a specific name (or leaving the default one) and then click on 'Transform...'. This will add the path to your catalog data, allowing you to save it as a file or use it in other tools such as Play Path."
+      },
+      "step9": {
+        "title": "Export your measurements in various formats.",
         "markdownDescription": "You can choose from various formats such as CSV, GEOJSON, or KML. And you can choose to export the single path or all paths (if you have multiple paths)."
       }
     },
