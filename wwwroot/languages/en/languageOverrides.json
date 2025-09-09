@@ -114,7 +114,7 @@
       },
       "step8": {
         "title": "From the Measure Panel you can transform your path into a temporary layer.",
-        "markdownDescription": "You can transform the path you draw into a temporary layer by simply selecting a specific name (or leaving the default one) and then click on 'Transform...'. This will add the path to your catalog data, allowing you to save it as a file or use it in other tools such as Play Path."
+        "markdownDescription": "You can transform the path you draw into a temporary layer by simply selecting a specific name (or leaving the default one) and then click on \"Transform into a temporary layer\". This will add the path to your catalog data, allowing you to save it as a file or use it in other tools such as Play Path."
       },
       "step9": {
         "title": "Export your measurements in various formats.",
@@ -168,11 +168,11 @@
     "gettingstarted": {
       "title": "Getting started with Play Path",
       "step1": {
-        "markdownDescription": "The Play Path panel is available after loading a file of a path or transforming a drawn path into a catalog layer.",
+        "markdownDescription": "The Play Path panel is available after loading a file of a path or transforming a drawn path into a temporary catalog layer.",
         "title": "Play Path panel availability"
       },
       "step2": {
-        "markdownDescription": "You can draw a path directly on the map using Measurable Tools and then click on \"Transform into a temporary layer\" or import path files (GPX, KML, GeoJSON). Once you perform either of these actions, the path will appear in the catalog data",
+        "markdownDescription": "You can draw a path directly on the map using Measurable Tools and then click on \"Transform into a temporary layer\" or import path files (GPX, KML, GeoJSON). Once you perform either of these actions, the path will appear in the catalog data.",
         "title": "Draw and transform a path or import one from a file"
       },
       "step3": {
@@ -215,11 +215,7 @@
       },
       "step2": {
         "title": "Adjust zoom, pitch and bearing",
-        "markdownDescription": "Set zoom and pitch to suit the terrain: a more top-down view for flat areas, and a less extreme low pitch in mountainous regions."
-      },
-      "step3": {
-        "title": "Smooth camera transitions",
-        "markdownDescription": "Transitions between camera positions are eased for a smooth playback experience. Use Stop/Reset to create abrupt cuts between segments if needed."
+        "markdownDescription": "Adjust the zoom and pitch according to the terrain in order to achieve an optimal view and maintain accurate rendering."
       }
     },
     "tips": {
@@ -234,7 +230,7 @@
       },
       "step3": {
         "title": "Avoid low pitch in steep terrain",
-        "markdownDescription": "In mountainous areas, avoid very low camera pitch angles—raise the pitch or zoom out to maintain context and prevent clipping."
+        "markdownDescription": "In mountainous areas, avoid very low camera pitch angles, raise the pitch or zoom out to maintain context and prevent clipping."
       }
     }
   },

@@ -340,14 +340,6 @@
               {
                 "title": "translate#playpathguide.gettingstarted.step6.title",
                 "markdownDescription": "translate#playpathguide.gettingstarted.step6.markdownDescription"
-              },
-              {
-                "title": "translate#playpathguide.gettingstarted.step7.title",
-                "markdownDescription": "translate#playpathguide.gettingstarted.step7.markdownDescription"
-              },
-              {
-                "title": "translate#playpathguide.gettingstarted.step8.title",
-                "markdownDescription": "translate#playpathguide.gettingstarted.step8.markdownDescription"
               }
             ]
           },
@@ -365,10 +357,6 @@
               {
                 "title": "translate#playpathguide.playbackcontrols.step3.title",
                 "markdownDescription": "translate#playpathguide.playbackcontrols.step3.markdownDescription"
-              },
-              {
-                "title": "translate#playpathguide.playbackcontrols.step4.title",
-                "markdownDescription": "translate#playpathguide.playbackcontrols.step4.markdownDescription"
               }
             ]
           },
@@ -382,14 +370,6 @@
               {
                 "title": "translate#playpathguide.cameraandview.step2.title",
                 "markdownDescription": "translate#playpathguide.cameraandview.step2.markdownDescription"
-              },
-              {
-                "title": "translate#playpathguide.cameraandview.step3.title",
-                "markdownDescription": "translate#playpathguide.cameraandview.step3.markdownDescription"
-              },
-              {
-                "title": "translate#playpathguide.cameraandview.step4.title",
-                "markdownDescription": "translate#playpathguide.cameraandview.step4.markdownDescription"
               }
             ]
           },
@@ -407,10 +387,6 @@
               {
                 "title": "translate#playpathguide.tips.step3.title",
                 "markdownDescription": "translate#playpathguide.tips.step3.markdownDescription"
-              },
-              {
-                "title": "translate#playpathguide.tips.step4.title",
-                "markdownDescription": "translate#playpathguide.tips.step4.markdownDescription"
               }
             ]
           }
