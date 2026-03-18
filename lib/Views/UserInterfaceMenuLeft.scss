@@ -1,0 +1,48 @@
+@import "~terriajs-variables";
+
+$menu-left-group-border-radius: 999px;
+
+.menuLeftPosition {
+  top: 0 !important;
+  display: flex;
+  gap: 1px;
+  transition: margin-left 0.25s, transform 0.25s;
+}
+
+.menuLeftPosition.isMapFullScreen {
+  transform: translateX(0);
+}
+
+.menuLeftItem {
+  display: flex;
+}
+
+.menuLeftItem > div > button,
+.menuLeftItem > div > a,
+.menuLeftItem > button,
+.menuLeftItem > a {
+  border-radius: 0;
+}
+
+.menuLeftItem:first-child:not(:only-child) > div > button,
+.menuLeftItem:first-child:not(:only-child) > div > a,
+.menuLeftItem:first-child:not(:only-child) > button,
+.menuLeftItem:first-child:not(:only-child) > a {
+  border-radius: $menu-left-group-border-radius 0 0
+    $menu-left-group-border-radius;
+}
+
+.menuLeftItem:last-child:not(:only-child) > div > button,
+.menuLeftItem:last-child:not(:only-child) > div > a,
+.menuLeftItem:last-child:not(:only-child) > button,
+.menuLeftItem:last-child:not(:only-child) > a {
+  border-radius: 0 $menu-left-group-border-radius $menu-left-group-border-radius
+    0;
+}
+
+.menuLeftItem:only-child > div > button,
+.menuLeftItem:only-child > div > a,
+.menuLeftItem:only-child > button,
+.menuLeftItem:only-child > a {
+  border-radius: $menu-left-group-border-radius;
+}
