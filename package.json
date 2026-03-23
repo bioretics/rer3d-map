@@ -35,9 +35,13 @@
     "@types/react": "^17.0.3",
     "@types/lodash": "4.14.182",
     "@types/node": "^18.15.11",
-    "@types/css-font-loading-module": "^0.0.13"
+    "@types/css-font-loading-module": "^0.0.13",
+    "react-draggable": "4.4.5"
   },
   "devDependencies": {
+    "@types/flexsearch": "^0.7.1",
+    "@zip.js/zip.js": "2.6.63",
+    "react-draggable": "4.4.5",
     "@babel/core": "^7.23.5",
     "@babel/eslint-parser": "^7.23.3",
     "@babel/preset-env": "^7.23.5",
