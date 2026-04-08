@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 import RelatedMaps from "terriajs/lib/ReactViews/RelatedMaps/RelatedMaps";
+import PositionRightOfWorkbench from "terriajs/lib/ReactViews/Workbench/PositionRightOfWorkbench";
 import {
   ExperimentalMenu,
   MenuLeft
@@ -9,6 +10,7 @@ import MenuItem from "terriajs/lib/ReactViews/StandardUserInterface/customizable
 import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface";
 import version from "../../version";
 import "./global.scss";
+import Styles from "./UserInterfaceMenuLeft.scss";
 
 // function loadAugmentedVirtuality(callback) {
 //   require.ensure(
@@ -29,19 +31,35 @@ export default function UserInterface(props) {
   const relatedMaps = props.viewState.terria.configParameters.relatedMaps;
   const aboutButtonHrefUrl =
     props.viewState.terria.configParameters.aboutButtonHrefUrl;
+  const hasMenuLeftContent =
+    aboutButtonHrefUrl || (relatedMaps && relatedMaps.length > 0);
+  const menuLeftPositionClassName = `${Styles.menuLeftPosition} ${
+    props.viewState.isMapFullScreen ? Styles.isMapFullScreen : ""
+  }`;
 
   return (
     <StandardUserInterface {...props} version={version}>
       <MenuLeft>
-        {aboutButtonHrefUrl ? (
-          <MenuItem
-            caption="About"
-            href={aboutButtonHrefUrl}
-            key="about-link"
-          />
-        ) : null}
-        {relatedMaps && relatedMaps.length > 0 ? (
-          <RelatedMaps relatedMaps={relatedMaps} />
+        {hasMenuLeftContent ? (
+          <PositionRightOfWorkbench
+            viewState={props.viewState}
+            className={menuLeftPositionClassName}
+          >
+            {aboutButtonHrefUrl ? (
+              <div className={Styles.menuLeftItem}>
+                <MenuItem
+                  caption="About"
+                  href={aboutButtonHrefUrl}
+                  key="about-link"
+                />
+              </div>
+            ) : null}
+            {relatedMaps && relatedMaps.length > 0 ? (
+              <div className={Styles.menuLeftItem}>
+                <RelatedMaps relatedMaps={relatedMaps} />
+              </div>
+            ) : null}
+          </PositionRightOfWorkbench>
         ) : null}
       </MenuLeft>
       <ExperimentalMenu>
