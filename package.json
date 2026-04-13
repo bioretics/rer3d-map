@@ -100,7 +100,8 @@
     "docker-build-ci": "node deploy/docker/create-docker-context.js --build",
     "start": "terriajs-server --config-file serverconfig.json",
     "gulp": "gulp",
-    "postinstall": "echo 'Installation successful. What to do next:\\n  yarn gulp dev   # Starts the server on port 3001, builds TerriaMap and dependencies, and rebuilds if files change.'",
+    "maki": "node wwwroot/images/maki/maki.js",
+    "postinstall": "yarn maki && echo 'Installation successful. What to do next:\\n  yarn gulp dev   # Starts the server on port 3001, builds TerriaMap and dependencies, and rebuilds if files change.'",
     "hot": "webpack-dev-server --inline --config buildprocess/webpack.config.hot.js --hot --host 0.0.0.0",
     "prettier": "prettier --write .",
     "prettier-check": "prettier --check ."
