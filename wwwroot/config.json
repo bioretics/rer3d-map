@@ -70,6 +70,12 @@
         ]
       }
     },
+    "microzonationEnabled": true,
+    "microzonationConfig": {
+      "url": "https://geosrv-protciv.regione.marche.it/geoserver/qmap_mzs_rm/ows",
+      "typeName": "qmap_mzs_rm:qmp_mzs_stato_progetto_view",
+      "outputFormat": "application/json"
+    },
 
     // Log ConsoleAnalytics events to console
     // logToConsole: true,
