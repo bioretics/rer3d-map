@@ -1,0 +1,83 @@
+{
+  "baseMaps": {
+    "defaultBaseMapId": "bing-aerial-with-labels",
+    "previewBaseMapId": "basemap-positron",
+    "enabledBaseMaps": [
+      "bing-aerial-with-labels",
+      "bing-aerial",
+      "osm",
+      "google-satellite",
+      "basemap-positron",
+      "basemap-darkmatter",
+      "white"
+    ],
+    "items": [
+      {
+        "item": {
+          "id": "osm",
+          "type": "open-street-map",
+          "name": "OpenStreetMap",
+          "url": "https://openstreetmap.org",
+          "subdomains": ["a.tile", "b.tile", "c.tile"],
+          "opacity": 1.0
+        },
+        "image": "images/basemaps/osm.png"
+      },
+      {
+        "item": {
+          "id": "bing-aerial",
+          "name": "Bing Maps Aerial",
+          "type": "ion-imagery",
+          "ionAssetId": 2,
+          "opacity": 1.0
+        },
+        "image": "images/basemaps/bingaerial.jpg"
+      },
+      {
+        "item": {
+          "id": "bing-aerial-with-labels",
+          "name": "Bing Maps Aerial with labels",
+          "type": "ion-imagery",
+          "ionAssetId": 3,
+          "opacity": 1.0
+        },
+        "image": "images/basemaps/bingaerial.jpg"
+      },
+      {
+        "item": {
+          "id": "google-satellite",
+          "name": "Google Maps Satellite",
+          "type": "google-tile-maps",
+          "key": "AIzaSyAd2xIqQlIg_67OFa817b0wR2sJeHPTVks",
+          "mapType": "satellite",
+          "language": "it-IT",
+          "region": "IT"
+        },
+        "image": "images/basemaps/bingaerial.jpg"
+      },
+      {
+        "item": {
+          "id": "white",
+          "name": "All white",
+          "type": "open-street-map",
+          "url": "https://basemaps.cartocdn.com/light_all/",
+          "subdomains": ["a"],
+          "opacity": 0.0
+        },
+        "image": "images/basemaps/white.png"
+      },
+      {
+        "item": {
+          "id": "basemap-positron"
+        },
+        "image": "images/basemaps/rer_positron.png"
+      },
+      {
+        "item": {
+          "id": "basemap-darkmatter"
+        },
+        "image": "images/basemaps/dark-matter_it.png"
+      }
+    ]
+  }
+}

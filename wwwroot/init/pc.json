@@ -1,0 +1,165 @@
+{
+  "parameters": {
+    "brandBarElements": [
+      "<a target=\"_blank\" href=\"https://www.regione.marche.it\"><img src=\"images/regione_marche_logo_bianco.png\" alt=\"Regione //Marche\"  height=\"52\" title=\"Regione Marche\" /></a>",
+      "<a href='https://www.regione.marche.it/Regione-Utile/Protezione-Civile'><img src='images/Logo_Protezione_Civile_Regione_Marche.svg.png' height='50' /></a>"
+    ],
+    "brandBarSmallElements": [
+      "<a href='https://www.regione.marche.it/Regione-Utile/Protezione-Civile'><img src='images/Logo_Protezione_Civile_Regione_Marche.svg.png' height='30' /></a>"
+    ],
+    "theme": {
+      "colorPrimary": "#004F94" /*,
+      "colorSecondary": "red",
+      "textLight": "red",
+      "textLightTranslucent": "orange",
+      "textLightDimmed": "red",
+      "textDark": "red",
+      "textDarker": "red",
+      "textBlack": "red",
+      "turquoiseBlue": "red",
+      "dark": "#00ff008f",
+      "darkTranslucent": "orange",
+      "darkWithOverlay": "red",
+      "darkLighter": "red"*/
+    }
+  },
+  "workbench": [],
+  "catalog": [
+    {
+      "id": "kJ6gr",
+      "type": "group",
+      "name": "Catalogo Protezione Civile",
+      "isOpen": true,
+      "members": [
+        {
+          "type": "group",
+          "name": "Microzonazione sismica",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Accessibilità",
+              "url": "http://150.146.31.58/geoserver/ms_cle/wms",
+              "layers": "Accessibilità"
+            },
+            {
+              "type": "wms",
+              "name": "Aggregati strutturali",
+              "url": "http://150.146.31.58/geoserver/ms_cle/wms",
+              "layers": "Aggregati_Strutturali"
+            },
+            {
+              "type": "wms",
+              "name": "Aree di emergenza",
+              "url": "http://150.146.31.58/geoserver/ms_cle/wms",
+              "layers": "Aree_di_emergenza"
+            },
+            {
+              "type": "wms",
+              "name": "Edifici strategici",
+              "url": "http://150.146.31.58/geoserver/ms_cle/wms",
+              "layers": "Edifici_Strategici"
+            },
+            {
+              "type": "wms",
+              "name": "Unità strutturali",
+              "url": "http://150.146.31.58/geoserver/ms_cle/wms",
+              "layers": "Unità_Strutturali"
+            },
+            {
+              "type": "wms",
+              "name": "Elementi lineari",
+              "url": "http://150.146.31.58/geoserver/ms_cle/wms",
+              "layers": "Elementi_Lineari"
+            },
+            {
+              "type": "wms",
+              "name": "Elementi puntuali",
+              "url": "http://150.146.31.58/geoserver/ms_cle/wms",
+              "layers": "Elementi_Puntuali"
+            },
+            {
+              "type": "wms",
+              "name": "Forme",
+              "url": "http://150.146.31.58/geoserver/ms_cle/wms",
+              "layers": "Forme"
+            },
+            {
+              "type": "wms",
+              "name": "Indagini lineari",
+              "url": "http://150.146.31.58/geoserver/ms_cle/wms",
+              "layers": "Indagini_Lineari"
+            },
+            {
+              "type": "wms",
+              "name": "Indagini puntuali",
+              "url": "http://150.146.31.58/geoserver/ms_cle/wms",
+              "layers": "Indagini_Puntuali"
+            },
+            {
+              "type": "wms",
+              "name": "Instab livello 1",
+              "url": "http://150.146.31.58/geoserver/ms_cle/wms",
+              "layers": "Instab_Livello_1"
+            },
+            {
+              "type": "wms",
+              "name": "Instab livello 2",
+              "url": "http://150.146.31.58/geoserver/ms_cle/wms",
+              "layers": "Instab_Livello_2"
+            },
+            {
+              "type": "wms",
+              "name": "Instab livello 3",
+              "url": "http://150.146.31.58/geoserver/ms_cle/wms",
+              "layers": "Instab_Livello_3"
+            },
+            {
+              "type": "wms",
+              "name": "Stab livello 1",
+              "url": "http://150.146.31.58/geoserver/ms_cle/wms",
+              "layers": "Stab_Livello_1"
+            },
+            {
+              "type": "wms",
+              "name": "Stab livello 2",
+              "url": "http://150.146.31.58/geoserver/ms_cle/wms",
+              "layers": "Stab_Livello_2"
+            },
+            {
+              "type": "wms",
+              "name": "Stab livello 3",
+              "url": "http://150.146.31.58/geoserver/ms_cle/wms",
+              "layers": "Stab_Livello_3"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "PAI",
+          "members": []
+        },
+        {
+          "type": "group",
+          "name": "ISTAT",
+          "members": [
+            {
+              "name": "Province",
+              "type": "geojson",
+              "url": "test/Prov_R11_2026.geojson"
+            },
+            {
+              "name": "Comuni",
+              "type": "geojson",
+              "url": "test/Com_R11_2026.geojson"
+            },
+            {
+              "name": "Sezioni",
+              "type": "geojson",
+              "url": "test/Sezioni_R11_2021.geojson"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
