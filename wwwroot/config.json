@@ -1,13 +1,11 @@
 {
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
-  "initializationUrls": [
-    "basemaps",
-    "marche"
-  ],
+  "initializationUrls": ["basemaps", "marche"],
   "parameters": {
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
     "googleAnalyticsOptions": null,
+    "cesiumIonAccessToken": "",
     "cesiumTerrainAssetId": 1,
     "cesiumGlobeColor": "white",
     "aboutButtonHrefUrl": "about.html",
@@ -19,7 +17,7 @@
     ],
     "relatedMaps": [
       {
-        "imageUrl": "images/logo-infra.png",
+        "imageUrl": "images/logo-marche-2032.png",
         "url": "http://marche2032.regione.marche.it/",
         "title": "Marche 2032",
         "description": "Consultazione semplificata e accessibile delle opere infrastrutturali della Regione Marche"
@@ -35,11 +33,7 @@
     "polylineWidth": 4,
     "playPathCameraPitchThreshold": 30,
     "workbenchPanelDefaultHeight": 700,
-    "mapViewers": [
-      "3d",
-      "2dcesium",
-      "2d"
-    ],
+    "mapViewers": ["3d", "2dcesium", "2d"],
     "userProfileLoginServiceType": "Cohesion",
     "userProfileLoginServiceUrl": "https://gis.regione.marche.it/infrastrutture/Account/Login?ReturnUrl=",
     "userProfilesDefinition": {
@@ -53,21 +47,15 @@
       },
       "Consultatore": {
         "isAdmin": false,
-        "allowed": [
-          "QueryData"
-        ]
+        "allowed": ["QueryData"]
       },
       "Utente": {
         "isAdmin": false,
-        "allowed": [
-          "QueryData"
-        ]
+        "allowed": ["QueryData"]
       },
       "Amministratore": {
         "isAdmin": true,
-        "allowed": [
-          "DownloadQueryData"
-        ]
+        "allowed": ["DownloadQueryData"]
       }
     },
     "microzonationEnabled": true,
@@ -109,8 +97,8 @@
     "appName": "Geoportale 3D",
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
-      "<a target=\"_blank\" href=\"https://www.regione.marche.it\"><img src=\"images/regione_marche_logo_bianco.png\" alt=\"Regione //Marche\"  height=\"52\" title=\"Regione Marche\" /></a>",
-      "<a target=\"_blank\" href=\"https://marche2032.regione.marche.it\"><img src=\"images/logo-infra.png\" alt=\"Regione //Marche\"  height=\"32\" title=\"Regione Marche\" /></a>"
+      "<a target=\"_blank\" href=\"https://www.regione.marche.it\"><img src=\"images/logo.png\" alt=\"Regione //Marche\"  height=\"52\" title=\"Regione Marche\" /></a>",
+      "<a target=\"_blank\" href=\"https://marche2032.regione.marche.it\"><img src=\"images/logo-marche-2032.png\" alt=\"Regione //Marche\"  height=\"32\" title=\"Regione Marche\" /></a>"
     ],
     "brandBarSmallElements": [
       "<a target=\"_blank\" href=\"https://www.regione.marche.it\"><img src=\"images/regione_marche_logo_bianco.png\" alt=\"Regione //Marche\"  height=\"52\" title=\"Regione Marche\" /></a>"

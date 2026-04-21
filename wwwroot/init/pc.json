@@ -1,11 +1,11 @@
 {
   "parameters": {
     "brandBarElements": [
-      "<a target=\"_blank\" href=\"https://www.regione.marche.it\"><img src=\"images/regione_marche_logo_bianco.png\" alt=\"Regione //Marche\"  height=\"52\" title=\"Regione Marche\" /></a>",
-      "<a href='https://www.regione.marche.it/Regione-Utile/Protezione-Civile'><img src='images/Logo_Protezione_Civile_Regione_Marche.svg.png' height='50' /></a>"
+      "<a target=\"_blank\" href=\"https://www.regione.marche.it\"><img src=\"images/logo.png\" alt=\"Regione //Marche\"  height=\"52\" title=\"Regione Marche\" /></a>",
+      "<a href='https://www.regione.marche.it/Regione-Utile/Protezione-Civile'><img src='images/logo-marche-pc.png' height='50' /></a>"
     ],
     "brandBarSmallElements": [
-      "<a href='https://www.regione.marche.it/Regione-Utile/Protezione-Civile'><img src='images/Logo_Protezione_Civile_Regione_Marche.svg.png' height='30' /></a>"
+      "<a href='https://www.regione.marche.it/Regione-Utile/Protezione-Civile'><img src='images/logo-marche-pc.png' height='30' /></a>"
     ],
     "theme": {
       "colorPrimary": "#004F94" /*,
