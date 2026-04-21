@@ -1,6 +1,23 @@
 const path = require("path");
 const fs = require("fs");
 
+const spzAfterImportMetaBabel = {
+  loader: "babel-loader",
+  options: {
+    cacheDirectory: true,
+    presets: [
+      [
+        "@babel/preset-env",
+        {
+          corejs: 3,
+          useBuiltIns: "usage"
+        }
+      ]
+    ],
+    plugins: ["@babel/plugin-proposal-nullish-coalescing-operator"]
+  }
+};
+
 /**
  * RegExp pattern used for matching plugin package names for applying various rules.
  *
@@ -12,6 +29,28 @@ const fs = require("fs");
 const PluginPackagePattern = /^terriajs-.*plugin/;
 
 function configureWebpackForPlugins(config) {
+  const spzDir = path.resolve(
+    path.dirname(require.resolve("@spz-loader/core")),
+    ".."
+  );
+  const cesiumWidgetsDir = path.dirname(
+    require.resolve("terriajs-cesium-widgets/package.json")
+  );
+  config.module.rules.unshift(
+    {
+      test: /\.js$/,
+      include: spzDir,
+      use: [
+        spzAfterImportMetaBabel,
+        require.resolve("@open-wc/webpack-import-meta-loader")
+      ]
+    },
+    {
+      test: /\.js$/,
+      include: cesiumWidgetsDir,
+      use: [spzAfterImportMetaBabel]
+    }
+  );
   config.module.rules.push(createPluginIconsRule());
   return config;
 }
