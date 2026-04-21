@@ -43,8 +43,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://rer3d.regione.emilia-romagna.it">
-            <img alt="Brand" src="../public/img/logo-regione.png">
+          <a class="navbar-brand" href="..">
+            <img alt="Brand" src="../images/logo.png">
           </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
@@ -52,7 +52,7 @@
             <li><a href="../about.html">About</a></li>
             <li class="active"><a href="help.html">Help & FAQ</a></li>
             <!--<li><a href="privacy.html">Privacy</a></li>-->
-            <li><a href="https://mappe.regione.emilia-romagna.it" target="blank">Apri rer3d-map</a></li>
+            <li><a href=".." target="blank">Apri rer3d-map</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -248,7 +248,7 @@
               <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
                 <div class="panel-body">
                   <p>Scrivi un'email a <a
-                      href="mailto:infogeoportale@regione.emilia-romagna.it">infogeoportale@regione.emilia-romagna.it</a>
+                      href="mailto:{supportEmail}">{supportEmail}</a>
                   </p>
 
                 </div>
@@ -269,7 +269,7 @@
               <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
                 <div class="panel-body">
 
-                  <p>I layer presenti nel catalogo utilizzano dati in possesso di Regione Emilia-Romagna,
+                  <p>I layer presenti nel catalogo utilizzano dati in possesso di {customerName},
                     perchè da essa acquistati o prodotti. Si tratta, per la maggior parte, degli stessi layer presenti
                     nel catalogo Moka. Sono anche presenti dati open resi disponibili da altre
                     realtà, quali ad esempio ARPAE. Ogni layer del catalogo riporta nei metadati le informazioni
@@ -292,7 +292,7 @@
                 <div class="panel-body">
 
                   <p>No, i layer caricati dall'utente da file locale o URL non sono salvati in alcun modo,
-                    nè da rer3d-map nè da Regione Emilia-Romagna.</p>
+                    nè da rer3d-map nè da {customerName}.</p>
                 </div>
               </div>
             </div>
@@ -332,7 +332,7 @@
               <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
                 <div class="panel-body">
 
-                  <p>Alcune Mappe base sono di Regione Emilia-Romagna, altre sono rese disponibili gratuitamente da
+                  <p>Alcune Mappe base sono di {customerName}, altre sono rese disponibili gratuitamente da
                     Microsoft e Open Street Map. Sono scaricate dai loro server direttamente al momento dell'uso,
                     quindi sono sempre le stesse visibili sui rispettivi siti.</p>
 
@@ -432,7 +432,7 @@
                 <h4 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
                     href="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
-                    rer3d-map funziona anche fuori dall'Emilia-Romagna?
+                    rer3d-map funziona su qualsiasi territorio?
                   </a>
                 </h4>
               </div>
@@ -441,10 +441,10 @@
 
                   <p>rer3d-map in quanto software non ha alcuna limitazione territoriale, sono i dati a poter essere
                     limitati.
-                    I layer del catalogo e le Mappe base regionali rappresentano solo il territorio dell'Emilia-Romagna,
+                    I layer del catalogo e le Mappe base rappresentano solo il territorio gestito da {customerName},
                     o sue porzioni, più eventualmente un intorno del territorio circostante. Le Mappe base di Microsoft e
                     Open Street Map rappresentano invece l'intero globo. Caricando i layer opportuni sarà possibile usare
-                    rer3d-map anche fuori dall'Emilia-Romagna.</p>
+                    rer3d-map anche fuori di {customerName}.</p>
 
                   <!--<p>Obviously, the NationalMap’s spatial data does not cover the rest of the world!</p>-->
 
@@ -490,7 +490,7 @@
                 <div class="panel-body">
 
                   <p>Scrivi un'email a <a
-                      href="mailto:infogeoportale@regione.emilia-romagna.it">infogeoportale@regione.emilia-romagna.it</a>
+                      href="mailto:{supportEmail}">{supportEmail}</a>
                     per segnalare il problema o bug. Nell'email cerca di fornire più dettagli possibile su come replicare
                     la situazione
                     che ha fatto emergere il problema o bug.</p>
@@ -513,7 +513,7 @@
                 <div class="panel-body">
 
                   <p>Certamente! Scrivila in un'email a <a
-                      href="mailto:infogeoportale@regione.emilia-romagna.it">infogeoportale@regione.emilia-romagna.it</a>
+                      href="mailto:{supportEmail}">{supportEmail}</a>
                   </p>
 
                 </div>
@@ -554,7 +554,7 @@
 
     <footer class="footer">
       <div class="container">
-        <p class="text-muted">&copy; Regione Emilia-Romagna 2017-2025</p>
+        <p class="text-muted">&copy; {copyright}</p>
         <!--<p><strong><a href="../about.html#terms">Terms and conditions</a></strong> – <strong><a href="privacy.html">Privacy</a></strong></p>-->
 
       </div>
