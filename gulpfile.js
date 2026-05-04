@@ -285,15 +285,29 @@ function checkForDuplicateCesium() {
   }
 }
 
+gulp.task("maki", function (done) {
+  var spawnSync = require("child_process").spawnSync;
+  var result = spawnSync("node", ["wwwroot/images/maki/maki.js"], {
+    stdio: "inherit"
+  });
+  if (result.status !== 0) {
+    throw new PluginError("maki", "Maki script failed", { showStack: false });
+  }
+  done();
+});
+
 gulp.task("terriajs-server", terriajsServerGulpTask(3001));
 
-gulp.task("build", gulp.series("copy-terriajs-assets", "build-app"));
-gulp.task("release", gulp.series("copy-terriajs-assets", "release-app"));
+gulp.task("build", gulp.series("maki", "copy-terriajs-assets", "build-app"));
+gulp.task(
+  "release",
+  gulp.series("maki", "copy-terriajs-assets", "release-app")
+);
 gulp.task("watch", gulp.parallel("watch-terriajs-assets", "watch-app"));
 // Run render-index before starting terriajs-server because terriajs-server won't
 //  start if index.html isn't present
 gulp.task(
   "dev",
-  gulp.parallel(gulp.series("render-index", "terriajs-server"), "watch")
+  gulp.parallel(gulp.series("maki", "render-index", "terriajs-server"), "watch")
 );
 gulp.task("default", gulp.series("lint", "build"));
