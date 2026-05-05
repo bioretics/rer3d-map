@@ -21,6 +21,20 @@
       "darkTranslucent": "orange",
       "darkWithOverlay": "red",
       "darkLighter": "red"*/
+    },
+    "relatedMaps": [
+      {
+        "imageUrl": "images/logo-marche-2032.png",
+        "url": "http://mappe.regione.marche.it/",
+        "title": "Marche 2032",
+        "description": "Geoportale delle opere infrastrutturali della Regione Marche"
+      }
+    ],
+    "microzonationConfig": {
+      "url": "https://geosrv-protciv.regione.marche.it/geoserver/qmap_mzs_rm/ows",
+      "projectsLayerName": "qmap_mzs_rm:qmp_mzs_stato_progetto_view",
+      "documentsLayerName": "qmap_mzs_rm:qmp_mzs_stato_progetto_docs",
+      "outputFormat": "application/json"
     }
   },
   "workbench": [],
@@ -33,110 +47,479 @@
       "members": [
         {
           "type": "group",
-          "name": "Microzonazione sismica",
+          "name": "CLE",
           "members": [
             {
               "type": "wms",
               "name": "Accessibilità",
               "url": "http://150.146.31.58/geoserver/ms_cle/wms",
-              "layers": "Accessibilità"
+              "layers": "Accessibilità",
+              "legendBackgroundColor": "white",
+              "legends": [
+                {
+                  "url": "http://150.146.31.58:80/geoserver/ms_cle/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=Accessibilità",
+                  "imageScaling": 1.5,
+                  "urlMimeType": "image/png"
+                }
+              ]
             },
             {
               "type": "wms",
               "name": "Aggregati strutturali",
               "url": "http://150.146.31.58/geoserver/ms_cle/wms",
-              "layers": "Aggregati_Strutturali"
+              "layers": "Aggregati_Strutturali",
+              "legendBackgroundColor": "white",
+              "legends": [
+                {
+                  "url": "http://150.146.31.58:80/geoserver/ms_cle/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=Aggregati_Strutturali",
+                  "imageScaling": 1.5,
+                  "urlMimeType": "image/png"
+                }
+              ]
             },
             {
               "type": "wms",
               "name": "Aree di emergenza",
               "url": "http://150.146.31.58/geoserver/ms_cle/wms",
-              "layers": "Aree_di_emergenza"
+              "layers": "Aree_di_emergenza",
+              "legendBackgroundColor": "white",
+              "legends": [
+                {
+                  "url": "http://150.146.31.58:80/geoserver/ms_cle/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=Aree_di_emergenza",
+                  "imageScaling": 1.5,
+                  "urlMimeType": "image/png"
+                }
+              ]
             },
             {
               "type": "wms",
               "name": "Edifici strategici",
               "url": "http://150.146.31.58/geoserver/ms_cle/wms",
-              "layers": "Edifici_Strategici"
+              "layers": "Edifici_Strategici",
+              "legendBackgroundColor": "white",
+              "legends": [
+                {
+                  "url": "http://150.146.31.58:80/geoserver/ms_cle/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=Edifici_Strategici",
+                  "imageScaling": 1.5,
+                  "urlMimeType": "image/png"
+                }
+              ]
             },
             {
               "type": "wms",
               "name": "Unità strutturali",
               "url": "http://150.146.31.58/geoserver/ms_cle/wms",
-              "layers": "Unità_Strutturali"
-            },
+              "layers": "Unità_Strutturali",
+              "legendBackgroundColor": "white",
+              "legends": [
+                {
+                  "url": "http://150.146.31.58:80/geoserver/ms_cle/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=Unità_Strutturali",
+                  "imageScaling": 1.5,
+                  "urlMimeType": "image/png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Microzonazione sismica",
+          "members": [
             {
               "type": "wms",
               "name": "Elementi lineari",
               "url": "http://150.146.31.58/geoserver/ms_cle/wms",
-              "layers": "Elementi_Lineari"
+              "layers": "Elementi_Lineari",
+              "legendBackgroundColor": "white",
+              "legends": [
+                {
+                  "url": "http://150.146.31.58:80/geoserver/ms_cle/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=Elementi_Lineari",
+                  "imageScaling": 1.5,
+                  "urlMimeType": "image/png"
+                }
+              ]
             },
             {
               "type": "wms",
               "name": "Elementi puntuali",
               "url": "http://150.146.31.58/geoserver/ms_cle/wms",
-              "layers": "Elementi_Puntuali"
+              "layers": "Elementi_Puntuali",
+              "legendBackgroundColor": "white",
+              "legends": [
+                {
+                  "url": "http://150.146.31.58:80/geoserver/ms_cle/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=Elementi_Puntuali",
+                  "imageScaling": 1.5,
+                  "urlMimeType": "image/png"
+                }
+              ]
             },
             {
               "type": "wms",
               "name": "Forme",
               "url": "http://150.146.31.58/geoserver/ms_cle/wms",
-              "layers": "Forme"
+              "layers": "Forme",
+              "legendBackgroundColor": "white",
+              "legends": [
+                {
+                  "url": "http://150.146.31.58:80/geoserver/ms_cle/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=Forme",
+                  "imageScaling": 1.5,
+                  "urlMimeType": "image/png"
+                }
+              ]
             },
             {
               "type": "wms",
               "name": "Indagini lineari",
               "url": "http://150.146.31.58/geoserver/ms_cle/wms",
-              "layers": "Indagini_Lineari"
+              "layers": "Indagini_Lineari",
+              "legendBackgroundColor": "white",
+              "legends": [
+                {
+                  "url": "http://150.146.31.58:80/geoserver/ms_cle/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=Indagini_Lineari",
+                  "imageScaling": 1.5,
+                  "urlMimeType": "image/png"
+                }
+              ],
+              "featureInfoTemplate": {
+                "template": "<table><tbody><tr><td>Id SLN</td><td>{{id_sln}}</td></tr><tr><td>Codice Provincia</td><td>{{cod_prov}}</td></tr><tr><td>Codice Comune</td><td>{{cod_com}}</td></tr><tr><td>Tipo</td><td>{{tipo_ind}}</td></tr><tr><td>Classe</td><td>{{classe_ind}}</td></tr><tr><td>Pkey SLN</td><td>{{pkey_sln}}</td></tr><tr><td>Pkey Indln</td><td>{{pkey_indln}}</td></tr><tr><td>Id Indlnex</td><td>{{id_indlnex}}</td></tr><tr><td>arch_ex</td><td>{{arch_ex}}</td></tr><tr><td>Note</td><td>{{note_indln}}</td></tr><tr><td>Data indagine</td><td>{{data_ind}}</td></tr><tr><td>Documento</td><td>{{doc_ind}}</td></tr><tr><td>Pagina documento</td><td>{{doc_page}}</td></tr></tbody></table><div><p><a target='_blank' href='https://www.webms.it/servizi/php/schede/ind_ln.php?id={{cod_prov}}{{cod_com}}L{{pkey_indln}}'><b>Apri scheda</b></a></div>"
+              }
             },
             {
               "type": "wms",
               "name": "Indagini puntuali",
               "url": "http://150.146.31.58/geoserver/ms_cle/wms",
-              "layers": "Indagini_Puntuali"
+              "layers": "Indagini_Puntuali",
+              "legendBackgroundColor": "white",
+              "legends": [
+                {
+                  "url": "http://150.146.31.58:80/geoserver/ms_cle/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=Indagini_Puntuali",
+                  "imageScaling": 1.5,
+                  "urlMimeType": "image/png"
+                }
+              ],
+              "featureInfoTemplate": {
+                "template": "<table><tbody><tr><td>Id SPU</td><td>{{id_spu}}</td></tr><tr><td>Codice Provincia</td><td>{{cod_prov}}</td></tr><tr><td>Codice Comune</td><td>{{cod_com}}</td></tr><tr><td>Tipo</td><td>{{tipo_ind}}</td></tr><tr><td>Id INDPU</td><td>{{id_indpu}}</td></tr><tr><td>Posizione precisa</td><td>{{posizione_precisa}}</td></tr><tr><td>Riferimento Procom</td><td>{{procom_rif}}</td></tr></tbody></table><div><p><a target='_blank' href='https://www.webms.it/servizi/php/schede/ind_pu.php?id={{id_indpu}}'><b>Apri scheda</b></a></div>"
+              }
             },
             {
               "type": "wms",
               "name": "Instab livello 1",
               "url": "http://150.146.31.58/geoserver/ms_cle/wms",
-              "layers": "Instab_Livello_1"
+              "layers": "Instab_Livello_1",
+              "legendBackgroundColor": "white",
+              "legends": [
+                {
+                  "url": "http://150.146.31.58:80/geoserver/ms_cle/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=Instab_Livello_1",
+                  "imageScaling": 1.5,
+                  "urlMimeType": "image/png"
+                }
+              ]
             },
             {
               "type": "wms",
               "name": "Instab livello 2",
               "url": "http://150.146.31.58/geoserver/ms_cle/wms",
-              "layers": "Instab_Livello_2"
+              "layers": "Instab_Livello_2",
+              "stylesToUse": [
+                "ms_cle:instab_liv2_fa0105",
+                "ms_cle:instab_liv2_fa0408",
+                "ms_cle:instab_liv2_fa0711",
+                "ms_cle:instab_liv2_ft"
+              ],
+              "availableStyles": [
+                {
+                  "layerName": "Instab_Livello_2",
+                  "styles": [
+                    {
+                      "name": "ms_cle:instab_liv2_fa0105",
+                      "title": "Instab liv2 fa0105"
+                    },
+                    {
+                      "name": "ms_cle:instab_liv2_fa0408",
+                      "title": "Instab liv2 fa0408"
+                    },
+                    {
+                      "name": "ms_cle:instab_liv2_fa0711",
+                      "title": "Instab liv2 fa0711"
+                    },
+                    {
+                      "name": "ms_cle:instab_liv2_ft",
+                      "title": "Instab liv2 ft"
+                    }
+                  ]
+                }
+              ],
+              "rectangle": {
+                "west": 6,
+                "south": 41,
+                "east": 14,
+                "north": 46
+              },
+              "legendBackgroundColor": "white"
             },
             {
               "type": "wms",
               "name": "Instab livello 3",
               "url": "http://150.146.31.58/geoserver/ms_cle/wms",
-              "layers": "Instab_Livello_3"
+              "layers": "Instab_Livello_3",
+              "stylesToUse": [
+                "ms_cle:instab_liv3_fa0105",
+                "ms_cle:instab_liv3_fa0408",
+                "ms_cle:instab_liv3_fa0711",
+                "ms_cle:instab_liv3_ft"
+              ],
+              "availableStyles": [
+                {
+                  "layerName": "Instab_Livello_3",
+                  "styles": [
+                    {
+                      "name": "ms_cle:instab_liv3_fa0105",
+                      "title": "Instab liv3 fa0105"
+                    },
+                    {
+                      "name": "ms_cle:instab_liv3_fa0408",
+                      "title": "Instab liv3 fa0408"
+                    },
+                    {
+                      "name": "ms_cle:instab_liv3_fa0711",
+                      "title": "Instab liv3 fa0711"
+                    },
+                    {
+                      "name": "ms_cle:instab_liv3_ft",
+                      "title": "Instab liv3 ft"
+                    }
+                  ]
+                }
+              ],
+              "rectangle": {
+                "west": 6,
+                "south": 41,
+                "east": 14,
+                "north": 46
+              },
+              "legendBackgroundColor": "white"
             },
             {
               "type": "wms",
               "name": "Stab livello 1",
               "url": "http://150.146.31.58/geoserver/ms_cle/wms",
-              "layers": "Stab_Livello_1"
+              "layers": "Stab_Livello_1",
+              "legendBackgroundColor": "white",
+              "legends": [
+                {
+                  "url": "http://150.146.31.58:80/geoserver/ms_cle/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=Stab_Livello_1",
+                  "imageScaling": 1.5,
+                  "urlMimeType": "image/png"
+                }
+              ]
             },
             {
               "type": "wms",
               "name": "Stab livello 2",
               "url": "http://150.146.31.58/geoserver/ms_cle/wms",
-              "layers": "Stab_Livello_2"
+              "layers": "Stab_Livello_2",
+              "stylesToUse": [
+                "ms_cle:stab_liv2_fa0105",
+                "ms_cle:stab_liv2_fa0408",
+                "ms_cle:stab_liv2_fa0711",
+                "ms_cle:stab_liv2_ft"
+              ],
+              "availableStyles": [
+                {
+                  "layerName": "Stab_Livello_2",
+                  "styles": [
+                    {
+                      "name": "ms_cle:stab_liv2_fa0105",
+                      "title": "Stab liv2 fa0105"
+                    },
+                    {
+                      "name": "ms_cle:stab_liv2_fa0408",
+                      "title": "Stab liv2 fa0408"
+                    },
+                    {
+                      "name": "ms_cle:stab_liv2_fa0711",
+                      "title": "Stab liv2 fa0711"
+                    },
+                    {
+                      "name": "ms_cle:stab_liv2_ft",
+                      "title": "Stab liv2 ft"
+                    }
+                  ]
+                }
+              ],
+              "rectangle": {
+                "west": 6,
+                "south": 41,
+                "east": 14,
+                "north": 46
+              }
             },
             {
               "type": "wms",
               "name": "Stab livello 3",
               "url": "http://150.146.31.58/geoserver/ms_cle/wms",
-              "layers": "Stab_Livello_3"
+              "layers": "Stab_Livello_3",
+              "stylesToUse": [
+                "ms_cle:stab_liv3_fa0105",
+                "ms_cle:stab_liv3_fa0408",
+                "ms_cle:stab_liv3_fa0711",
+                "ms_cle:stab_liv3_ft"
+              ],
+              "availableStyles": [
+                {
+                  "layerName": "Stab_Livello_3",
+                  "styles": [
+                    {
+                      "name": "ms_cle:stab_liv3_fa0105",
+                      "title": "Stab liv3 fa0105"
+                    },
+                    {
+                      "name": "ms_cle:stab_liv3_fa0408",
+                      "title": "Stab liv3 fa0408"
+                    },
+                    {
+                      "name": "ms_cle:stab_liv3_fa0711",
+                      "title": "Stab liv3 fa0711"
+                    },
+                    {
+                      "name": "ms_cle:stab_liv3_ft",
+                      "title": "Stab liv3 ft"
+                    }
+                  ]
+                }
+              ],
+              "rectangle": {
+                "west": 6,
+                "south": 41,
+                "east": 14,
+                "north": 46
+              }
             }
           ]
         },
         {
           "type": "group",
           "name": "PAI",
-          "members": []
+          "members": [
+            {
+              "type": "esri-mapServer-group",
+              "name": "AUBAC",
+              "url": "https://webgis.abdac.it/server/rest/services/PAI_Marche_05_11_2025/MapServer"
+            },
+            /*{
+              "type": "wms-group",
+              "name": "ADBPO",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0"
+            },*/
+            {
+              "type": "group",
+              "name": "ADBPO",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Fasce fluviali UoM Marecchia-Conca Zone o elementi a rischio 2020",
+                  "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+                  "layers": "geonode:aaa03_f_t2_aree_a_rischio_idraulico"
+                },
+                {
+                  "type": "wms",
+                  "name": "Fasce fluviali UoM Marecchia-Conca Aree inondabili post-interventi per piene con tempo di ritorno di 200 anni 2020",
+                  "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+                  "layers": "geonode:aaa03_f_t2_q200_post_interventi"
+                },
+                {
+                  "type": "wms",
+                  "name": "Fasce fluviali UoM Marecchia-Conca Aree a rischio di inondazione ante intervento 2020",
+                  "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+                  "layers": "geonode:aaa03_f_t2_q200_pre_erase_interventi"
+                },
+                {
+                  "type": "wms",
+                  "name": "Fasce fluviali UoM Marecchia-Conca Aree inondabili naturali per piene con tempo di ritorno di 200 anni 2020",
+                  "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+                  "layers": "geonode:aaa03_f_t2_q200_pre_interventi"
+                },
+                {
+                  "type": "wms",
+                  "name": "Fasce fluviali UoM Marecchia-Conca Fasce inondabili per piene con tempo di ritorno di 200 anni 2020",
+                  "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+                  "layers": "geonode:aaa03_f_t2_q200_pre_interventi_linee"
+                },
+                {
+                  "type": "wms",
+                  "name": "Fasce fluviali UoM Marecchia-Conca Fasce inondabili per piene con tempo di ritorno di 500 anni 2020",
+                  "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+                  "layers": "geonode:aaa03_f_t2_q500_linee"
+                },
+                {
+                  "type": "wms",
+                  "name": "Fasce fluviali UoM Marecchia-Conca Fasce inondabili per piene con tempo di ritorno di 50 anni 2020",
+                  "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+                  "layers": "geonode:aaa03_f_t2_q50_linee"
+                },
+                {
+                  "type": "wms",
+                  "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Abitati da consolidare 2020",
+                  "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+                  "layers": "geonode:aaa03_f_t3_abitati_da_consolidare"
+                },
+                {
+                  "type": "wms",
+                  "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Aree da assoggettare a verifica 2020",
+                  "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+                  "layers": "geonode:aaa03_f_t3_aree_da_assoggettare_a_verifica"
+                },
+                {
+                  "type": "wms",
+                  "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Aree verificate 2020",
+                  "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+                  "layers": "geonode:aaa03_f_t3_aree_oggetto_di_verifica"
+                },
+                {
+                  "type": "wms",
+                  "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Aree di pericolosita 2020",
+                  "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+                  "layers": "geonode:aaa03_f_t3_aree_pericolosita"
+                },
+                {
+                  "type": "wms",
+                  "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Calanchi 2020",
+                  "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+                  "layers": "geonode:aaa03_f_t3_calanchi"
+                },
+                {
+                  "type": "wms",
+                  "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Censimento dissesto 2020",
+                  "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+                  "layers": "geonode:aaa03_f_t3_censimento_adb"
+                },
+                {
+                  "type": "wms",
+                  "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Dissesto 2020",
+                  "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+                  "layers": "geonode:aaa03_f_t3_dissesto"
+                },
+                {
+                  "type": "wms",
+                  "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Dissesto non cartografabile 2020",
+                  "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+                  "layers": "geonode:aaa03_f_t3_frane_non_cartografabili"
+                },
+                {
+                  "type": "wms",
+                  "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Aree di rischio 2020",
+                  "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+                  "layers": "geonode:aaa03_f_t3_perimetrazioni_adb"
+                },
+                {
+                  "type": "wms",
+                  "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Pseudocalanchi 2020",
+                  "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+                  "layers": "geonode:aaa03_f_t3_pseudocalanchi"
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "group",
@@ -145,17 +528,53 @@
             {
               "name": "Province",
               "type": "geojson",
-              "url": "test/Prov_R11_2026.geojson"
+              "url": "data/Prov_R11_2026.geojson",
+              "defaultStyle": {
+                "color": {
+                  "mapType": "constant",
+                  "nullColor": "transparent"
+                },
+                "outline": {
+                  "null": {
+                    "color": "lightgreen",
+                    "width": 3
+                  }
+                }
+              }
             },
             {
               "name": "Comuni",
               "type": "geojson",
-              "url": "test/Com_R11_2026.geojson"
+              "url": "data/Com_R11_2026.geojson",
+              "defaultStyle": {
+                "color": {
+                  "mapType": "constant",
+                  "nullColor": "transparent"
+                },
+                "outline": {
+                  "null": {
+                    "color": "red",
+                    "width": 3
+                  }
+                }
+              }
             },
             {
               "name": "Sezioni",
               "type": "geojson",
-              "url": "test/Sezioni_R11_2021.geojson"
+              "url": "data/Sezioni_R11_2021.geojson",
+              "defaultStyle": {
+                "color": {
+                  "mapType": "constant",
+                  "nullColor": "transparent"
+                },
+                "outline": {
+                  "null": {
+                    "color": "blue",
+                    "width": 3
+                  }
+                }
+              }
             }
           ]
         }

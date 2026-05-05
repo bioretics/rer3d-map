@@ -572,7 +572,7 @@
                   "color": "white"
                 },
                 {
-                  "title": "Caselli autostradali",
+                  "title": "Svincoli autostradali",
                   "marker": "highway",
                   "color": "white"
                 },
@@ -765,7 +765,7 @@
             },
             {
               "properties": {
-                "tipo_infrastruttura": "Caselli autostradali"
+                "tipo_infrastruttura": "Svincoli autostradali"
               },
               "style": {
                 "marker-symbol": "highway"
