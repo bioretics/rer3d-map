@@ -1,15 +1,22 @@
 {
-  /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
-  "initializationUrls": ["simple"],
+  "initializationUrls": [
+    "basemaps",
+    "0_emiro_init",
+    "1_emiro_rapido",
+    "2_emiro_catalogo_regionale",
+    "edi3d"
+  ],
   "parameters": {
+    "googleUrlShortenerKey": null,
+    "googleAnalyticsKey": null,
+    "googleAnalyticsOptions": null,
+    "cesiumIonAccessToken": "",
+    "cesiumTerrainAssetId": 2473055,
+    "bingMapsKey": "Ap3-3lzCO0---yJ-IKWdbxq3QVFykIJ8vJrqrCqsYofNT5ETG1g8ei-Squ9cFxxV",
     "cesiumGlobeColor": "white",
     "aboutButtonHrefUrl": null,
     "extraCreditLinks": [],
     "relatedMaps": null,
-    "googleUrlShortenerKey": null,
-    "googleAnalyticsKey": null,
-    "googleAnalyticsOptions": null,
-    "customSearchProviderUrl": "eGeoCoding",
     "whereAmIParams": {
       "urlFast": "https://servizigis.regione.emilia-romagna.it/geoags/rest/services/portale/where/MapServer/0/query?geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIndexIntersects&outFields=OBJECTID,LOCALIZZAZ,DETTAGLIO&returnGeometry=false&f=pjson",
       "urlSlowButAccurate": "https://servizigis.regione.emilia-romagna.it/geoags/rest/services/portale/where/MapServer/0/query?geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID,LOCALIZZAZ,DETTAGLIO&returnGeometry=false&f=pjson",
@@ -18,22 +25,21 @@
       "fieldResultDetailed": "DETTAGLIO"
     },
     "coordsConverterUrl": "http://servizigis.regione.emilia-romagna.it/arcgis/rest/services/Utilities/Geometry/GeometryServer/project",
-    "useMyLocationFromDesktop": false,
-    "mouseAsInfoDefaultValue": false,
+    "useMyLocationFromDesktop": true,
+    "isPickInfoEnabledDefaultValue": false,
     "useElevationMeanSeaLevel": true,
     "wgs84vsMeanSeaLevelRoughDiff": 42,
     "leafletMaxZoom": 21,
     "pickSize": 10,
     "polylineWidth": 4,
     "playPathCameraPitchThreshold": 30,
-    // Log ConsoleAnalytics events to console
-    // logToConsole: true,
-    /* Text that appears at the bottom of the map */
+    "workbenchPanelDefaultHeight": 700,
+    "mapViewers": ["3d", "2d"],
+
     "disclaimer": {
       "text": "Disclaimer: questa mappa non può essere usata per la navigazione o calcoli di elevata precisione. @Regione Emilia-Romagna",
       "url": ""
     },
-    // Text that will be added to any pages printed from your site.
     "printDisclaimer": {
       "text": "@Regione Emilia-Romagna",
       "url": "#"
@@ -54,9 +60,7 @@
       "text": "Bioretics srl",
       "link": "http://www.bioretics.com"
     },
-    // This is used in various text messages. You should also set <title> in index.html
     "appName": "Geoportale 3D",
-    // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
       "<a target=\"_blank\" href=\"https://www.regione.emilia-romagna.it\"><img src=\"https://mappe.regione.emilia-romagna.it/init/logo/LogoRER52x52.png\" alt=\"Regione //Emilia-Romagna\"  height=\"52\" title=\"Regione Emilia-Romagna\" /></a>",
       "<a target=\"_blank\" href=\"https://mappe.regione.emilia-romagna.it\"><img src=\"https://mappe.regione.emilia-romagna.it/init/logo/LogoGeoportale218x52.png\" height=\"52\"  alt=\"Geportale 3D - Emilia-Romagna\" title=\"Geoportale 3D - Regione Emilia-Romagna\" /></a>",
@@ -65,31 +69,14 @@
     "brandBarSmallElements": [
       "<a target=\"_blank\" href=\"https://www.regione.emilia-romagna.it\"><img src=\"https://mappe.regione.emilia-romagna.it/init/logo/LogoRER52x52.png\" alt=\"Regione Emilia-Romagna\"  height=\"52\" title=\"Regione Emilia-Romagna\" /></a>"
     ],
-    // Shown when things go wrong.
     "supportEmail": "mappe@regione.emilia-romagna.it",
-    // You probably shouldn't change this.
     "proj4ServiceBaseUrl": "proj4def/",
-    // Or this
-    "feedbackUrl": "mailto:giovanni.lughi@gmail.com",
+    "feedbackUrl": "mailto:mappe@regione.emilia-romagna.it",
     "feedbackPreamble": "Geoportale 3D - segnalazione",
-    // Default mobile viewer mode when loading the map for the first time on mobile platforms.
-    // Options are: "3DTerrain", "3DSmooth", "2D"
     "mobileDefaultViewerMode": "2d",
-    // Enable experimental features, since its nice to have the bleeding edge.
-    // Disable it if things go wrong with the experimental features or your users aren't robust to features which might change or disapear completly.
     "experimentalFeatures": true,
-    // To enable welcome message when map first loads
     "showWelcomeMessage": true,
-    // To override the welcome message video displayed on the welcome message
-    // By default, the Getting Started to Terria video is displayed
-    "welcomeMessageVideo": {
-      "videoTitle": "Naviga con le mappe",
-      "videoUrl": "https://www.youtube.com/embed/5iBZpiQhLJo?autoplay=1", // use an embedded video link
-      "placeholderImage": "https://i.ytimg.com/vi/5iBZpiQhLJo/mqdefault.jpg"
-    },
-    // True to display in-app guides.
     "showInAppGuides": true,
-    // see `languageOverrides.json` in languages/en
     "languageConfiguration": {
       "enabled": true,
       "debug": false,
@@ -107,15 +94,8 @@
         "name": "RER",
         "flightDurationSeconds": 2,
         "minCharacters": 3,
-        "url": "https://servizigistest.regione.emilia-romagna.it/normalizzatore/eGeoCoding"
+        "url": "https://servizigis.regione.emilia-romagna.it/normalizzatore/eGeoCoding"
       },
-      /*{
-        "id": "search-provider/bing",
-        "type": "bing-maps-search-provider",
-        "name": "Bing",
-        "flightDurationSeconds": 2,
-        "minCharacters": 3
-      },*/
       {
         "id": "search-provider/nominatim",
         "type": "nominatim-search-provider",
@@ -204,51 +184,6 @@
               }
             ]
           }
-          // -- Uncomment to enable the following trainer guides --
-          // {
-          //   "title": "stepbystepguide.satelliteimagery.title",
-          //   "footnote": "stepbystepguide.satelliteimagery.footnote",
-          //   "steps": [
-          //     {
-          //       "title": "stepbystepguide.satelliteimagery.step1.title",
-          //       "markdownDescription": "stepbystepguide.satelliteimagery.step1.markdownDescription"
-          //     },
-          //     {
-          //       "title": "stepbystepguide.satelliteimagery.step2.title",
-          //       "markdownDescription": "stepbystepguide.satelliteimagery.step2.markdownDescription"
-          //     },
-          //     {
-          //       "title": "stepbystepguide.satelliteimagery.step3.title",
-          //     "markdownDescription": "stepbystepguide.satelliteimagery.step3.markdownDescription"
-          //     },
-          //     {
-          //       "title": "stepbystepguide.satelliteimagery.step4.title",
-          //       "markdownDescription": "stepbystepguide.satelliteimagery.step4.markdownDescription"
-          //     }
-          //   ]
-          // },
-          // {
-          //   "title": "stepbystepguide.comparetimeseries.title",
-          //   "footnote": "stepbystepguide.comparetimeseries.footnote",
-          //   "steps": [
-          //     {
-          //       "title": "stepbystepguide.comparetimeseries.step1.title",
-          //       "markdownDescription": "stepbystepguide.comparetimeseries.step1.markdownDescription"
-          //     },
-          //     {
-          //       "title": "stepbystepguide.comparetimeseries.step2.title",
-          //       "markdownDescription": "stepbystepguide.comparetimeseries.step2.markdownDescription"
-          //     },
-          //     {
-          //       "title": "stepbystepguide.comparetimeseries.step3.title",
-          //       "markdownDescription": "stepbystepguide.comparetimeseries.step3.markdownDescription"
-          //     },
-          //     {
-          //       "title": "stepbystepguide.comparetimeseries.step4.title",
-          //       "markdownDescription": "stepbystepguide.comparetimeseries.step4.markdownDescription"
-          //     }
-          //   ]
-          // }
         ]
       },
       {
@@ -392,14 +327,6 @@
           }
         ]
       }
-
-      // For maps with satellite imagery, also see `showInAppGuides`
-      // {
-      //     "itemName": "satelliteimagery",
-      //     "title": "Satellite Imagery",
-      //     "paneMode": "slider",
-      //     "icon": "satellite"
-      // }
     ],
     "helpContentTerms": [
       {
