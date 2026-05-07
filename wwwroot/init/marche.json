@@ -1,9 +1,9 @@
 {
   "homeCamera": {
-    "west": 13.0,
-    "south": 43.4,
-    "east": 13.7,
-    "north": 43.65
+    "west": 11.5,
+    "south": 42.85,
+    "east": 14.5,
+    "north": 43.85
   },
   "workbench": ["fd532s"],
   "settings": {
@@ -128,10 +128,12 @@
               "layers": "LimitiAmministrativi"
             },*/
             {
+              "id": "jc8h3nb",
               "type": "wms",
               "name": "Regione",
               "url": "http://wmscartografia.regione.marche.it:8080/geoserver/geoportale.intra/wms",
-              "layers": "LimitiRegionali"
+              "layers": "LimitiRegionali",
+              "opacity": 1
             },
             {
               "type": "wms",
@@ -262,7 +264,7 @@
             {
               "type": "wms",
               "name": "Rete ferroviaria",
-              "url": "http://wmscartografia.regione.marche.it:8080/geoserver/geoportale.intra/wms?version=1.1.1",
+              "url": "http://wmscartografia.regione.marche.it:8080/geoserver/geoportale.intra/wms",
               "layers": "ReteFerroviaria"
             },
             {
@@ -333,7 +335,7 @@
           //"type": "wfs",
           //"url": "http://wmscartografia.regione.marche.it/geoserver/geoportale.intra/wfs?&request=GetFeature&typeNames=geoportale.intra:interventi",
           "type": "geojson",
-          "url": "test/interventi.json",
+          "url": "data/interventi.json",
           //"maxFeatures": 2000,
           "disableExport": true,
           "featureInfoTemplate": {
@@ -869,6 +871,130 @@
           },
           "colorBlendMode": "HIGHLIGHT",
           "id": "4g8K2P"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "PAI",
+      "members": [
+        {
+          "type": "esri-mapServer-group",
+          "name": "AUBAC",
+          "url": "https://webgis.abdac.it/server/rest/services/PAI_Marche_05_11_2025/MapServer"
+        },
+        /*{
+              "type": "wms-group",
+              "name": "ADBPO",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0"
+            },*/
+        {
+          "type": "group",
+          "name": "ADBPO",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Fasce fluviali UoM Marecchia-Conca Zone o elementi a rischio 2020",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+              "layers": "geonode:aaa03_f_t2_aree_a_rischio_idraulico"
+            },
+            {
+              "type": "wms",
+              "name": "Fasce fluviali UoM Marecchia-Conca Aree inondabili post-interventi per piene con tempo di ritorno di 200 anni 2020",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+              "layers": "geonode:aaa03_f_t2_q200_post_interventi"
+            },
+            {
+              "type": "wms",
+              "name": "Fasce fluviali UoM Marecchia-Conca Aree a rischio di inondazione ante intervento 2020",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+              "layers": "geonode:aaa03_f_t2_q200_pre_erase_interventi"
+            },
+            {
+              "type": "wms",
+              "name": "Fasce fluviali UoM Marecchia-Conca Aree inondabili naturali per piene con tempo di ritorno di 200 anni 2020",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+              "layers": "geonode:aaa03_f_t2_q200_pre_interventi"
+            },
+            {
+              "type": "wms",
+              "name": "Fasce fluviali UoM Marecchia-Conca Fasce inondabili per piene con tempo di ritorno di 200 anni 2020",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+              "layers": "geonode:aaa03_f_t2_q200_pre_interventi_linee"
+            },
+            {
+              "type": "wms",
+              "name": "Fasce fluviali UoM Marecchia-Conca Fasce inondabili per piene con tempo di ritorno di 500 anni 2020",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+              "layers": "geonode:aaa03_f_t2_q500_linee"
+            },
+            {
+              "type": "wms",
+              "name": "Fasce fluviali UoM Marecchia-Conca Fasce inondabili per piene con tempo di ritorno di 50 anni 2020",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+              "layers": "geonode:aaa03_f_t2_q50_linee"
+            },
+            {
+              "type": "wms",
+              "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Abitati da consolidare 2020",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+              "layers": "geonode:aaa03_f_t3_abitati_da_consolidare"
+            },
+            {
+              "type": "wms",
+              "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Aree da assoggettare a verifica 2020",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+              "layers": "geonode:aaa03_f_t3_aree_da_assoggettare_a_verifica"
+            },
+            {
+              "type": "wms",
+              "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Aree verificate 2020",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+              "layers": "geonode:aaa03_f_t3_aree_oggetto_di_verifica"
+            },
+            {
+              "type": "wms",
+              "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Aree di pericolosita 2020",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+              "layers": "geonode:aaa03_f_t3_aree_pericolosita"
+            },
+            {
+              "type": "wms",
+              "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Calanchi 2020",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+              "layers": "geonode:aaa03_f_t3_calanchi"
+            },
+            {
+              "type": "wms",
+              "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Censimento dissesto 2020",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+              "layers": "geonode:aaa03_f_t3_censimento_adb"
+            },
+            {
+              "type": "wms",
+              "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Dissesto 2020",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+              "layers": "geonode:aaa03_f_t3_dissesto"
+            },
+            {
+              "type": "wms",
+              "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Dissesto non cartografabile 2020",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+              "layers": "geonode:aaa03_f_t3_frane_non_cartografabili"
+            },
+            {
+              "type": "wms",
+              "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Aree di rischio 2020",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+              "layers": "geonode:aaa03_f_t3_perimetrazioni_adb"
+            },
+            {
+              "type": "wms",
+              "name": "Aree di versante in condizioni di dissesto UoM Marecchia-Conca Pseudocalanchi 2020",
+              "url": "https://webgis.adbpo.it/geoserver/ows?VERSION=1.3.0",
+              "layers": "geonode:aaa03_f_t3_pseudocalanchi"
+            }
+          ]
         }
       ]
     }
