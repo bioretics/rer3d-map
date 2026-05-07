@@ -31,7 +31,7 @@
       }
     ],
     "microzonationConfig": {
-      "url": "https://geosrv-protciv.regione.marche.it/geoserver/qmap_mzs_rm/ows",
+      "url": "/proxy/https://geosrv-protciv.regione.marche.it/geoserver/qmap_mzs_rm/ows",
       "projectsLayerName": "qmap_mzs_rm:qmp_mzs_stato_progetto_view",
       "documentsLayerName": "qmap_mzs_rm:qmp_mzs_stato_progetto_docs",
       "outputFormat": "application/json"
