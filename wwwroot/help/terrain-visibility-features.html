@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>rer3d-map - Help & FAQ - Play Path</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/custom.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="..">
+          <img alt="Brand" src="../images/logo.png">
+        </a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="../about.html">About</a></li>
+          <li class="active"><a href="help.html">Help & FAQ</a></li>
+          <li><a href="../" target="blank">Apri rer3d-map</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container content">
+    <div class="row">
+      <nav class="side-nav navbar-right col-md-3 col-md-offset-1">
+        <div data-spy="affix">
+
+          <h4 class="nav-header">Come...</h4>
+          <ul class="how-to">
+            <li><a href="help.html">Come iniziare</a></li>
+            <li><a href="help.html#add-data">Come caricare nuovi layer non presenti nel catalogo</a></li>
+            <li><a href="help.html#share">Come condividere la mappa con altri</a></li>
+          </ul>
+
+          <h4 class="nav-header">Key Features</h4>
+          <ul class="key-features">
+            <li><a href="map-navigation.html">Mappa</a></li>
+            <li><a href="data-catalogue.html">Catalogo</a></li>
+            <li><a href="data-workbench.html">Workbench</a></li>
+            <li><a href="path-usage.html">Misure e percorsi</a></li>
+            <li><a href="coordinates.html">Coordinate</a></li>
+            <li><a href="play-path.html">Play Path</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="terrain-visibility-features.html">Visibilità del terreno</a></li>
+          </ul>
+
+          <h4 class="nav-header">Frequently Asked Questions</h4>
+          <ul class="faq">
+            <li><a href="faq.html">rer3d-map</a></li>
+            <li><a href="faq.html#nm-systemdata">Dati</a></li>
+            <li><a href="faq.html#nm-reportingissues">Segnalazioni</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="col-md-8">
+        <h1>Gestione della visibilità del terreno</h1>
+
+
+        <h2>Cos’è la gestione della visibilità del terreno</h2>
+        <p>Gli strumenti di gestione della visibilità del terreno sono funzionalità avanzate del Geoportale che
+          consentono di controllare il modo in cui il globo, il terreno e gli oggetti dei layer vengono visualizzati
+          nella scena 3D.</p>
+        <p>Queste opzioni permettono di adattare la resa della mappa al contesto di utilizzo nella modalità 3D,
+          migliorando la leggibilità della scena e rendendo più chiara l’interpretazione dei dati territoriali.</p>
+
+        <p>Le funzionalità disponibili sono:</p>
+        <ul>
+          <li>Nascondi Caratteristiche Sotterranee</li>
+          <li>Trasparenza del Terreno</li>
+          <li>Controllo Collisioni</li>
+          <li>Taglio del Globo</li>
+        </ul>
+
+
+        <h2 id="nascondi">Nascondi Caratteristiche Sotterranee</h2>
+
+        <h3>Cos’è Nascondi Caratteristiche Sotterranee</h3>
+        <p>La funzione Nascondi Caratteristiche Sotterranee è una funzionalità avanzata del Geoportale che consente di
+          nascondere gli oggetti presenti sotto il terreno.</p>
+        <p>Quando è attiva, gli elementi localizzati al di sotto della superficie non vengono visualizzati, così da
+          rendere la scena più pulita e leggibile. Questa opzione è utile quando si vuole dare priorità visiva al
+          terreno oppure quando si desidera evitare che contenuti interrati o parzialmente coperti interferiscano con la
+          lettura del layer.</p>
+
+        <h3>Come attivare Nascondi Caratteristiche Sotterranee</h3>
+        <p>Per utilizzare la funzione Nascondi Caratteristiche Sotterranee è necessario attivare il relativo controllo
+          nel pannello Impostazioni Mappa.</p>
+        <img src="img/hide-underground-features-panel.png" alt="Hide Underground Features panel"
+          class="screenshot img-responsive" />
+        <h3>Comportamento</h3>
+        <p>Quando la funzione è attiva:</p>
+        <ul>
+          <li>gli oggetti sotto il terreno vengono nascosti;</li>
+          <li>restano visibili solo gli elementi sopra o a livello della superficie;</li>
+          <li>la scena risulta più ordinata e immediata.</li>
+        </ul>
+          <img src="img/hide-underground-features-on.png" alt="Hide Underground Features enabled"
+            class="screenshot img-responsive" />
+
+        <h3>Quando usarla</h3>
+        <p>Nascondi Caratteristiche Sotterranee è utile per:</p>
+        <ul>
+          <li>nascondere elementi non pertinenti alla consultazione corrente;</li>
+          <li>evitare sovrapposizioni visive con il terreno;</li>
+          <li>rendere più chiara la lettura di dati tridimensionali o georeferenziati.</li>
+        </ul>
+
+        <h2 id="trasparenza">Trasparenza del Terreno</h2>
+
+        <h3>Cos’è Trasparenza del Terreno</h3>
+        <p>La funzione Trasparenza del Terreno consente di rendere il globo progressivamente trasparente in funzione
+          della distanza della camera.</p>
+        <p>La trasparenza non cambia in modo brusco, ma viene interpolata tra un valore vicino e un valore lontano, così
+          da ottenere una transizione graduale durante la navigazione. Questa opzione è utile quando si vuole mantenere
+          visibile il contesto territoriale senza coprire completamente gli oggetti sovrapposti al terreno.</p>
+
+        <h3>Come attivare Trasparenza del Terreno</h3>
+        <p>Per utilizzare la funzione Trasparenza del Terreno è necessario attivare il relativo controllo nel pannello
+          Impostazioni Mappa.</p>
+        <img src="img/terrain-transparency-panel.png" alt="Terrain Transparency panel"
+          class="screenshot img-responsive" />
+        <h3>Comportamento</h3>
+        <p>Quando la funzione è attiva:</p>
+        <ul>
+          <li>la trasparenza varia in base alla distanza della camera;</li>
+          <li>tra il limite di distanza lontano e il limite di distanza vicino il valore viene interpolato gradualmente;
+          </li>
+          <li>al di fuori di questo intervallo il valore resta bloccato al limite più vicino.</li>
+        </ul>
+        <p>In questo modo la transizione resta fluida e leggibile anche durante lo zoom o la rotazione della scena.</p>
+          <img src="img/terrain-transparency-on.png" alt="Terrain Transparency enabled"
+            class="screenshot img-responsive" />
+        <h3>Quando usarla</h3>
+        <p>Trasparenza del Terreno è utile per:</p>
+        <ul>
+          <li>rendere più leggibili gli oggetti che si trovano sopra o vicino al terreno;</li>
+          <li>migliorare la visibilità dei dati posti nel sottosuolo;</li>
+          <li>evitare che il globo risulti troppo dominante nella scena.</li>
+        </ul>
+
+        <h2 id="collisioni">Controllo Collisioni</h2>
+
+        <h3>Cos’è Controllo Collisioni</h3>
+        <p>La funzione Controllo Collisioni gestisce la collisione della camera con il terreno.</p>
+        <p>Quando è attiva, la camera non può attraversare la superficie del terreno. Quando è disattivata, aumentare lo
+          zoom permette alla camera di scendere sotto il livello del terreno. Questa opzione consente di controllare il
+          comportamento della navigazione 3D al variare dello zoom ed evitare movimenti indesiderati sotto la
+          superficie.</p>
+
+        <h3>Come attivare Controllo Collisioni</h3>
+        <p>Per utilizzare la funzione Controllo Collisioni è necessario attivare il relativo controllo nel pannello
+          Impostazioni Mappa.</p>
+        <img src="img/collision-control-panel.png" alt="Collision Control panel"
+          class="screenshot img-responsive" />
+        <h3>Comportamento</h3>
+        <p>Quando il controllo è visibile, l’utente può scegliere tra due modalità:</p>
+        <ul>
+          <li>collisione attiva: la camera resta sopra il terreno;</li>
+          <li>collisione disattiva: la camera può attraversare il terreno e posizionarsi sotto la superficie.</li>
+        </ul>
+        <p>Quando la funzione è disattivata, la camera può passare attraverso il terreno visualizzando anche elementi
+          posti nel sottosuolo.</p>
+          <img src="img/collision-control-on.png" alt="Collision Control enabled"
+            class="screenshot img-responsive" />
+        <h3>Quando usarla</h3>
+        <p>Controllo Collisioni è utile per:</p>
+        <ul>
+          <li>mantenere una navigazione più controllata;</li>
+          <li>evitare che la camera entri accidentalmente sotto il suolo;</li>
+          <li>garantire una consultazione più intuitiva in scenari standard.</li>
+        </ul>
+
+        <h2 id="taglio">Taglio del Globo</h2>
+
+        <h3>Cos’è Taglio del Globo</h3>
+        <p>La funzione Taglio del Globo consente di ritagliare il globo in base all’estensione dei dati visualizzati.
+        </p>
+        <p>In questo modo viene mostrata soltanto l’area utile del layer, mentre il terreno esterno al riquadro dei dati
+          viene tagliato. Questa opzione è utile quando si vuole concentrare la visualizzazione sull’area di interesse e
+          ridurre gli elementi di sfondo non necessari.</p>
+
+        <h3>Come attivare Taglio del Globo</h3>
+        <p>Per utilizzare la funzione Taglio del Globo è necessario attivare il relativo controllo dedicato al taglio
+          del globo nel dato di catalogo presente nella workbench.</p>
+        <img src="img/clipping-globe-panel.png" alt="Clipping Globe panel"
+          class="screenshot img-responsive" />
+        <h3>Comportamento</h3>
+        <p>Quando la funzione è attiva:</p>
+        <ul>
+          <li>il globo viene tagliato in corrispondenza dell’area coperta dai dati;</li>
+          <li>la porzione esterna al box del layer non viene visualizzata;</li>
+          <li>la scena risulta più focalizzata e meno dispersiva.</li>
+        </ul>
+          <img src="img/clipping-globe-on.png" alt="Clipping Globe enabled"
+            class="screenshot img-responsive" />
+          <img src="img/clipping-globe-on_2.png" alt="Clipping Globe enabled"
+            class="screenshot img-responsive" />
+        <h3>Quando usarla</h3>
+        <p>Taglio del Globo è utile per:</p>
+        <ul>
+          <li>limitare la visualizzazione all’area realmente rilevante;</li>
+          <li>ridurre il rumore visivo nella vista 3D;</li>
+          <li>ottenere una visualizzazione più ordinata e leggibile dei dati presenti nel sottosuolo.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">&copy; {copyright}</p>
+      <!--<p><strong><a href="../about.html#terms">Terms and conditions</a></strong> – <strong><a href="privacy.html">Privacy</a></strong></p>-->
+
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
