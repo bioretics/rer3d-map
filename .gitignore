@@ -1,28 +1,24 @@
+# Dependencies
 node_modules/
-.idea/
-wwwroot/build/
-wwwroot/doc/
-wwwroot/index.html
+
+# Turborepo
+.turbo/
+
+# Build output
+dist/
+build/
+ts-out/
+
+# Logs
+*.log
 npm-debug.log
-version.js
-wwwroot/init/nm.json
-datasources/00_National_Data_Sets.json
+
+# Editor / OS
+.idea/
+.history/
 .DS_Store
-.localized
-.sass-cache
-/terriajs.pid
-/terriajs-server.log
+*.swp
 
-/wwwroot/editor/
-/error.log
-/error.log
-/output.log
-privateserverconfig.json
-wwwroot/privateconfig.json
-deploy/packages/
-deploy/work/
-packages/
-pancake/
-yarn-error.log
-
+# Lockfiles from other package managers (this repo uses yarn)
 package-lock.json
+pnpm-lock.yaml

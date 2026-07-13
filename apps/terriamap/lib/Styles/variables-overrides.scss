@@ -1,0 +1,7 @@
+// Regione Emilia-Romagna (rer3d-map) theme values, carried over from the legacy
+// lib/Styles/variables.scss during the merge onto the TerriaJS monorepo.
+@forward "~terriajs/lib/Sass/common/_default_variables.scss" with (
+  $color-primary: #519ac2,
+  $dark: #3f4854,
+  $dark-with-overlay: #667080
+);

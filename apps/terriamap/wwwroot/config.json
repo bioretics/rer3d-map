@@ -11,6 +11,9 @@
     "googleAnalyticsKey": null,
     "googleAnalyticsOptions": null,
 
+    // RER custom search parameters. Consumed by the rer3d-terriajs fork's
+    // RerSearchProvider ("eGeoCoding") and whereAmI/coords services; inert on stock
+    // terriajs 8.12.4 until those providers are ported (see MERGE_LOG.md, flag F3).
     "customSearchProviderUrl": "eGeoCoding",
     "whereAmIParams": {
       "urlFast": "https://servizigis.regione.emilia-romagna.it/geoags/rest/services/portale/where/MapServer/0/query?geometryType=esriGeometryPoint&spatialRel=esriSpatialRelIndexIntersects&outFields=OBJECTID,LOCALIZZAZ,DETTAGLIO&returnGeometry=false&f=pjson",
@@ -106,6 +109,20 @@
       },
       "fallbackLanguage": "en"
     },
+    "searchBarConfig": {},
+    "searchProviders": [
+      // Nominatim search restricted to Italy — carries over the legacy fork's
+      // NominatimSearchProvider({ countryCodes: "it" }) registration, now expressed
+      // through the stock terriajs 8.12.4 config-driven search providers.
+      {
+        "id": "search-provider/nominatim",
+        "type": "nominatim-search-provider",
+        "name": "translate#viewModels.searchLocations",
+        "countryCodes": "it",
+        "flightDurationSeconds": 1.5,
+        "minCharacters": 3
+      }
+    ],
     "helpContent": [
       {
         "title": "About",
@@ -117,7 +134,10 @@
         "title": "translate#gettingstarted.title",
         "itemName": "gettingstarted",
         "paneMode": "videoAndContent",
-        "markdownText": "translate#gettingstarted.markdownText"
+        "markdownText": "translate#gettingstarted.markdownText",
+        "icon": "video",
+        "videoUrl": "translate#gettingstarted.videoUrl",
+        "placeholderImage": "translate#gettingstarted.placeholderImage"
       },
       {
         "title": "translate#stepbystepguide.title",
@@ -143,82 +163,31 @@
                 "markdownDescription": "translate#stepbystepguide.gettingstarted.step3.markdownDescription"
               },
               {
-                "title": "translate#stepbystepguide.gettingstarted.step4.title",
-                "markdownDescription": "translate#stepbystepguide.gettingstarted.step4.markdownDescription"
+                "title": "translate#stepbystepguide.gettingstarted.step4.title"
               },
               {
-                "title": "translate#stepbystepguide.gettingstarted.step5.title",
-                "markdownDescription": "translate#stepbystepguide.gettingstarted.step5.markdownDescription"
+                "title": "translate#stepbystepguide.gettingstarted.step5.title"
               },
               {
-                "title": "translate#stepbystepguide.gettingstarted.step6.title",
-                "markdownDescription": "translate#stepbystepguide.gettingstarted.step6.markdownDescription"
+                "title": "translate#stepbystepguide.gettingstarted.step6.title"
               },
               {
-                "title": "translate#stepbystepguide.gettingstarted.step7.title",
-                "markdownDescription": "translate#stepbystepguide.gettingstarted.step7.markdownDescription"
+                "title": "translate#stepbystepguide.gettingstarted.step7.title"
               },
               {
-                "title": "translate#stepbystepguide.gettingstarted.step8.title",
-                "markdownDescription": "translate#stepbystepguide.gettingstarted.step8.markdownDescription"
-              },
-              {
-                "title": "translate#stepbystepguide.gettingstarted.step9.title",
-                "markdownDescription": "translate#stepbystepguide.gettingstarted.step9.markdownDescription"
-              },
-              {
-                "title": "translate#stepbystepguide.gettingstarted.step10.title",
-                "markdownDescription": "translate#stepbystepguide.gettingstarted.step10.markdownDescription"
+                "title": "translate#stepbystepguide.gettingstarted.step8.title"
               }
             ]
           }
-          // -- Uncomment to enable the following trainer guides --
-          // {
-          //   "title": "stepbystepguide.satelliteimagery.title",
-          //   "footnote": "stepbystepguide.satelliteimagery.footnote",
-          //   "steps": [
-          //     {
-          //       "title": "stepbystepguide.satelliteimagery.step1.title",
-          //       "markdownDescription": "stepbystepguide.satelliteimagery.step1.markdownDescription"
-          //     },
-          //     {
-          //       "title": "stepbystepguide.satelliteimagery.step2.title",
-          //       "markdownDescription": "stepbystepguide.satelliteimagery.step2.markdownDescription"
-          //     },
-          //     {
-          //       "title": "stepbystepguide.satelliteimagery.step3.title",
-          //     "markdownDescription": "stepbystepguide.satelliteimagery.step3.markdownDescription"
-          //     },
-          //     {
-          //       "title": "stepbystepguide.satelliteimagery.step4.title",
-          //       "markdownDescription": "stepbystepguide.satelliteimagery.step4.markdownDescription"
-          //     }
-          //   ]
-          // },
-          // {
-          //   "title": "stepbystepguide.comparetimeseries.title",
-          //   "footnote": "stepbystepguide.comparetimeseries.footnote",
-          //   "steps": [
-          //     {
-          //       "title": "stepbystepguide.comparetimeseries.step1.title",
-          //       "markdownDescription": "stepbystepguide.comparetimeseries.step1.markdownDescription"
-          //     },
-          //     {
-          //       "title": "stepbystepguide.comparetimeseries.step2.title",
-          //       "markdownDescription": "stepbystepguide.comparetimeseries.step2.markdownDescription"
-          //     },
-          //     {
-          //       "title": "stepbystepguide.comparetimeseries.step3.title",
-          //       "markdownDescription": "stepbystepguide.comparetimeseries.step3.markdownDescription"
-          //     },
-          //     {
-          //       "title": "stepbystepguide.comparetimeseries.step4.title",
-          //       "markdownDescription": "stepbystepguide.comparetimeseries.step4.markdownDescription"
-          //     }
-          //   ]
-          // }
         ]
-      } // For maps with satellite imagery, also see `showInAppGuides`
+      },
+      {
+        "icon": "story",
+        "itemName": "storymigration",
+        "markdownText": "## Share & Story Migration\n\n### Guide on updating share links, including stories\n\nIf you've received a warning telling you that a share link was based off an older version of TerriaJS, you'll want to do a few things to recreate them in the latest version of Terria!\n\n#### Creators\n\n1. Identify the share URL which causes a notification of share preservation effort when loading them into Terria. e.g. you may know where they are embedded, or come across them accidentally\n2. Open them in the newer (v8) based map application \n3. Check that everything is sharing as you expect, tweak the layers to fit if some are missing or not behaving correctly.\n4. Update the share link by clicking the Share/Print button and copy the new link\n5. If distribution of share link is known, update the url in your web page (if embedded), or send the new link to users \n\n#### Consumers\n1. Load the share URL\n2. If it doesn't quite look right, notify the provider so they can follow the above steps to recreate it in the latest version of Terria",
+        "title": "Share & Story migration"
+      }
+      // For maps with satellite imagery, also see `showInAppGuides`
       // {
       //     "itemName": "satelliteimagery",
       //     "title": "Satellite Imagery",

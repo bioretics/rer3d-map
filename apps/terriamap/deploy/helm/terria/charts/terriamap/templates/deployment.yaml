@@ -19,7 +19,7 @@ spec:
       - name: terriamap
         resources:
 {{ toYaml .Values.resources | indent 10 }}
-        command: [ "node", "./node_modules/rer3d-terriajs-server/lib/app.js", "--config-file", "/etc/config/server/serverconfig.json"]
+        command: [ "node", "./node_modules/terriajs-server/lib/app.js", "--config-file", "/etc/config/server/serverconfig.json"]
         env:
         - name: NODE_ENV
           value: production
@@ -30,6 +30,9 @@ spec:
             mountPath: /etc/config/client
           - name: terriamap-config-server
             mountPath: /etc/config/server
+          - name: terriamap-config-client
+            mountPath: /usr/src/app/component/wwwroot/config.json
+            subPath: config.json
       volumes:
         - name: terriamap-config-client
           configMap:

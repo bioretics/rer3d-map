@@ -1,0 +1,38 @@
+name: Find region mapping alias duplicates
+
+# Run when regionMapping.json file or  is updated
+on:
+  push:
+    paths:
+      - "packages/terriajs/wwwroot/data/regionMapping.json"
+      - "packages/terriajs/buildprocess/find-region-mapping-alias-duplicates.js"
+  pull_request:
+    paths:
+      - "packages/terriajs/wwwroot/data/regionMapping.json"
+      - "packages/terriajs/buildprocess/find-region-mapping-alias-duplicates.js"
+
+permissions:
+  contents: read # to fetch code (actions/checkout)
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job
+  find-alias-duplicates:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Check out only 2 files
+      # Use without cone mode as no git operations are executed past checkout
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          sparse-checkout: |
+            packages/terriajs/wwwroot/data/regionMapping.json
+            packages/terriajs/buildprocess/find-region-mapping-alias-duplicates.js
+          sparse-checkout-cone-mode: false
+
+      - name: Check aliases
+        working-directory: packages/terriajs
+        run: |
+          node buildprocess/find-region-mapping-alias-duplicates.js

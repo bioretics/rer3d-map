@@ -11,5 +11,6 @@ insert_final_newline = true
 [*.md]
 trim_trailing_whitespace = false
 
-[*.scss]
-indent_size = 2
+[doc/**.md]
+# mkdocs requires 4 spaces. With 2 space indents, nested lists do not work
+indent_size = 4

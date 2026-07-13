@@ -3,16 +3,3 @@
 /terriajs.pid
 /error.log
 /output.log
-packages
-
-node_modules/
-npm-debug.log
-.DS_Store
-.sass-cache
-/terriajs-server.log
-privateserverconfig.json
-wwwroot/privateconfig.json
-deploy
-
-.dockerignore
-terriajs-server.log
