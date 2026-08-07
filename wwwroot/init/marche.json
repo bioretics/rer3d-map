@@ -332,16 +332,17 @@
         {
           "id": "fd532s",
           "name": "Interventi",
-          //"type": "wfs",
-          //"url": "http://wmscartografia.regione.marche.it/geoserver/geoportale.intra/wfs?&request=GetFeature&typeNames=geoportale.intra:interventi",
-          "type": "geojson",
-          "url": "data/interventi.json",
-          //"maxFeatures": 2000,
+          //"type": "geojson",
+          //"url": "data/interventi.json",
+          "type": "wfs",
+          "url": "http://wmscartografia.regione.marche.it/geoserver/geoportale.intra/wfs",
+          "typeNames": "geoportale.intra:interventi",
+          "maxFeatures": 2000,
           "disableExport": true,
           "featureInfoTemplate": {
             "name": "{{nome_infrastruttura}}",
-            //"template": "<table><tbody><tr><td>Id</td><td>{{id}}</td></tr><tr><td>Codice</td><td>{{codice_intervento}}</td></tr><tr><td>{{#terria.partialByName}}nome_intervento{{/terria.partialByName}}</td><td>{{{nome_intervento}}}</td></tr><tr><td>Descrizione</td><td>{{descrizione_intervento}}</td></tr><tr><td>Note</td><td>{{note_intervento}}</td></tr><tr><td>Tipo intervento</td><td>{{tipo_intervento}}</td></tr><tr><td>Nome infrastruttura</td><td>{{nome_infrastruttura}}</td></tr><tr><td>Tipo infrastruttura</td><td>{{tipo_infrastruttura}}</td></tr><tr><td>Province</td><td>{{localizzazione_province}}</td></tr><tr><td>Comuni</td><td>{{localizzazione_comuni}}</td></tr><tr><td>Descrizione posizione</td><td>{{centroide_descrizione}}</td></tr><tr><td>Responsabile procedimento</td><td>{{responsabile_procedimento}}</td></tr><tr><td>Riferimento normativo</td><td>{{riferimento_normativo}}</td></tr><tr><td>Tipo finanziamento</td><td>{{tipo_finanziamento}}</td></tr><tr><td>Fonte finanziamento</td><td>{{fonte_finanziamento}}</td></tr><tr><td>Soggetto attuatore</td><td>{{soggetto_attuatore}}</td></tr><tr><td>Tipo soggetto attuatore</td><td>{{tipo_soggetto_attuatore}}</td></tr><tr><td>Avanzamento %</td><td>{{percentuale_avanzamento}}</td></tr><tr><td>Tipo stato avanzamento</td><td>{{tipo_stato_avanzamento}}</td></tr><tr><td>Descrizione stato avanzamento</td><td>{{descrizione_tipo_stato_avanzamento}}</td></tr><tr><td>Fase cronoprogramma</td><td>{{fase_cronoprogramma}}</td></tr><tr><td>Note cronoprogramma</td><td>{{note_cronoprogramma}}</td></tr><tr><td>Programma non rispettato</td><td>{{programma_non_rispettato}}</td></tr><tr><td>Foto</td><td>{{media_immagine}}</td></tr><tr><td>Pdf</td><td>{{media_scheda_pdf}}</td></tr><tr><td>Link</td><td>{{media_url}}</td></tr><tr><td>Costo complessivo previsto (€)</td><td>{{costo_complessivo_previsto}}</td></tr><tr><td>Finanziamento regionale previsto (€)</td><td>{{finanziamento_regione_previsto}}</td></tr><tr><td>Costo complessivo effettivo (€)</td><td>{{costo_complessivo_effettivo}}</td></tr><tr><td>Finanziamento regionale effettivo (€)</td><td>{{finanziamento_regione_effettivo}}</td></tr><tr><td>Contributo erogato (€)</td><td>{{contributo_erogato}}</td></tr><tr><td>Costo realizzato (€)</td><td>{{costo_realizzato}}</td></tr><tr><td>Codice CLP</td><td>{{codice_clp}}</td></tr><tr><td>Codice CUP</td><td>{{codice_cup}}</td></tr><tr><td>Data riferimento</td><td>{{data_riferimento}}</td></tr><tr><td>Note</td><td>{{note}}</td></tr></table></tbody>",
-            //"template": "<table><tbody><tr><td>{{#terria.partialByName}}id{{/terria.partialByName}}</td><td>{{id}}</td></tr><tr><td>{{#terria.partialByName}}codice{{/terria.partialByName}}</td><td>{{codice_intervento}}</td></tr><tr><td>{{#terria.partialByName}}nome_intervento{{/terria.partialByName}}</td><td>{{{nome_intervento}}}</td></tr><tr><td>{{#terria.partialByName}}descrizione_intervento{{/terria.partialByName}}</td><td>{{descrizione_intervento}}</td></tr><tr><td>{{#terria.partialByName}}note_intervento{{/terria.partialByName}}</td><td>{{note_intervento}}</td></tr><tr><td>{{#terria.partialByName}}tipo_intervento{{/terria.partialByName}}</td><td>{{tipo_intervento}}</td></tr><tr><td>{{#terria.partialByName}}nome_infrastruttura{{/terria.partialByName}}</td><td>{{nome_infrastruttura}}</td></tr><tr><td>{{#terria.partialByName}}tipo_infrastruttura{{/terria.partialByName}}</td><td>{{tipo_infrastruttura}}</td></tr><tr><td>{{#terria.partialByName}}localizzazione_province{{/terria.partialByName}}</td><td>{{localizzazione_province}}</td></tr><tr><td>{{#terria.partialByName}}localizzazione_comuni{{/terria.partialByName}}</td><td>{{localizzazione_comuni}}</td></tr><tr><td>{{#terria.partialByName}}centroide_descrizione{{/terria.partialByName}}</td><td>{{centroide_descrizione}}</td></tr><tr><td>{{#terria.partialByName}}responsabile_procedimento{{/terria.partialByName}}</td><td>{{responsabile_procedimento}}</td></tr><tr><td>{{#terria.partialByName}}riferimento_normativo{{/terria.partialByName}}</td><td>{{riferimento_normativo}}</td></tr><tr><td>{{#terria.partialByName}}tipo_finanziamento{{/terria.partialByName}}</td><td>{{tipo_finanziamento}}</td></tr><tr><td>{{#terria.partialByName}}fonte_finanziamento{{/terria.partialByName}}</td><td>{{fonte_finanziamento}}</td></tr><tr><td>{{#terria.partialByName}}soggetto_attuatore{{/terria.partialByName}}</td><td>{{soggetto_attuatore}}</td></tr><tr><td>{{#terria.partialByName}}tipo_soggetto_attuatore{{/terria.partialByName}}</td><td>{{tipo_soggetto_attuatore}}</td></tr><tr><td>{{#terria.partialByName}}percentuale_avanzamento{{/terria.partialByName}}</td><td>{{percentuale_avanzamento}}</td></tr><tr><td>{{#terria.partialByName}}tipo_stato_avanzamento{{/terria.partialByName}}</td><td>{{tipo_stato_avanzamento}}</td></tr><tr><td>{{#terria.partialByName}}descrizione_tipo_stato_avanzamento{{/terria.partialByName}}</td><td>{{descrizione_tipo_stato_avanzamento}}</td></tr><tr><td>{{#terria.partialByName}}fase_cronoprogramma{{/terria.partialByName}}</td><td>{{fase_cronoprogramma}}</td></tr><tr><td>{{#terria.partialByName}}note_cronoprogramma{{/terria.partialByName}}</td><td>{{note_cronoprogramma}}</td></tr><tr><td>{{#terria.partialByName}}programma_non_rispettato{{/terria.partialByName}}</td><td>{{programma_non_rispettato}}</td></tr><tr><td>{{#terria.partialByName}}media_immagine{{/terria.partialByName}}</td><td>{{media_immagine}}</td></tr><tr><td>{{#terria.partialByName}}media_scheda_pdf{{/terria.partialByName}}</td><td>{{media_scheda_pdf}}</td></tr><tr><td>{{#terria.partialByName}}media_url{{/terria.partialByName}}</td><td>{{media_url}}</td></tr><tr><td>{{#terria.partialByName}}costo_complessivo_previsto{{/terria.partialByName}}</td><td>{{costo_complessivo_previsto}}</td></tr><tr><td>{{#terria.partialByName}}finanziamento_regione_previsto{{/terria.partialByName}}</td><td>{{finanziamento_regione_previsto}}</td></tr><tr><td>{{#terria.partialByName}}costo_complessivo_effettivo{{/terria.partialByName}}</td><td>{{costo_complessivo_effettivo}}</td></tr><tr><td>{{#terria.partialByName}}finanziamento_regione_effettivo{{/terria.partialByName}}</td><td>{{finanziamento_regione_effettivo}}</td></tr><tr><td>{{#terria.partialByName}}contributo_erogato{{/terria.partialByName}}</td><td>{{contributo_erogato}}</td></tr><tr><td>{{#terria.partialByName}}costo_realizzato{{/terria.partialByName}}</td><td>{{costo_realizzato}}</td></tr><tr><td>{{#terria.partialByName}}codice_clp{{/terria.partialByName}}</td><td>{{codice_clp}}</td></tr><tr><td>{{#terria.partialByName}}codice_cup{{/terria.partialByName}}</td><td>{{codice_cup}}</td></tr><tr><td>{{#terria.partialByName}}data_riferimento{{/terria.partialByName}}</td><td>{{data_riferimento}}</td></tr><tr><td>{{#terria.partialByName}}note{{/terria.partialByName}}</td><td>{{note}}</td></tr><tr><td>{{#terria.partialByName}}tipo_piano{{/terria.partialByName}}</td><td>{{tipo_piano}}</td></tr></table></tbody>",
+            //"template": "<table><tbody><tr><td>Id</td><td>{{id}}</td></tr><tr><td>Codice</td><td>{{codice_intervento}}</td></tr><tr><td>{{#terria.partialByName}}nome_intervento{{/terria.partialByName}}</td><td>{{{nome_intervento}}}</td></tr><tr><td>Descrizione</td><td>{{descrizione_intervento}}</td></tr><tr><td>Note</td><td>{{note_intervento}}</td></tr><tr><td>Tipo intervento</td><td>{{tipo_intervento}}</td></tr><tr><td>Nome infrastruttura</td><td>{{nome_infrastruttura}}</td></tr><tr><td>Tipo infrastruttura</td><td>{{tipo_infrastruttura}}</td></tr><tr><td>Province</td><td>{{localizzazione_province}}</td></tr><tr><td>Comuni</td><td>{{localizzazione_comuni}}</td></tr><tr><td>Indirizzo intervento</td><td>{{indirizzo_intervento}}</td></tr><tr><td>Responsabile procedimento</td><td>{{responsabile_procedimento}}</td></tr><tr><td>Riferimento normativo</td><td>{{riferimento_normativo}}</td></tr><tr><td>Tipo finanziamento</td><td>{{tipo_finanziamento}}</td></tr><tr><td>Fonte finanziamento</td><td>{{fonte_finanziamento}}</td></tr><tr><td>Soggetto attuatore</td><td>{{soggetto_attuatore}}</td></tr><tr><td>Tipo soggetto attuatore</td><td>{{tipo_soggetto_attuatore}}</td></tr><tr><td>Avanzamento %</td><td>{{percentuale_avanzamento}}</td></tr><tr><td>Tipo stato avanzamento</td><td>{{tipo_stato_avanzamento}}</td></tr><tr><td>Descrizione stato avanzamento</td><td>{{descrizione_tipo_stato_avanzamento}}</td></tr><tr><td>Fase cronoprogramma</td><td>{{fase_cronoprogramma}}</td></tr><tr><td>Note cronoprogramma</td><td>{{note_cronoprogramma}}</td></tr><tr><td>Programma non rispettato</td><td>{{programma_non_rispettato}}</td></tr><tr><td>Foto</td><td>{{media_immagine}}</td></tr><tr><td>Link</td><td>{{media_pubb_link}}</td></tr><tr><td>Costo complessivo previsto (€)</td><td>{{costo_complessivo_previsto}}</td></tr><tr><td>Finanziamento regionale previsto (€)</td><td>{{finanziamento_regione_previsto}}</td></tr><tr><td>Finanziamento regionale effettivo (€)</td><td>{{finanziamento_regione_effettivo}}</td></tr><tr><td>Contributo erogato (€)</td><td>{{contributo_erogato}}</td></tr><tr><td>Costo realizzato (€)</td><td>{{costo_realizzato}}</td></tr><tr><td>Codice CLP</td><td>{{codice_clp}}</td></tr><tr><td>Codice CUP</td><td>{{codice_cup}}</td></tr><tr><td>Data riferimento</td><td>{{data_riferimento}}</td></tr><tr><td>Note</td><td>{{note}}</td></tr></table></tbody>",
+            //"template": "<table><tbody><tr><td>{{#terria.partialByName}}id{{/terria.partialByName}}</td><td>{{id}}</td></tr><tr><td>{{#terria.partialByName}}codice{{/terria.partialByName}}</td><td>{{codice_intervento}}</td></tr><tr><td>{{#terria.partialByName}}nome_intervento{{/terria.partialByName}}</td><td>{{{nome_intervento}}}</td></tr><tr><td>{{#terria.partialByName}}descrizione_intervento{{/terria.partialByName}}</td><td>{{descrizione_intervento}}</td></tr><tr><td>{{#terria.partialByName}}note_intervento{{/terria.partialByName}}</td><td>{{note_intervento}}</td></tr><tr><td>{{#terria.partialByName}}tipo_intervento{{/terria.partialByName}}</td><td>{{tipo_intervento}}</td></tr><tr><td>{{#terria.partialByName}}nome_infrastruttura{{/terria.partialByName}}</td><td>{{nome_infrastruttura}}</td></tr><tr><td>{{#terria.partialByName}}tipo_infrastruttura{{/terria.partialByName}}</td><td>{{tipo_infrastruttura}}</td></tr><tr><td>{{#terria.partialByName}}localizzazione_province{{/terria.partialByName}}</td><td>{{localizzazione_province}}</td></tr><tr><td>{{#terria.partialByName}}localizzazione_comuni{{/terria.partialByName}}</td><td>{{localizzazione_comuni}}</td></tr><tr><td>{{#terria.partialByName}}indirizzo_intervento{{/terria.partialByName}}</td><td>{{indirizzo_intervento}}</td></tr><tr><td>{{#terria.partialByName}}responsabile_procedimento{{/terria.partialByName}}</td><td>{{responsabile_procedimento}}</td></tr><tr><td>{{#terria.partialByName}}riferimento_normativo{{/terria.partialByName}}</td><td>{{riferimento_normativo}}</td></tr><tr><td>{{#terria.partialByName}}tipo_finanziamento{{/terria.partialByName}}</td><td>{{tipo_finanziamento}}</td></tr><tr><td>{{#terria.partialByName}}fonte_finanziamento{{/terria.partialByName}}</td><td>{{fonte_finanziamento}}</td></tr><tr><td>{{#terria.partialByName}}soggetto_attuatore{{/terria.partialByName}}</td><td>{{soggetto_attuatore}}</td></tr><tr><td>{{#terria.partialByName}}tipo_soggetto_attuatore{{/terria.partialByName}}</td><td>{{tipo_soggetto_attuatore}}</td></tr><tr><td>{{#terria.partialByName}}percentuale_avanzamento{{/terria.partialByName}}</td><td>{{percentuale_avanzamento}}</td></tr><tr><td>{{#terria.partialByName}}tipo_stato_avanzamento{{/terria.partialByName}}</td><td>{{tipo_stato_avanzamento}}</td></tr><tr><td>{{#terria.partialByName}}descrizione_tipo_stato_avanzamento{{/terria.partialByName}}</td><td>{{descrizione_tipo_stato_avanzamento}}</td></tr><tr><td>{{#terria.partialByName}}fase_cronoprogramma{{/terria.partialByName}}</td><td>{{fase_cronoprogramma}}</td></tr><tr><td>{{#terria.partialByName}}note_cronoprogramma{{/terria.partialByName}}</td><td>{{note_cronoprogramma}}</td></tr><tr><td>{{#terria.partialByName}}programma_non_rispettato{{/terria.partialByName}}</td><td>{{programma_non_rispettato}}</td></tr><tr><td>{{#terria.partialByName}}media_immagine{{/terria.partialByName}}</td><td>{{media_immagine}}</td></tr><tr><td>{{#terria.partialByName}}media_pubb_link{{/terria.partialByName}}</td><td>{{media_pubb_link}}</td></tr><tr><td>{{#terria.partialByName}}costo_complessivo_previsto{{/terria.partialByName}}</td><td>{{costo_complessivo_previsto}}</td></tr><tr><td>{{#terria.partialByName}}finanziamento_regione_previsto{{/terria.partialByName}}</td><td>{{finanziamento_regione_previsto}}</td></tr><tr><td>{{#terria.partialByName}}finanziamento_regione_effettivo{{/terria.partialByName}}</td><td>{{finanziamento_regione_effettivo}}</td></tr><tr><td>{{#terria.partialByName}}contributo_erogato{{/terria.partialByName}}</td><td>{{contributo_erogato}}</td></tr><tr><td>{{#terria.partialByName}}costo_realizzato{{/terria.partialByName}}</td><td>{{costo_realizzato}}</td></tr><tr><td>{{#terria.partialByName}}codice_clp{{/terria.partialByName}}</td><td>{{codice_clp}}</td></tr><tr><td>{{#terria.partialByName}}codice_cup{{/terria.partialByName}}</td><td>{{codice_cup}}</td></tr><tr><td>{{#terria.partialByName}}data_riferimento{{/terria.partialByName}}</td><td>{{data_riferimento}}</td></tr><tr><td>{{#terria.partialByName}}note{{/terria.partialByName}}</td><td>{{note}}</td></tr><tr><td>{{#terria.partialByName}}tipo_piano{{/terria.partialByName}}</td><td>{{tipo_piano}}</td></tr></table></tbody>",
             "partials": {
               "id": "Id",
               "codice": "Codice",
@@ -353,7 +354,7 @@
               "tipo_infrastruttura": "Tipo infrastruttura",
               "localizzazione_province": "Province",
               "localizzazione_comuni": "Comuni",
-              "centroide_descrizione": "Descrizione posizione",
+              "indirizzo_intervento": "Indirizzo intervento",
               "responsabile_procedimento": "Responsabile procedimento",
               "riferimento_normativo": "Riferimento normativo",
               "tipo_finanziamento": "Tipo finanziamento",
@@ -367,11 +368,9 @@
               "note_cronoprogramma": "Note cronoprogramma",
               "programma_non_rispettato": "Programma non rispettato",
               "media_immagine": "Foto",
-              "media_scheda_pdf": "Pdf",
-              "media_url": "Link",
+              "media_pubb_link": "Link",
               "costo_complessivo_previsto": "Costo complessivo previsto (€)",
               "finanziamento_regione_previsto": "Finanziamento regionale previsto (€)",
-              "costo_complessivo_effettivo": "Costo complessivo effettivo (€)",
               "finanziamento_regione_effettivo": "Finanziamento regionale effettivo (€)",
               "contributo_erogato": "Contributo erogato (€)",
               "costo_realizzato": "Costo realizzato (€)",
@@ -383,10 +382,6 @@
             },
             "formats": {
               "costo_complessivo_previsto": {
-                "type": "number",
-                "useGrouping": true
-              },
-              "costo_complessivo_effettivo": {
                 "type": "number",
                 "useGrouping": true
               },
@@ -423,7 +418,6 @@
                 "nome_intervento",
                 "nome_infrastruttura",
                 "costo_complessivo_previsto",
-                "costo_complessivo_effettivo",
                 "tipo_infrastruttura",
                 "tipo_stato_avanzamento",
                 "localizzazione_comuni",
@@ -433,7 +427,6 @@
                 "nome_intervento",
                 "nome_infrastruttura",
                 "costo_complessivo_previsto",
-                "costo_complessivo_effettivo",
                 "tipo_infrastruttura",
                 "tipo_stato_avanzamento",
                 "localizzazione_comuni",
@@ -443,7 +436,6 @@
                 "nome_intervento",
                 "nome_infrastruttura",
                 "costo_complessivo_previsto",
-                "costo_complessivo_effettivo",
                 "tipo_infrastruttura",
                 "tipo_stato_avanzamento",
                 "localizzazione_comuni",
@@ -453,7 +445,6 @@
                 "nome_intervento",
                 "nome_infrastruttura",
                 "costo_complessivo_previsto",
-                "costo_complessivo_effettivo",
                 "tipo_infrastruttura",
                 "tipo_stato_avanzamento",
                 "localizzazione_comuni",
@@ -508,13 +499,6 @@
             {
               "propertyName": "costo_complessivo_previsto",
               "propertyLabel": "Costo complessivo previsto",
-              "propertyType": "number",
-              "propertyMeasureUnit": "€",
-              "sumOnAggregation": true
-            },
-            {
-              "propertyName": "costo_complessivo_effettivo",
-              "propertyLabel": "Costo complessivo effettivo",
               "propertyType": "number",
               "propertyMeasureUnit": "€",
               "sumOnAggregation": true
